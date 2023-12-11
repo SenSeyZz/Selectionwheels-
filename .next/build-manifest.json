@@ -27,16 +27,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/counter-strike": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/counter-strike.js"
-    ],
-    "/counter-strike/CSGOWheel": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/counter-strike/CSGOWheel.js"
-    ],
     "/counter-strike/weaponWheels": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -46,11 +36,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/counter-strike/weaponWheels/SMGsWheel.js"
-    ],
-    "/counter-strike/weaponWheels/heavyWheel": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/counter-strike/weaponWheels/heavyWheel.js"
     ],
     "/counter-strike/weaponWheels/pistolsWheel": [
       "static/chunks/webpack.js",

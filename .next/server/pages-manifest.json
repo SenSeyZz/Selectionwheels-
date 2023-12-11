@@ -3,11 +3,8 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/counter-strike/weaponWheels": "pages/counter-strike/weaponWheels.js",
-  "/counter-strike/weaponWheels/heavyWheel": "pages/counter-strike/weaponWheels/heavyWheel.js",
-  "/counter-strike/weaponWheels/pistolsWheel": "pages/counter-strike/weaponWheels/pistolsWheel.js",
-  "/counter-strike": "pages/counter-strike.js",
-  "/counter-strike/CSGOWheel": "pages/counter-strike/CSGOWheel.js",
   "/counter-strike/weaponWheels/riflesWheel": "pages/counter-strike/weaponWheels/riflesWheel.js",
+  "/counter-strike/weaponWheels": "pages/counter-strike/weaponWheels.js",
+  "/counter-strike/weaponWheels/pistolsWheel": "pages/counter-strike/weaponWheels/pistolsWheel.js",
   "/counter-strike/weaponWheels/SMGsWheel": "pages/counter-strike/weaponWheels/SMGsWheel.js"
 }

@@ -1,12 +1,11 @@
 import Link from 'next/link';
-import WheelComponent from "react-wheel-of-prizes";
-import randomColor from "randomcolor";
-import React, { useState, useEffect } from 'react';
+import WheelContainer from '../../wheelContainer';
+import useWheelFunctions from '../../wheelFunctions';
 
 //Lot of repeated code consider making it a separate file that i import 
 export default function App() {
 
-  const [segments, setSegments] = useState([
+  const initialSegments = [
     "AK-47",
     "AUG / SG",
     "AWP",
@@ -14,57 +13,18 @@ export default function App() {
     "M4", 
     "Auto-noob",
     "SSG 08", 
-  ]);
+  ];
 
 
-  const segColors = []
-  
-  for(let i = 0; i <segments.length ; i++){
-    segColors.push(randomColor())
-      
-  }
-
-  
-  const [textValue, setTextValue] = useState('');
-  
-  
-  const handleTextAreaChange = (event) => {
-    // Update the state with the current value of the textarea
-    setTextValue(event.target.value);
-  };
-
-  const onFinished = (winner) => {
-    console.log(winner);
-  };
-
-  const submit = () =>{
-    setSegments([...segments, textValue.trim()]); // Use setSegments to update the state
-    setTextValue('')
-  }
-
-  
-
-  const deleteAStrat = () =>{
-    const stratToDelete = textValue.trim()
-    console.log(stratToDelete);
-    let indexToDelete = segments.indexOf(stratToDelete)
-    console.log(indexToDelete);
-    if (indexToDelete !== -1) {
-      const updatedSegments = [...segments];
-      updatedSegments.splice(indexToDelete, 1); // Remove 1 element at indexToDelete
-      setSegments(updatedSegments);
-      setTextValue('')
-    }else{
-      console.log("nope");
-    }
-    
-  }
-
-  useEffect(() => {
-    // This will log the updated state after each render
-    console.log("Updated segments:", segments);
-  }, [segments]);
-
+  const {
+    segments,
+    segColors,
+    textValue,
+    handleTextAreaChange,
+    onFinished,
+    submit,
+    deleteAStrat,
+  } = useWheelFunctions(initialSegments);
 
   return (
     <div>
@@ -78,47 +38,15 @@ export default function App() {
         <div className="centered-heading">
 
           <h1>CSGO rifles Weapons wheel</h1>
-          <div className="wheel-container">
-
-            <WheelComponent 
-              key={segments.join(",")}
-              segments={segments}
-              segColors={segColors}
-              onFinished={(winner) => onFinished(winner)}
-              primaryColor="black"
-              contrastColor="white"
-              buttonText="Spin"
-              isOnlyOnce={false}
-              size={190}
-              upDuration={500}
-              downDuration={600}
-              fontFamily="Arial"
-            />
-            <div className="button-container d-flex flex-column align-items-center">
-
-              <textarea
-                rows={2}
-                cols={40}
-                placeholder="Type the Weapon that you want to add/delete: "
-                value={textValue}  // Bind the value to the state
-                onChange={handleTextAreaChange}  // Set the event handler for changes
-              />
-
-              <div className="d-flex justify-content-center mt-2">
-
-                <button className="btn btn-primary mr-2" onClick={submit}>
-                  Submit 
-                </button>
-
-                <button className="btn btn-primary" onClick={deleteAStrat}>
-                  Delete 
-               </button>
-
-              </div>
-      
-            </div>
-        
-          </div>
+          <WheelContainer
+          segments={segments}
+          segColors={segColors}
+          onFinished={onFinished}
+          textValue={textValue}
+          handleTextAreaChange={handleTextAreaChange}
+          submit={submit}
+          deleteAStrat={deleteAStrat}
+          />
       
         </div>
       
