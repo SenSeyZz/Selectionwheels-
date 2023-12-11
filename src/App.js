@@ -7,8 +7,8 @@ export default function App() {
       
       <div>
       <ul>
-        <li><Link href="/lolWheel"> LOL Wheel </Link></li>
-        <li><Link href="/CSGOWheel"> CSGO Wheel </Link></li>
+        <li><Link href="/league-of-legends"> LOL Wheel </Link></li>
+        <li><Link href="/counter-strike"> CSGO </Link></li>
       </ul>
       </div>
       
