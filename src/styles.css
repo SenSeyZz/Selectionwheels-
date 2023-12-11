@@ -1,3 +1,8 @@
+.black-bg {
+  background-color: black; /* Set the background color to black */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
 
 
 ul {
@@ -49,3 +54,41 @@ li a:hover {
   margin-right: 5px; /* Adjust margin as needed */
 }
 
+.grayscale {
+  filter: grayscale(100%); /* Make the image black and white by default */
+}
+
+.grayscale:hover {
+  filter: grayscale(0%); /* Remove grayscale on hover to add color */
+}
+
+.col-md-6 {
+  margin-top: 20px; /* Add margin to the top of each column */
+}
+
+.image-container {
+  background-size: cover;
+  height: 100%;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-container:hover {
+  transform: scale(1.05);
+}
+
+.weapon-container {
+  transition: transform 0.3s ease-in-out;
+}
+
+.weapon-container:hover {
+  transform: scale(1.05);
+}
+
+.wheel-name{
+  margin-left: 250px;
+}
+
+.wheel-name-small{
+  margin-left: 200px;
+}

@@ -1,10 +1,11 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
+  "/counter-strike/Wheels/stratWheels": "pages/counter-strike/Wheels/stratWheels.js",
+  "/counter-strike/Wheels": "pages/counter-strike/Wheels.js",
+  "/counter-strike/Wheels/weaponWheels/riflesWheel": "pages/counter-strike/Wheels/weaponWheels/riflesWheel.js",
   "/": "pages/index.js",
-  "/counter-strike/weaponWheels/riflesWheel": "pages/counter-strike/weaponWheels/riflesWheel.js",
-  "/counter-strike/weaponWheels": "pages/counter-strike/weaponWheels.js",
-  "/counter-strike/weaponWheels/pistolsWheel": "pages/counter-strike/weaponWheels/pistolsWheel.js",
-  "/counter-strike/weaponWheels/SMGsWheel": "pages/counter-strike/weaponWheels/SMGsWheel.js"
+  "/counter-strike/Wheels/weaponWheels": "pages/counter-strike/Wheels/weaponWheels.js",
+  "/counter-strike": "pages/counter-strike.js"
 }

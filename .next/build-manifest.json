@@ -27,25 +27,30 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/counter-strike/weaponWheels": [
+    "/counter-strike": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/counter-strike/weaponWheels.js"
+      "static/chunks/pages/counter-strike.js"
     ],
-    "/counter-strike/weaponWheels/SMGsWheel": [
+    "/counter-strike/Wheels": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/counter-strike/weaponWheels/SMGsWheel.js"
+      "static/chunks/pages/counter-strike/Wheels.js"
     ],
-    "/counter-strike/weaponWheels/pistolsWheel": [
+    "/counter-strike/Wheels/stratWheels": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/counter-strike/weaponWheels/pistolsWheel.js"
+      "static/chunks/pages/counter-strike/Wheels/stratWheels.js"
     ],
-    "/counter-strike/weaponWheels/riflesWheel": [
+    "/counter-strike/Wheels/weaponWheels": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/counter-strike/weaponWheels/riflesWheel.js"
+      "static/chunks/pages/counter-strike/Wheels/weaponWheels.js"
+    ],
+    "/counter-strike/Wheels/weaponWheels/riflesWheel": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/counter-strike/Wheels/weaponWheels/riflesWheel.js"
     ]
   },
   "ampFirstPages": []

@@ -7,8 +7,8 @@ export default function App() {
       <div>
       <ul>
       <li><Link href="/"> Home Page </Link></li>
-        <li><Link href="/counter-strike/CSGOWheel"> CSGO strategies Wheel </Link></li>
-        <li><Link href="/counter-strike/weaponWheels/"> CSGO Weapon Wheels </Link></li>
+        <li><Link href="/counter-strike/Wheels/"> CSGO Wheels  </Link></li>
+        
       </ul>
       </div>
       
