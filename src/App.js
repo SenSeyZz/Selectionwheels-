@@ -4,15 +4,12 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Home Page</h1>
+      
       <div>
-      <Link href="/lolWheel">
-          LOL Wheel
-      </Link>
-      <br></br>
-      <Link href="/CSGOWheel">
-          CSGO Wheel
-      </Link>
+      <ul>
+        <li><Link href="/lolWheel"> LOL Wheel </Link></li>
+        <li><Link href="/CSGOWheel"> CSGO Wheel </Link></li>
+      </ul>
       </div>
       
     </div>

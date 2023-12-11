@@ -4,16 +4,11 @@ import Link from 'next/link';
 const lolWheel = () => {
     return (
       <div>
-        <h2>LOL Wheel</h2>
-        <div>
-        <Link href="/CSGOWheel">
-          CSGO Wheel
-        </Link>
-        <br/>
-        <Link href="/">
-          HomePage
-        </Link>
-        </div>
+        <ul>
+          <li><Link href="/CSGOWheel"> CSGO Wheel </Link></li>
+          <li><Link href="/"> HomePage </Link></li>
+        </ul>
+        <h1>LOL Wheel</h1>
       </div>
     );
   };
