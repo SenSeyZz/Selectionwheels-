@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 
 
 export default function App() {
-
+  
   const [showVideo, setShowVideo] = useState(false);
 
   const handleMouseEnter = () => {
@@ -40,13 +40,14 @@ export default function App() {
           </img>
 
           {showVideo && (
-          <iframe className='youtube-vid '
+          <iframe className='youtube-vid-mirage-window-smoke '
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
             allow='autoplay'
             frameborder="0"
             allowfullscreen
+            
           ></iframe>
           )}
 
