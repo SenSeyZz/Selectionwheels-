@@ -16,6 +16,10 @@
     "react-wheel-of-prizes": "^1.0.9",
     "web-vitals": "^2.1.4"
   },
+  "engines": {
+    "node": "19.0.1",
+    "npm": "9.1.2"
+  },
   "scripts": {
     "start": "next start",
     "build": "next build",
