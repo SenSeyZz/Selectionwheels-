@@ -24,6 +24,7 @@ export default function App() {
     onFinished,
     submit,
     deleteAStrat,
+    deleteWinner,
   } = useWheelFunctions(initialSegments);
 
   return (
@@ -46,6 +47,7 @@ export default function App() {
           handleTextAreaChange={handleTextAreaChange}
           submit={submit}
           deleteAStrat={deleteAStrat}
+          deleteWinner={deleteWinner}
           />
       
         </div>

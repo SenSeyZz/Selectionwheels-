@@ -1,7 +1,12 @@
 import Link from 'next/link';
+import fadeIn from "./fadeIn.js"
 
 export default function App() {
+
+  fadeIn()
+
   return (
+    
     <div className="container-fluid black-bg">
   
       <div className="row">

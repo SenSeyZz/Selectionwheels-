@@ -4,6 +4,7 @@ import randomColor from 'randomcolor';
 const useWheelFunctions = (initialSegments = []) => {
   const [segments, setSegments] = useState(initialSegments);
   const [textValue, setTextValue] = useState('');
+  const [wheelWinner, setWheelWinner] = useState('');
 
   const segColors = segments.map(() => randomColor());
 
@@ -13,6 +14,9 @@ const useWheelFunctions = (initialSegments = []) => {
 
   const onFinished = (winner) => {
     console.log(winner);
+    console.log(wheelWinner);
+    setWheelWinner(winner)
+    console.log(wheelWinner);
   };
 
   const submit = () => {
@@ -34,6 +38,25 @@ const useWheelFunctions = (initialSegments = []) => {
     }
   };
 
+
+const deleteWinner = () => {
+  if (wheelWinner) {
+    const indexToDelete = segments.indexOf(wheelWinner);
+
+    if (indexToDelete !== -1) {
+      const updatedSegments = [...segments];
+      updatedSegments.splice(indexToDelete, 1);
+      setSegments(updatedSegments);
+      setWheelWinner(''); // Clear the winner after deletion
+    } else {
+      console.log("Winner not found");
+    }
+  } else {
+    console.log("No winner selected");
+  }
+};
+
+
   return {
     segments,
     segColors,
@@ -42,6 +65,7 @@ const useWheelFunctions = (initialSegments = []) => {
     onFinished,
     submit,
     deleteAStrat,
+    deleteWinner
   };
 };
 

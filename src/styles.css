@@ -71,6 +71,7 @@ li a:hover {
   height: 100%;
   padding: 20px;
   transition: transform 0.3s ease-in-out;
+  visibility: hidden;
 }
 
 .image-container:hover {
@@ -79,6 +80,7 @@ li a:hover {
 
 .weapon-container {
   transition: transform 0.3s ease-in-out;
+  visibility: hidden;
 }
 
 .weapon-container:hover {
@@ -91,4 +93,60 @@ li a:hover {
 
 .wheel-name-small{
   margin-left: 200px;
+}
+
+.test-container{
+  margin-left: 100px;
+}
+
+.utilityh2{
+  margin-left: 150px;
+  margin-bottom: 50px;
+}
+.bottomMarginForWheel{
+  margin-bottom: 50px;
+}
+
+.left-container{
+  margin-top: 50px;
+  margin-left: -100px ;
+  transition: transform 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.left-container:hover {
+  transform: scale(1.05);
+}
+
+.right-container{
+  margin-top: 50px;
+  margin-left: 100px ;
+  transition: transform 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.right-container:hover {
+  transform: scale(1.05);
+}
+
+.smaller-image {
+  width: 5%; /* Adjust the percentage based on your preference */
+  height: auto; /* Maintain aspect ratio */
+  position: absolute; /* Position the second image absolute to stack on top */
+}
+
+.window-smoke{
+  margin-left: -10%;
+  margin-top: -6%;
+}
+
+.window-smoke:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.youtube-vid{
+  margin-left: -10%;
+  margin-top: -30%;
+  position: absolute;
 }

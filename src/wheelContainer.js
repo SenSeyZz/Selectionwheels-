@@ -9,6 +9,7 @@ const WheelContainer = ({
     handleTextAreaChange,
     submit,
     deleteAStrat,
+    deleteWinner
   }) => {
 
     return(
@@ -27,6 +28,7 @@ const WheelContainer = ({
                   upDuration={500}
                   downDuration={600}
                   fontFamily="Arial"
+              
                 />
                 <div className="button-container d-flex flex-column align-items-center">
     
@@ -46,6 +48,9 @@ const WheelContainer = ({
     
                     <button className="btn btn-primary" onClick={deleteAStrat}>
                       Delete 
+                   </button>
+                   <button className="btn btn-primary" onClick={deleteWinner}>
+                      Delete Winner 
                    </button>
     
                   </div>
