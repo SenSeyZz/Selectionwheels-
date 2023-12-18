@@ -2,8 +2,9 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/counter-strike/utility/mirage": "pages/counter-strike/utility/mirage.js",
-  "/counter-strike/utility": "pages/counter-strike/utility.js",
+  "/league-of-legends": "pages/league-of-legends.js",
+  "/group/[groupNames]": "pages/group/[groupNames].js",
   "/": "pages/index.js",
-  "/counter-strike/utility/ancient": "pages/counter-strike/utility/ancient.js"
+  "/api/groups/create": "pages/api/groups/create.js",
+  "/api/groups/join": "pages/api/groups/join.js"
 }

@@ -27,15 +27,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/counter-strike/utility/ancient": [
+    "/group/[groupNames]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/counter-strike/utility/ancient.js"
+      "static/chunks/pages/group/[groupNames].js"
     ],
-    "/counter-strike/utility/mirage": [
+    "/league-of-legends": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/counter-strike/utility/mirage.js"
+      "static/chunks/pages/league-of-legends.js"
     ]
   },
   "ampFirstPages": []
