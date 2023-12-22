@@ -1,4 +1,4 @@
-/*import { createPool } from 'mysql2';
+import { createPool } from 'mysql2';
 require('dotenv').config();
 
 const pool = createPool({
@@ -10,4 +10,6 @@ const pool = createPool({
   port: process.env.DB_PORT,
 });
 
-!!!!!!Remember to add the exports !!!!!!!!!! */
+
+
+export default pool; 

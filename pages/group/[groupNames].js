@@ -1,7 +1,7 @@
-/*import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 
 const GroupPage = () => {
-  const router = useRouter();
+ const router = useRouter();
 
   const { groupNames } = router.query;
 
@@ -10,8 +10,9 @@ const GroupPage = () => {
       <h1>Group Page: {groupNames}</h1>
       
     </div>
+    
   );
 };
 
-!!!!!!Remember to add the export default !!!!!!!!!!
-*/
+
+export default GroupPage; 
