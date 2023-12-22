@@ -1,5 +1,5 @@
 // pages/api/groups/create.js
-/*
+
 import pool from '../../../pages/mySQL';  // Adjust the path accordingly
 
 export default async function handler(req, res) {
@@ -19,4 +19,4 @@ export default async function handler(req, res) {
     } else {
       res.status(405).json({ error: 'Method Not Allowed' });
     }
-  } */
+  } 

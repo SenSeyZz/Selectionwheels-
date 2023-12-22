@@ -8,7 +8,7 @@ import { useRouter } from 'next/router';
 // get the role that the key means and print it. 
 
 const lol = () => {
-  /*
+  
   const router = useRouter();
   const [groupName, setGroupName] = useState('');
 
@@ -59,7 +59,7 @@ const lol = () => {
       console.error('Error adding participant:', error);
     }
   };
-  */
+  
 
     return (
       <div>
@@ -67,7 +67,7 @@ const lol = () => {
           <li><Link href="/"> HomePage </Link></li>
         </ul>
         <h1>League of legends</h1>
-         {/*
+         
         <textarea
           rows={2}
           cols={40}
@@ -77,7 +77,7 @@ const lol = () => {
         />
         <button onClick={createGroup}>Create Group</button>
 
-        <button onClick={joinGroup}>Join Group</button> */}
+        <button onClick={joinGroup}>Join Group</button> 
       </div>
     );
   };
