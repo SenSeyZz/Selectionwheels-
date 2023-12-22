@@ -2,6 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/trivia": "pages/trivia.js",
-  "/counter-strike/Wheels/weaponWheels": "pages/counter-strike/Wheels/weaponWheels.js"
+  "/": "pages/index.js",
+  "/league-of-legends": "pages/league-of-legends.js"
 }

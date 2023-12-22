@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router';
+/*import { useRouter } from 'next/router';
 
 const GroupPage = () => {
   const router = useRouter();
@@ -8,9 +8,9 @@ const GroupPage = () => {
   return (
     <div>
       <h1>Group Page: {groupNames}</h1>
-      {/* Add content related to the specific group */}
+      
     </div>
   );
 };
 
-export default GroupPage;
+export default GroupPage; */
