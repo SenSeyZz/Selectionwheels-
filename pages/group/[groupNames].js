@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router';
+/*import { useRouter } from 'next/router';
 
 const GroupPage = () => {
  const router = useRouter();
@@ -15,4 +15,4 @@ const GroupPage = () => {
 };
 
 
-export default GroupPage; 
+export default GroupPage; */

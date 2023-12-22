@@ -1,4 +1,4 @@
-import { createPool } from 'mysql2';
+/*import { createPool } from 'mysql2';
 require('dotenv').config();
 
 const pool = createPool({
@@ -12,4 +12,4 @@ const pool = createPool({
 
 
 
-export default pool; 
+export default pool; */
