@@ -57,3 +57,14 @@
   .centered-table {
     margin: 0 auto;
   }
+
+  .wheels-container {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    margin-top: 500px;
+  }
+
+  .red-button {
+    background-color: red;
+    color: white;
+  }

@@ -2,34 +2,34 @@ import React from 'react';
 import WheelComponent from "react-wheel-of-prizes";
 
 const WheelContainer = ({
-    segments,
-    segColors,
-    onFinished,
-    textValue,
-    handleTextAreaChange,
-    submit,
-    deleteAStrat,
-    deleteWinner
-  }) => {
+  segments,
+  segColors,
+  onFinished,
+  textValue,
+  handleTextAreaChange,
+  submit,
+  deleteAStrat,
+  deleteWinner
+}) => {
 
-    return(
-        <div className="wheel-container">
-    
-                <WheelComponent 
-                  key={segments.join(",")}
-                  segments={segments}
-                  segColors={segColors}
-                  onFinished={(winner) => onFinished(winner)}
-                  primaryColor="black"
-                  contrastColor="white"
-                  buttonText="Spin"
-                  isOnlyOnce={false}
-                  size={190}
-                  upDuration={500}
-                  downDuration={600}
-                  fontFamily="Arial"
-              
-                />
+  return(
+      <div className="wheel-container ">
+  
+              <WheelComponent 
+                key={segments.join(",")}
+                segments={segments}
+                segColors={segColors}
+                onFinished={(winner) => onFinished(winner)}
+                primaryColor="black"
+                contrastColor="white"
+                buttonText="Spin"
+                isOnlyOnce={false}
+                size={190}
+                upDuration={500}
+                downDuration={600}
+                fontFamily="Arial"
+            
+              />
                 <div className="button-container d-flex flex-column align-items-center">
     
                   <textarea

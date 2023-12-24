@@ -8,6 +8,8 @@ import { useRouter } from 'next/router';
 // get the role that the key means and print it. 
 
 const lol = () => {
+
+  // EVERYTHING THAT IS COMMENTED IS LINKED TO MYSQL i ALSO DELETED FILES TAHT SHOULD GO IN API/GROUPS AND GROUP AND THE MYSQL.JS FILE 
   /*
   const router = useRouter();
   const [groupName, setGroupName] = useState('');

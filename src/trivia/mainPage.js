@@ -6,10 +6,16 @@ import useWheelFunctions from '../wheelFunctions';
 
 const Trivia = () => {
   const [selectedCard, setSelectedCard] = useState(null);
+  const [clickedButtons, setClickedButtons] = useState([]);
 
   const showCard = (number) => {
     setSelectedCard(number);
+    setClickedButtons((prevClickedButtons) => [...prevClickedButtons, number]);
+    
   };
+
+  
+  
 
   const getCardTexts = (number) => {
     
@@ -21,7 +27,7 @@ const Trivia = () => {
         case 6:
           return { question: 'Ce pays se trouve au nord de la Corée du Sud', answer: 'La Corée du Nord' };
         case 11:
-          return { question: `C'est un tas de poubelle qui fait 1/2 de la france et se trouve dans l'Océan atlantique`, answer: 'Le Royaume unis' };
+          return { question: `1515 ? `, answer: 'Marignan' };
         case 16:
           return { question: 'Le président de ce pays est connu pour avoir un tout petit penis', answer: 'Russie' };
         case 21:
@@ -134,17 +140,39 @@ const Trivia = () => {
 
   ];
 
-  const {
-    segments,
-    segColors,
-    textValue,
-    handleTextAreaChange,
-    onFinished,
-    submit,
-    deleteAStrat,
-    deleteWinner,
-  } = useWheelFunctions(initialSegments);
+  const initialSegments2 = [
+    "test",
+    "test2",
+    "test3"
+  ]
 
+  const {
+    segments : segmentsLooser,
+    segColors : segColorsLooser,
+    textValue: textValueLooser,
+    handleTextAreaChange: handleTextAreaChangeLooser,
+    onFinished: onFinishedLooser,
+    submit : submitLooser,
+    deleteAStrat: deleteAStratLooser,
+    deleteWinner: deleteWinnerLooser,
+   
+  } = useWheelFunctions(initialSegments);
+  
+
+  const {
+    segments : segments2,
+    segColors : segColors2,
+    textValue: textValue2,
+    handleTextAreaChange: handleTextAreaChange2,
+    onFinished: onFinished2,
+    submit : submit2,
+    deleteAStrat: deleteAStrat2,
+    deleteWinner: deleteWinner2,
+   
+  } = useWheelFunctions(initialSegments2);
+
+ 
+  
 
   return (
     <div>
@@ -160,29 +188,45 @@ const Trivia = () => {
           </tr>
         </thead>
         <tbody>
+        
           {Array.from({ length: 7 }, (_, rowIndex) => (
-            <tr key={rowIndex} >
-              {Array.from({ length: 5 }, (_, colIndex) => (
-                <td key={colIndex} className={styles['centered-cell']}>{buttons[rowIndex * 5 + colIndex]}</td>
-              ))}
-            </tr>
-          ))}
+            <tr key={rowIndex}>
+            {Array.from({ length: 5 }, (_, colIndex) => {
+              const buttonNumber = (colIndex + rowIndex * 5) + 1;
+              const isButtonClicked = clickedButtons.includes(buttonNumber);
+
+              return (
+                  <td key={colIndex} className={styles['centered-cell']}>
+                  <button
+                  key={rowIndex}
+                  onClick={() => showCard(buttonNumber)}
+                  className={isButtonClicked ? styles['red-button'] : ''}
+                  >
+                  {rowIndex}
+                  </button>
+                  </td>
+                   );
+               })}
+             </tr>
+            ))}
         </tbody>
       </table>
 
       {selectedCard && <Card  question={question} answer={answer} />}
-
-      <WheelContainer
-          segments={segments}
-          segColors={segColors}
-          onFinished={onFinished}
-          textValue={textValue}
-          handleTextAreaChange={handleTextAreaChange}
-          submit={submit}
-          deleteAStrat={deleteAStrat}
-          deleteWinner={deleteWinner}
+    
+      
+      <WheelContainer 
+          key="looserWheel"
+          segments={segmentsLooser}
+          segColors={segColorsLooser}
+          onFinished={onFinishedLooser}
+          textValue={textValueLooser}
+          handleTextAreaChange={handleTextAreaChangeLooser}
+          submit={submitLooser}
+          deleteAStrat={deleteAStratLooser}
+          deleteWinner={deleteWinnerLooser}
           />
-
+      
        
     </div>
   );
