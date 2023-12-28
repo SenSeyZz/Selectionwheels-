@@ -1,0 +1,30 @@
+.black-bg {
+    background-color: black; /* Set the background color to black */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+  }
+
+.inferno-short-smoke{
+    margin-left: -26%;
+    margin-top: -40%; 
+  }
+  
+  .inferno-long-smoke{
+    margin-left: -26%;
+    margin-top: -50%;
+  }
+  
+  .inferno-plaine-smoke{
+    margin-left: -26%;
+    margin-top: -60%;
+  }
+  
+  .inferno-B-ct-smoke{
+    margin-left: -40%;
+    margin-top: -60%;
+  }
+  
+  .inferno-B-coffins-smoke{
+    margin-left: -50%;
+    margin-top: -60%;
+  }

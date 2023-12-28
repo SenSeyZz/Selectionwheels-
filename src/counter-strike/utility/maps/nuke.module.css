@@ -1,0 +1,30 @@
+.black-bg {
+    background-color: black; /* Set the background color to black */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+  }
+
+.nuke-outside1-smoke{
+    margin-left: -40%;
+    margin-top: -50%;
+  }
+  
+  .nuke-outside2-smoke{
+    margin-left: -40%;
+    margin-top: -40%;
+  }
+  
+  .nuke-outside3-smoke{
+    margin-left: -40%;
+    margin-top: -30%;
+  }
+  
+  .nuke-heaven-smoke{
+    margin-left: -40%;
+    margin-top: -20%;
+  }
+  
+  .nuke-hut-smoke{
+    margin-left: -40%;
+    margin-top: -10%;
+  }

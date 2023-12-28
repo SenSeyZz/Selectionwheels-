@@ -226,6 +226,8 @@ const Trivia = () => {
           deleteAStrat={deleteAStratLooser}
           deleteWinner={deleteWinnerLooser}
           />
+
+      
       
        
     </div>

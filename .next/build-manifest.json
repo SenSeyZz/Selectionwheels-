@@ -27,6 +27,31 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/counter-strike/utility": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/counter-strike/utility.js"
+    ],
+    "/counter-strike/utility/inferno": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/counter-strike/utility/inferno.js"
+    ],
+    "/counter-strike/utility/nuke": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/counter-strike/utility/nuke.js"
+    ],
+    "/counter-strike/utility/overpass": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/counter-strike/utility/overpass.js"
+    ],
+    "/counter-strike/utility/vertigo": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/counter-strike/utility/vertigo.js"
+    ],
     "/trivia": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

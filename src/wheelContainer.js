@@ -16,7 +16,7 @@ const WheelContainer = ({
       <div className="wheel-container ">
   
               <WheelComponent 
-                key={segments.join(",")}
+                key =""
                 segments={segments}
                 segColors={segColors}
                 onFinished={(winner) => onFinished(winner)}

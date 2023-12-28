@@ -1,0 +1,83 @@
+/* Start of the smokes for ancient*/
+.black-bg {
+  background-color: black; /* Set the background color to black */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+
+
+.youtube-vid-ancient-bakcsiteA-smoke{
+  margin-left: -10%;
+  margin-top: -10%;
+  position: absolute;
+}
+.ancient-backsiteA-smoke{
+  margin-left: -25%;
+  margin-top: -33%;
+}
+
+.youtube-vid-ancient-ctFromDonut-smoke{
+  margin-left: 0%;
+  margin-top: -10%;
+  position: absolute;
+}
+.ancient-ctFromDonut-smoke{
+  margin-left: -15.5%;
+  margin-top: -30%;
+}
+
+.youtube-vid-ancient-tunnel-smoke{
+  margin-left: -10%;
+  margin-top: 0%;
+  position: absolute;
+}
+
+.ancient-tunnel-smoke{
+  margin-left: -20.5%;
+  margin-top: -20%;
+}
+
+.youtube-vid-ancient-ctFromMid-smoke{
+  margin-left: 0%;
+  margin-top: 0%;
+  position: absolute;
+}
+
+.ancient-ctFromMid-smoke{
+  margin-left: -13%;
+  margin-top: -30%;
+}
+
+.youtube-vid-ancient-bLong-smoke{
+  margin-left: 0%;
+  margin-top: 0%;
+  position: absolute;
+}
+
+.ancient-bLong-smoke{
+  margin-left: 34.5%;
+  margin-top: -19%;
+}
+
+.youtube-vid-ancient-bShort-smoke{
+  margin-left: 0%;
+  margin-top: 0%;
+  position: absolute;
+}
+
+.ancient-bShort-smoke{
+  margin-left: 22.5%;
+  margin-top: -19%;
+}
+
+.youtube-vid-ancient-cave-smoke{
+  margin-left: 0%;
+  margin-top: 10%;
+  position: absolute;
+}
+
+.ancient-cave-smoke{
+  margin-left: 20.5%;
+  margin-top: -12%;
+}
