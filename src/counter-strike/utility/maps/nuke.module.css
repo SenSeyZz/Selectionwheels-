@@ -5,26 +5,31 @@
   }
 
 .nuke-outside1-smoke{
-    margin-left: -40%;
-    margin-top: -50%;
+    margin-left: 350px;
+    margin-top: 330px;
   }
   
   .nuke-outside2-smoke{
-    margin-left: -40%;
-    margin-top: -40%;
+    margin-left: 280px;
+    margin-top: 400px;
   }
   
   .nuke-outside3-smoke{
-    margin-left: -40%;
-    margin-top: -30%;
+    margin-left: 200px;
+    margin-top: 400px;
   }
   
-  .nuke-heaven-smoke{
-    margin-left: -40%;
-    margin-top: -20%;
+  .vertigo-ramp-mid-smoke{
+    margin-left: 230px;
+    margin-top: -80px;
   }
   
-  .nuke-hut-smoke{
-    margin-left: -40%;
-    margin-top: -10%;
+  .vertigo-A-smoke1{
+    margin-left: 200px;
+    margin-top: 260px;
+  }
+
+  .vertigo-A-smoke2{
+    margin-left: 200px;
+    margin-top: 260px;
   }

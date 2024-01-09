@@ -212,7 +212,7 @@ const Trivia = () => {
         </tbody>
       </table>
 
-      {selectedCard && <Card  question={question} answer={answer} />}
+      {selectedCard && <Card className={styles["centered-cell"]} question={question} answer={answer} />}
     
       
       <WheelContainer 

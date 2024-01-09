@@ -1,0 +1,30 @@
+.black-bg {
+    background-color: black; /* Set the background color to black */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+  }
+
+.overpass-B-site-smoke{
+    margin-left: 370px;
+    margin-top: -380px;
+  }
+  
+  .overpass-heaven-B-smoke{
+    margin-left: 170px;
+    margin-top: -530px;
+  }
+  
+  .overpass-trash-smoke{
+    margin-left: 70px;
+    margin-top: -700px;
+  }
+  
+  .overpass-bank-smoke{
+    margin-left: -120px;
+    margin-top: -750px;
+  }
+  
+  .overpass-truck-smoke{
+    margin-left: 20px;
+    margin-top: -560px;
+  }

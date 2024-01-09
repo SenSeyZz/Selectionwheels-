@@ -73,10 +73,9 @@ export default function App() {
           {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["window-smoke"]} img-fluid smaller-image`}
+            className={`${styles["window-smoke"]} img-fluid smaller-image hover-effect`}
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -96,10 +95,9 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["mirage-short-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["mirage-short-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -120,10 +118,9 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["mirage-connector-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["mirage-connector-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -144,10 +141,9 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["mirage-A-ct-smoke"]} img-fluid smaller-image`}
+            className={`${styles["mirage-A-ct-smoke"]} img-fluid smaller-image hover-effect`}
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -168,10 +164,9 @@ export default function App() {
           { seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["mirage-A-stairs-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["mirage-A-stairs-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -191,10 +186,9 @@ export default function App() {
           { seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["mirage-A-jungle-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["mirage-A-jungle-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -215,10 +209,9 @@ export default function App() {
           { seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["mirage-B-market-smoke"]} img-fluid smaller-image`}  
+            className={`${styles["mirage-B-market-smoke"]} img-fluid smaller-image hover-effect`}  
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -239,10 +232,9 @@ export default function App() {
           { seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["mirage-B-arch1-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["mirage-B-arch1-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -263,10 +255,9 @@ export default function App() {
           { seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["mirage-B-arch2-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["mirage-B-arch2-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 

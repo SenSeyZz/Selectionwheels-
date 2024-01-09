@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import fadeIn from '../../../fadeIn';
 import React, { use, useState } from 'react';
+import styles from "./overpass.module.css"
 
 
 
@@ -17,7 +18,7 @@ export default function App() {
     console.log(className);
     setShowVideo(true);
     setSeeOtherSmoke(false)
-    if(className == "img-fluid smaller-image overpass-B-site-smoke "){
+    if(className == "overpass_overpass-B-site-smoke__IN2Qy img-fluid smaller-image"){
       setName("B site smoke")
       console.log("short");
     }if (className == "img-fluid smaller-image overpass-heaven-B-smoke") {
@@ -57,15 +58,14 @@ export default function App() {
         <div class = "row">
           <div class = "col">
           <div className='col d-flex justify-content-center align-items-center'>
-          <img src='/csImages/overpass_layout.webp' className="img-fluid " alt="Responsive image"></img>
+          <img src='/csImages/overpass_layout.webp' className="" alt="Responsive image"></img>
           
           {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className="img-fluid smaller-image overpass-B-site-smoke" 
+            className={`${styles["overpass-B-site-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -85,10 +85,9 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className="img-fluid smaller-image overpass-heaven-B-smoke" 
+            className={`${styles["overpass-heaven-B-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -109,10 +108,9 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className="img-fluid smaller-image overpass-trash-smoke" 
+            className={`${styles["overpass-trash-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -133,10 +131,9 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className="img-fluid smaller-image overpass-bank-smoke" 
+            className={`${styles["overpass-bank-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -157,10 +154,9 @@ export default function App() {
           { seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className="img-fluid smaller-image overpass-truck-smoke" 
+            className={`${styles["overpass-truck-smoke"]} img-fluid smaller-image `} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 

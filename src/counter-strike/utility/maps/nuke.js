@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import fadeIn from '../../../fadeIn';
 import React, { use, useState } from 'react';
+import styles from "./nuke.module.css"; 
 
 
 
@@ -17,19 +18,19 @@ export default function App() {
     console.log(className);
     setShowVideo(true);
     setSeeOtherSmoke(false)
-    if(className == "img-fluid smaller-image nuke-outside1-smoke "){
+    if(className == "nuke_nuke-outside1-smoke__XujpH img-fluid smaller-image"){
       setName("outside1 smoke")
       console.log("short");
-    }if (className == "img-fluid smaller-image nuke-outside2-smoke") {
+    }if (className == "nuke_nuke-outside2-smoke__stplH img-fluid smaller-image") {
       setName("outside2 smoke")
       console.log("long");
-    }if(className == "img-fluid smaller-image nuke-outside3-smoke"){
+    }if(className == "nuke_nuke-outside3-smoke__zmLj4 img-fluid smaller-image"){
       setName("outside3 smoke")
       console.log("connector");
-    }if(className == "img-fluid smaller-image nuke-heaven-smoke"){
-      setName("nuke smoke")
+    }if(className == "nuke_nuke-heaven-smoke__J2g7s img-fluid smaller-image"){
+      setName("heaven smoke")
       console.log("B CT");
-    }if(className == "img-fluid smaller-image nuke-hut-smoke"){
+    }if(className == "nuke_nuke-hut-smoke__qhZzq img-fluid smaller-image"){
       setName("hut smoke")
     
     }
@@ -56,16 +57,16 @@ export default function App() {
       <div class='container'>
         <div class = "row">
           <div class = "col">
+          
           <div className='col d-flex justify-content-center align-items-center'>
-          <img src='/csImages/nuke_layout.webp' className="img-fluid " alt="Responsive image"></img>
+          <img src='/csImages/nuke_layout.webp' className={`${styles["nuke-enlarged"]}`} alt="Responsive image"></img>
           
           {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className="img-fluid smaller-image nuke-outside1-smoke " 
+            className={`${styles["nuke-outside1-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -85,10 +86,9 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className="img-fluid smaller-image nuke-outside2-smoke" 
+            className={`${styles["nuke-outside2-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -109,10 +109,9 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className="img-fluid smaller-image nuke-outside3-smoke" 
+            className={`${styles["nuke-outside3-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -133,10 +132,9 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className="img-fluid smaller-image nuke-heaven-smoke" 
+            className={`${styles["nuke-heaven-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -157,10 +155,9 @@ export default function App() {
           { seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className="img-fluid smaller-image nuke-hut-smoke" 
+            className={`${styles["nuke-hut-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 

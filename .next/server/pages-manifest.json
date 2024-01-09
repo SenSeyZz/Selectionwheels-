@@ -2,11 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/counter-strike/utility": "pages/counter-strike/utility.js",
-  "/counter-strike/utility/inferno": "pages/counter-strike/utility/inferno.js",
-  "/counter-strike/utility/overpass": "pages/counter-strike/utility/overpass.js",
-  "/counter-strike/utility/vertigo": "pages/counter-strike/utility/vertigo.js",
-  "/trivia": "pages/trivia.js",
   "/": "pages/index.js",
-  "/counter-strike/utility/nuke": "pages/counter-strike/utility/nuke.js"
+  "/trivia": "pages/trivia.js"
 }

@@ -1,0 +1,36 @@
+.black-bg {
+    background-color: black; /* Set the background color to black */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+  }
+
+.vertigo-short-smoke{
+    margin-left: 350px;
+    margin-top: 330px;
+  }
+  
+  .vertigo-left-mid-smoke{
+    margin-left: 280px;
+    margin-top: 400px;
+  }
+  
+  .vertigo-right-mid-smoke{
+    margin-left: 200px;
+    margin-top: 400px;
+  }
+  
+  .nuke-heaven-smoke{
+    margin-left: 230px;
+    margin-top: -80px;
+  }
+  
+  .nuke-hut-smoke{
+    margin-left: 200px;
+    margin-top: 260px;
+  }
+
+  .nuke-enlarged{
+  
+    width: 1000px; /* Set the desired width */
+    height: 1000px;
+  }

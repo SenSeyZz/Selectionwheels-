@@ -58,15 +58,14 @@ export default function App() {
         <div class = "row">
           <div class = "col">
           <div className='col d-flex justify-content-center align-items-center'>
-          <img src='/csImages/inferno_layout.png' className="img-fluid " alt="Responsive image"></img>
+          <img src='/csImages/inferno_layout.png' className="" alt="Responsive image"></img>
           
           {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["inferno-short-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -88,8 +87,7 @@ export default function App() {
             src='/csImages/smoke.png' 
             className= {`${styles["inferno-long-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -112,8 +110,7 @@ export default function App() {
             src='/csImages/smoke.png' 
             className={`${styles["inferno-plaine-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -136,8 +133,7 @@ export default function App() {
             src='/csImages/smoke.png' 
             className={`${styles["inferno-B-ct-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -160,8 +156,7 @@ export default function App() {
             src='/csImages/smoke.png' 
             className={`${styles["inferno-B-coffins-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import fadeIn from '../../../fadeIn';
 import React, { use, useState } from 'react';
+import styles from "./vertigo.module.css"
 
 
 
@@ -57,15 +58,14 @@ export default function App() {
         <div class = "row">
           <div class = "col">
           <div className='col d-flex justify-content-center align-items-center'>
-          <img src='/csImages/vertigo_layout.webp' className="img-fluid " alt="Responsive image"></img>
+          <img src='/csImages/vertigo_layout.webp' className="" alt="Responsive image"></img>
           
           {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className="img-fluid smaller-image inferno-short-smoke" 
+            className={`${styles["vertigo-short-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -85,10 +85,9 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className="img-fluid smaller-image inferno-long-smoke" 
+            className={`${styles["vertigo-left-mid-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -109,10 +108,9 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className="img-fluid smaller-image inferno-plaine-smoke" 
+            className={`${styles["vertigo-right-mid-smoke"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -133,10 +131,9 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className="img-fluid smaller-image inferno-B-ct-smoke" 
+            className={`${styles["vertigo-ramp-mid-smoke"]} img-fluid smaller-image`}
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
           </img>
           )}
 
@@ -157,10 +154,31 @@ export default function App() {
           { seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className="img-fluid smaller-image inferno-B-coffins-smoke" 
+            className={`${styles["vertigo-A-smoke1"]} img-fluid smaller-image`} 
             alt="Responsive image" 
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}>
+            onClick={handleMouseEnter}>
+          </img>
+          )}
+
+          {showVideo &&  name === "coffins B smoke" && (
+          <iframe className='youtube-vid-mirage-window-smoke '
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
+            allow='autoplay'
+            frameborder="0"
+            allowfullscreen
+            onMouseLeave={handleMouseLeave}
+          ></iframe>
+          
+          )}
+
+          { seeOtherSmoke &&(
+          <img 
+            src='/csImages/smoke.png' 
+            className={`${styles["vertigo-A-smoke2"]} img-fluid smaller-image`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnter}>
           </img>
           )}
 
