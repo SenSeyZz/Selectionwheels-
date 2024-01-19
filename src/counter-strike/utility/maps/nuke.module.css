@@ -4,38 +4,33 @@
     padding: 0; /* Remove default body padding */
   }
 
-  .nuke-enlarged {
-    transform: scale(1); /* Adjust the scale factor as needed */
-    width: 120%; /* Adjust the width as needed */
-    height: 120%;
+  .youtube-vid{
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
   }
 
 .nuke-outside1-smoke{
-    margin-left: 450px;
-    margin-top: 330px;
+    margin-left: 750px;
+    margin-top: 760px;
   }
   
   .nuke-outside2-smoke{
-    margin-left: 280px;
-    margin-top: 400px;
+    margin-left: 700px;
+    margin-top: 850px;
   }
   
   .nuke-outside3-smoke{
-    margin-left: 200px;
-    margin-top: 400px;
+    margin-left: 630px;
+    margin-top: 850px;
   }
   
-  .vertigo-ramp-mid-smoke{
-    margin-left: 230px;
-    margin-top: -80px;
-  }
-  
-  .vertigo-A-smoke1{
-    margin-left: 200px;
-    margin-top: 260px;
+  .nuke-hut-smoke{
+    margin-left: 630px;
+    margin-top: 665px;
   }
 
-  .vertigo-A-smoke2{
-    margin-left: 200px;
-    margin-top: 260px;
+  .nuke-heaven-smoke{
+    margin-left: 680px;
+    margin-top: 270px;
   }

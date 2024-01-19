@@ -2,6 +2,7 @@ import Link from 'next/link';
 import fadeIn from '../../../fadeIn';
 import React, { use, useState } from 'react';
 import styles from "./mirage.module.css"
+import TopElementsContainer from './topElementContainer';
 
 
 
@@ -10,6 +11,8 @@ export default function App() {
   const [showVideo, setShowVideo] = useState(false);
   const [name, setName] = useState("");
   const [seeOtherSmoke, setSeeOtherSmoke] = useState (true)
+  const [seeOtherMolo, setSeeOtherMolo] = useState (false)
+  const [seeOtherFlash, setSeeOtherFlash] = useState (false)
 
 
   const handleMouseEnter = (event) => {
@@ -18,6 +21,7 @@ export default function App() {
     console.log(className);
     setShowVideo(true);
     setSeeOtherSmoke(false)
+    
     if(className == "mirage_window-smoke__GBkmp img-fluid smaller-image hover-effect"){
       setName("window smoke")
       console.log("window");
@@ -53,7 +57,6 @@ export default function App() {
     setSeeOtherSmoke(true)
   };
 
-
   return (
     
     <div className='black-bg'>
@@ -64,11 +67,21 @@ export default function App() {
       </ul>
       </div>
 
+
       <div class='container'>
         <div class = "row">
           <div class = "col">
+
+          <TopElementsContainer
+              setSeeOtherMolo={setSeeOtherMolo}
+              setSeeOtherSmoke={setSeeOtherSmoke}
+              setSeeOtherFlash={setSeeOtherFlash}
+              styles={styles}
+            />
+
           <div className='col d-flex justify-content-center align-items-center'>
           <img src='/csImages/layout_mirage.webp' className="" alt="Responsive image"></img>
+          
           
           {seeOtherSmoke &&(
           <img 
@@ -80,7 +93,7 @@ export default function App() {
           )}
 
           {showVideo && name == "window smoke" && (
-          <iframe className={`${styles["youtube-vid-mirage-window-smoke"]}`}
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -102,7 +115,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "short smoke" && (
-          <iframe className={`${styles["youtube-vid-mirage-window-smoke"]}`}
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -125,7 +138,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "connector smoke" && (
-          <iframe className={`${styles["youtube-vid-mirage-window-smoke"]}`}
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -148,7 +161,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "Ct A smoke" && (
-          <iframe className={`${styles["youtube-vid-mirage-window-smoke"]}`}
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -171,7 +184,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "stairs A smoke" && (
-          <iframe className={`${styles["youtube-vid-mirage-window-smoke"]}`}
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -193,7 +206,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "jungle A smoke" && (
-          <iframe className={`${styles["youtube-vid-mirage-window-smoke"]}`}
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -216,7 +229,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "market B smoke" && (
-          <iframe className={`${styles["youtube-vid-mirage-window-smoke"]}`}
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -239,7 +252,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "arch 1 B smoke" && (
-          <iframe className={`${styles["youtube-vid-mirage-window-smoke"]}`}
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -262,7 +275,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "arch 2 B smoke" && (
-          <iframe className={`${styles["youtube-vid-mirage-window-smoke"]}`}
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -273,6 +286,27 @@ export default function App() {
             
           ></iframe>
           
+          )}
+
+          {/* START OF MOLOTOVS */}
+
+          { seeOtherMolo &&(
+          <img 
+            src='/csImages/incendiary.webp' 
+            className={`${styles["mirage-B-arch2-smoke"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnter}>
+          </img>
+          )}
+
+          {/* START OF Flashes */}
+          { seeOtherFlash &&(
+          <img 
+            src='/csImages/flash.webp' 
+            className={`${styles["mirage-B-arch2-smoke"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnter}>
+          </img>
           )}
 
           </div>

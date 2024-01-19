@@ -18,19 +18,19 @@ export default function App() {
     console.log(className);
     setShowVideo(true);
     setSeeOtherSmoke(false)
-    if(className == "nuke_nuke-outside1-smoke__XujpH img-fluid smaller-image"){
+    if(className == "nuke_nuke-outside1-smoke__XujpH img-fluid smaller-image hover-effect"){
       setName("outside1 smoke")
       console.log("short");
-    }if (className == "nuke_nuke-outside2-smoke__stplH img-fluid smaller-image") {
+    }if (className == "nuke_nuke-outside2-smoke__stplH img-fluid smaller-image hover-effect") {
       setName("outside2 smoke")
       console.log("long");
-    }if(className == "nuke_nuke-outside3-smoke__zmLj4 img-fluid smaller-image"){
+    }if(className == "nuke_nuke-outside3-smoke__zmLj4 img-fluid smaller-image hover-effect"){
       setName("outside3 smoke")
       console.log("connector");
-    }if(className == "nuke_nuke-heaven-smoke__J2g7s img-fluid smaller-image"){
+    }if(className == "nuke_nuke-heaven-smoke__J2g7s img-fluid smaller-image hover-effect"){
       setName("heaven smoke")
       console.log("B CT");
-    }if(className == "nuke_nuke-hut-smoke__qhZzq img-fluid smaller-image"){
+    }if(className == "nuke_nuke-hut-smoke__qhZzq img-fluid smaller-image hover-effect"){
       setName("hut smoke")
     
     }
@@ -59,19 +59,19 @@ export default function App() {
           <div class = "col">
           
           <div className='col d-flex justify-content-center align-items-center'>
-          <img src='/csImages/nuke_layout2.png' className={`${styles["nuke-enlarged"]}`} alt="Responsive image"></img>
+          <img src='/csImages/nuke_layout2.png'  alt="Responsive image"></img>
           
           {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["nuke-outside1-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["nuke-outside1-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>
           )}
 
           {showVideo && name == "outside1 smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -86,14 +86,14 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["nuke-outside2-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["nuke-outside2-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>
           )}
 
           {showVideo &&  name === "outside2 smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke'
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -109,14 +109,14 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["nuke-outside3-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["nuke-outside3-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>
           )}
 
           {showVideo &&  name === "outside3 smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -132,14 +132,14 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["nuke-heaven-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["nuke-heaven-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>
           )}
 
           {showVideo &&  name === "heaven smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -155,14 +155,14 @@ export default function App() {
           { seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["nuke-hut-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["nuke-hut-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>
           )}
 
           {showVideo &&  name === "hut smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"

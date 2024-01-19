@@ -3,6 +3,34 @@
     margin: 0; /* Remove default body margin */
     padding: 0; /* Remove default body padding */
   }
+
+  .top-elements-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; /* Adjust as needed */
+    margin-bottom: -100px;
+    margin-top: 0px;
+    justify-content: space-evenly ;
+    
+  }
+
+  .top-inciendiary{ /* Center the image horizontally */
+    transform: scale(0.5);
+  }
+
+  .top-smoke{
+    transform: scale(0.4);
+  }
+
+  .top-flash{
+    transform: scale(0.4);
+  }
+
+  .youtube-vid{
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+  }
     
   /* Start of the smokes for mirage*/
   .window-smoke{

@@ -70,7 +70,7 @@ export default function App() {
           )}
 
           {showVideo && name == "B site smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
+          <iframe className={styles["youtube-vid"]}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -92,7 +92,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "heaven smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke'
+          <iframe className={styles["youtube-vid"]}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -115,7 +115,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "trash smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
+          <iframe className={styles["youtube-vid"]}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -138,7 +138,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "bank smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
+          <iframe className={styles["youtube-vid"]}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -160,8 +160,8 @@ export default function App() {
           </img>
           )}
 
-          {showVideo &&  name === " truck smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
+          {showVideo &&  name === "truck smoke" && (
+          <iframe className={styles["youtube-vid"]}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"

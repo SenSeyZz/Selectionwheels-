@@ -21,10 +21,9 @@ export default function App() {
             <div className="ml-3 test-container grayscale image-container rounded-circle" style={{ 
               backgroundImage: 'url(/csImages/utility.webp)', 
               backgroundSize: 'cover', 
-              height: '70%', 
-              width:"70%",
+              height: '650px', 
+              width:"650px",
               padding: '20px',
-              
               }}>
             </div>
           
@@ -36,12 +35,12 @@ export default function App() {
           {/* Content on the right side */}
           <h2 className='bottomMarginForWheel text-light'>To have fun with the wheels follow this path ;)</h2>
           <Link href="/counter-strike/Wheels">
-            <div  className="image-container grayscale" style={{ 
+            <div  className="ml-3 test-container grayscale image-container rounded-circle" style={{ 
               backgroundImage: 'url(/csImages/wheel.png)', 
               backgroundSize: 'cover', 
               backgroundPosition: 'center center', 
-              height: '70%', 
-              width:"70%",
+              height: '650px', 
+              width:"650px",
               padding: '20px' 
               }}>
             </div>

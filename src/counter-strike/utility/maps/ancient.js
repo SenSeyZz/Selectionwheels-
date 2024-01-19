@@ -85,7 +85,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "ancient-backsiteA-smoke" && (
-          <iframe className={styles["youtube-vid-ancient-bakcsiteA-smoke"]}
+          <iframe className={styles["youtube-vid"]}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/qGst7qOFkgw?autoplay=1&mute=1&end=20"
@@ -108,7 +108,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "ancient-ctFromDonut-smoke" && cross && (
-          <iframe className={styles["youtube-vid-ancient-ctFromDonut-smoke"]}
+          <iframe className={styles["youtube-vid"]}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/qGst7qOFkgw?start=21&end=38&autoplay=1&mute=1"
@@ -122,7 +122,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "ancient-ctFromMid-smoke" && cross && (
-          <iframe className={styles["youtube-vid-ancient-ctFromMid-smoke"]}
+          <iframe className={styles["youtube-vid"]}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/qGst7qOFkgw?start=57&end=75&autoplay=1&mute=1"
@@ -163,7 +163,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "ancient-tunnel-smoke" && (
-          <iframe className={styles['youtube-vid-ancient-tunnel-smoke']}  
+          <iframe className={styles['youtube-vid']}  
             width="560"
             height="315"
             src="https://www.youtube.com/embed/qGst7qOFkgw?start=39&end=56&autoplay=1&mute=1"
@@ -186,7 +186,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "ancient-bLong-smoke" && (
-          <iframe className={styles["youtube-vid-ancient-bLong-smoke"]} 
+          <iframe className={styles["youtube-vid"]} 
             width="560"
             height="315"
             src="https://www.youtube.com/embed/qGst7qOFkgw?start=78&end=93&autoplay=1&mute=1"
@@ -209,7 +209,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "ancient-bShort-smoke" && (
-          <iframe className={styles["youtube-vid-ancient-bShort-smoke"]} 
+          <iframe className={styles["youtube-vid"]} 
             width="560"
             height="315"
             src="https://www.youtube.com/embed/qGst7qOFkgw?start=94&end=108&autoplay=1&mute=1"
@@ -232,7 +232,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "ancient-cave-smoke" && (
-          <iframe className={styles["youtube-vid-ancient-cave-smoke"]}
+          <iframe className={styles["youtube-vid"]}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/qGst7qOFkgw?start=109&end=125&autoplay=1&mute=1"

@@ -70,7 +70,7 @@ export default function App() {
           )}
 
           {showVideo && name == "short smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -92,7 +92,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "long smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke'
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -115,7 +115,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "plaine smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -138,7 +138,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "Ct B smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
@@ -161,7 +161,7 @@ export default function App() {
           )}
 
           {showVideo &&  name === "coffins B smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"

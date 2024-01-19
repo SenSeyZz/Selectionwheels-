@@ -5,31 +5,21 @@
   padding: 0; /* Remove default body padding */
 }
 
-
-.youtube-vid-ancient-bakcsiteA-smoke{
-  margin-left: -10%;
-  margin-top: -10%;
+.youtube-vid{
+  margin-left: 0px;
+  margin-top: 0px;
   position: absolute;
 }
+
 .ancient-backsiteA-smoke{
   margin-left: -470px;
   margin-top: -630px;
 }
 
-.youtube-vid-ancient-ctFromDonut-smoke{
-  margin-left: 0%;
-  margin-top: -10%;
-  position: absolute;
-}
+
 .ancient-ctFromDonut-smoke{
   margin-left: -300px;
   margin-top: -580px;
-}
-
-.youtube-vid-ancient-tunnel-smoke{
-  margin-left: -10%;
-  margin-top: 0%;
-  position: absolute;
 }
 
 .ancient-tunnel-smoke{
@@ -37,21 +27,9 @@
   margin-top: -380px;
 }
 
-.youtube-vid-ancient-ctFromMid-smoke{
-  margin-left: 0%;
-  margin-top: 0%;
-  position: absolute;
-}
-
 .ancient-ctFromMid-smoke{
   margin-left: -250px;
   margin-top: -580px;
-}
-
-.youtube-vid-ancient-bLong-smoke{
-  margin-left: 0%;
-  margin-top: 0%;
-  position: absolute;
 }
 
 .ancient-bLong-smoke{
@@ -59,21 +37,9 @@
   margin-top: -350px;
 }
 
-.youtube-vid-ancient-bShort-smoke{
-  margin-left: 0%;
-  margin-top: 0%;
-  position: absolute;
-}
-
 .ancient-bShort-smoke{
   margin-left: 430px;
   margin-top: -350px;
-}
-
-.youtube-vid-ancient-cave-smoke{
-  margin-left: 0%;
-  margin-top: 10%;
-  position: absolute;
 }
 
 .ancient-cave-smoke{
