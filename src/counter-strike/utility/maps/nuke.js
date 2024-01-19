@@ -59,7 +59,7 @@ export default function App() {
           <div class = "col">
           
           <div className='col d-flex justify-content-center align-items-center'>
-          <img src='/csImages/nuke_layout.webp' className={`${styles["nuke-enlarged"]}`} alt="Responsive image"></img>
+          <img src='/csImages/nuke_layout2.png' className={`${styles["nuke-enlarged"]}`} alt="Responsive image"></img>
           
           {seeOtherSmoke &&(
           <img 

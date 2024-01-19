@@ -18,19 +18,19 @@ export default function App() {
     console.log(className);
     setShowVideo(true);
     setSeeOtherSmoke(false)
-    if(className == "inferno_inferno-short-smoke__nv8yD img-fluid smaller-image"){
+    if(className == "inferno_inferno-short-smoke__nv8yD img-fluid smaller-image hover-effect"){
       setName("short smoke")
       console.log("short");
-    }if (className == "inferno_inferno-long-smoke__WcPmF img-fluid smaller-image") {
+    }if (className == "inferno_inferno-long-smoke__WcPmF img-fluid smaller-image hover-effect") {
       setName("long smoke")
       console.log("long");
-    }if(className == "inferno_inferno-plaine-smoke__jDeeL img-fluid smaller-image"){
+    }if(className == "inferno_inferno-plaine-smoke__jDeeL img-fluid smaller-image hover-effect"){
       setName("plaine smoke")
       console.log("connector");
-    }if(className == "inferno_inferno-B-ct-smoke__jNkMO img-fluid smaller-image"){
+    }if(className == "inferno_inferno-B-ct-smoke__jNkMO img-fluid smaller-image hover-effect"){
       setName("Ct B smoke")
       console.log("B CT");
-    }if(className == "inferno_inferno-B-coffins-smoke__rF1ub img-fluid smaller-image"){
+    }if(className == "inferno_inferno-B-coffins-smoke__rF1ub img-fluid smaller-image hover-effect"){
       setName("coffins B smoke")
     
     }
@@ -63,7 +63,7 @@ export default function App() {
           {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["inferno-short-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["inferno-short-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>
@@ -85,7 +85,7 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className= {`${styles["inferno-long-smoke"]} img-fluid smaller-image`} 
+            className= {`${styles["inferno-long-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>
@@ -108,7 +108,7 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["inferno-plaine-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["inferno-plaine-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>
@@ -131,7 +131,7 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["inferno-B-ct-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["inferno-B-ct-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>
@@ -154,7 +154,7 @@ export default function App() {
           { seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["inferno-B-coffins-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["inferno-B-coffins-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>

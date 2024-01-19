@@ -12,11 +12,6 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
-    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -27,10 +22,25 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/trivia": [
+    "/counter-strike/utility": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/trivia.js"
+      "static/chunks/pages/counter-strike/utility.js"
+    ],
+    "/counter-strike/utility/ancient": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/counter-strike/utility/ancient.js"
+    ],
+    "/counter-strike/utility/inferno": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/counter-strike/utility/inferno.js"
+    ],
+    "/counter-strike/utility/vertigo": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/counter-strike/utility/vertigo.js"
     ]
   },
   "ampFirstPages": []

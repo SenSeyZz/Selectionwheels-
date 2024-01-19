@@ -2,6 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/trivia": "pages/trivia.js"
+  "/counter-strike/utility": "pages/counter-strike/utility.js",
+  "/counter-strike/utility/ancient": "pages/counter-strike/utility/ancient.js",
+  "/counter-strike/utility/vertigo": "pages/counter-strike/utility/vertigo.js",
+  "/counter-strike/utility/inferno": "pages/counter-strike/utility/inferno.js"
 }

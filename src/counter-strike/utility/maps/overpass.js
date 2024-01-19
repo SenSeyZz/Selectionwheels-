@@ -18,19 +18,19 @@ export default function App() {
     console.log(className);
     setShowVideo(true);
     setSeeOtherSmoke(false)
-    if(className == "overpass_overpass-B-site-smoke__IN2Qy img-fluid smaller-image"){
+    if(className == "overpass_overpass-B-site-smoke__IN2Qy img-fluid smaller-image hover-effect"){
       setName("B site smoke")
       console.log("short");
-    }if (className == "img-fluid smaller-image overpass-heaven-B-smoke") {
+    }if (className == "overpass_overpass-heaven-B-smoke__5SGWL img-fluid smaller-image hover-effect") {
       setName("heaven smoke")
       console.log("long");
-    }if(className == "img-fluid smaller-image overpass-trash-smoke"){
+    }if(className == "overpass_overpass-trash-smoke__PAGGI img-fluid smaller-image hover-effect"){
       setName("trash smoke")
       console.log("connector");
-    }if(className == "img-fluid smaller-image overpass-bank-smoke"){
+    }if(className == "overpass_overpass-bank-smoke__CMJbh img-fluid smaller-image hover-effect"){
       setName("bank smoke")
       console.log("B CT");
-    }if(className == "img-fluid smaller-image overpass-truck-smoke"){
+    }if(className == "overpass_overpass-truck-smoke__JokVG img-fluid smaller-image hover-effect"){
       setName("truck smoke")
     
     }
@@ -63,7 +63,7 @@ export default function App() {
           {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["overpass-B-site-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["overpass-B-site-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>
@@ -85,7 +85,7 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["overpass-heaven-B-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["overpass-heaven-B-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>
@@ -108,7 +108,7 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["overpass-trash-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["overpass-trash-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>
@@ -131,7 +131,7 @@ export default function App() {
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["overpass-bank-smoke"]} img-fluid smaller-image`} 
+            className={`${styles["overpass-bank-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>
@@ -154,7 +154,7 @@ export default function App() {
           { seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["overpass-truck-smoke"]} img-fluid smaller-image `} 
+            className={`${styles["overpass-truck-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>

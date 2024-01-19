@@ -6,15 +6,14 @@
 }
 
 
-
 .youtube-vid-ancient-bakcsiteA-smoke{
   margin-left: -10%;
   margin-top: -10%;
   position: absolute;
 }
 .ancient-backsiteA-smoke{
-  margin-left: -25%;
-  margin-top: -33%;
+  margin-left: -470px;
+  margin-top: -630px;
 }
 
 .youtube-vid-ancient-ctFromDonut-smoke{
@@ -23,8 +22,8 @@
   position: absolute;
 }
 .ancient-ctFromDonut-smoke{
-  margin-left: -15.5%;
-  margin-top: -30%;
+  margin-left: -300px;
+  margin-top: -580px;
 }
 
 .youtube-vid-ancient-tunnel-smoke{
@@ -34,8 +33,8 @@
 }
 
 .ancient-tunnel-smoke{
-  margin-left: -20.5%;
-  margin-top: -20%;
+  margin-left: -390px;
+  margin-top: -380px;
 }
 
 .youtube-vid-ancient-ctFromMid-smoke{
@@ -45,8 +44,8 @@
 }
 
 .ancient-ctFromMid-smoke{
-  margin-left: -13%;
-  margin-top: -30%;
+  margin-left: -250px;
+  margin-top: -580px;
 }
 
 .youtube-vid-ancient-bLong-smoke{
@@ -56,8 +55,8 @@
 }
 
 .ancient-bLong-smoke{
-  margin-left: 34.5%;
-  margin-top: -19%;
+  margin-left: 650px;
+  margin-top: -350px;
 }
 
 .youtube-vid-ancient-bShort-smoke{
@@ -67,8 +66,8 @@
 }
 
 .ancient-bShort-smoke{
-  margin-left: 22.5%;
-  margin-top: -19%;
+  margin-left: 430px;
+  margin-top: -350px;
 }
 
 .youtube-vid-ancient-cave-smoke{
@@ -78,6 +77,16 @@
 }
 
 .ancient-cave-smoke{
-  margin-left: 20.5%;
-  margin-top: -12%;
+  margin-left: 400px;
+  margin-top: -250px;
+}
+
+.donut-cross{
+  margin-left: -200px;
+  margin-top: -80px;
+}
+
+.mid-cross{
+  margin-left: -110px;
+  margin-top: -110px;
 }

@@ -4,8 +4,14 @@
     padding: 0; /* Remove default body padding */
   }
 
+  .nuke-enlarged {
+    transform: scale(1); /* Adjust the scale factor as needed */
+    width: 120%; /* Adjust the width as needed */
+    height: 120%;
+  }
+
 .nuke-outside1-smoke{
-    margin-left: 350px;
+    margin-left: 450px;
     margin-top: 330px;
   }
   

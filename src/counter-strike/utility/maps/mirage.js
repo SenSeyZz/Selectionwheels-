@@ -18,29 +18,29 @@ export default function App() {
     console.log(className);
     setShowVideo(true);
     setSeeOtherSmoke(false)
-    if(className == "mirage_window-smoke__GBkmp img-fluid smaller-image"){
+    if(className == "mirage_window-smoke__GBkmp img-fluid smaller-image hover-effect"){
       setName("window smoke")
-      console.log(name);
-    }if (className == "mirage_mirage-short-smoke__MjlsZ img-fluid smaller-image") {
+      console.log("window");
+    }if (className == "mirage_mirage-short-smoke__MjlsZ img-fluid smaller-image hover-effect") {
       setName("short smoke")
       console.log("short");
-    }if(className == "mirage_mirage-connector-smoke__0u4aR img-fluid smaller-image"){
+    }if(className == "mirage_mirage-connector-smoke__0u4aR img-fluid smaller-image hover-effect"){
       setName("connector smoke")
       console.log("connector");
-    }if(className == "mirage_mirage-A-ct-smoke__Ay2_V img-fluid smaller-image"){
+    }if(className == "mirage_mirage-A-ct-smoke__Ay2_V img-fluid smaller-image hover-effect"){
       setName("Ct A smoke")
       console.log("A CT");
-    }if(className == "mirage_mirage-A-stairs-smoke__1jdVT img-fluid smaller-image"){
+    }if(className == "mirage_mirage-A-stairs-smoke__1jdVT img-fluid smaller-image hover-effect"){
       setName("stairs A smoke")
-    }if(className == "mirage_mirage-A-jungle-smoke__7za_I img-fluid smaller-image"){
+    }if(className == "mirage_mirage-A-jungle-smoke__7za_I img-fluid smaller-image hover-effect"){
       setName("jungle A smoke")
-    }if (className == "mirage_mirage-B-market-smoke__YL6ia img-fluid smaller-image") {
+    }if (className == "mirage_mirage-B-market-smoke__YL6ia img-fluid smaller-image hover-effect") {
       setName("market B smoke")
       console.log("market B ");
-    }if (className == "mirage_mirage-B-arch1-smoke__Yu2Ov img-fluid smaller-image") {
+    }if (className == "mirage_mirage-B-arch1-smoke__Yu2Ov img-fluid smaller-image hover-effect") {
       setName("arch 1 B smoke")
       console.log("arch 1 B ");
-    }if (className == "mirage_mirage-B-arch2-smoke__6qZg5 img-fluid smaller-image") {
+    }if (className == "mirage_mirage-B-arch2-smoke__6qZg5 img-fluid smaller-image hover-effect") {
       setName("arch 2 B smoke")
       console.log("arch 2 B ");
     }
