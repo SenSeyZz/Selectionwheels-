@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import fadeIn from '../../../fadeIn';
-import React, { use, useState } from 'react';
+import React, { use, useState, useEffect } from 'react';
 import styles from "./mirage.module.css"
 import TopElementsContainer from './topElementContainer';
 
@@ -13,6 +13,7 @@ export default function App() {
   const [seeOtherSmoke, setSeeOtherSmoke] = useState (true)
   const [seeOtherMolo, setSeeOtherMolo] = useState (false)
   const [seeOtherFlash, setSeeOtherFlash] = useState (false)
+  const [utility, setUtility] = useState("")
 
 
   const handleMouseEnter = (event) => {
@@ -21,6 +22,7 @@ export default function App() {
     console.log(className);
     setShowVideo(true);
     setSeeOtherSmoke(false)
+    setUtility("smoke")
     
     if(className == "mirage_window-smoke__GBkmp img-fluid smaller-image hover-effect"){
       setName("window smoke")
@@ -47,15 +49,83 @@ export default function App() {
     }if (className == "mirage_mirage-B-arch2-smoke__6qZg5 img-fluid smaller-image hover-effect") {
       setName("arch 2 B smoke")
       console.log("arch 2 B ");
+    }if (className == "mirage_mirage-palace-ladder-smoke__DKAw6 img-fluid smaller-image hover-effect") {
+      setName("palace from ladder")
+      console.log("palace from ladder");
     }
     
   };
 
-  const handleMouseLeave = () => {
-    setShowVideo(false);
-    setName("")
-    setSeeOtherSmoke(true)
+  const handleMouseEnterMolo = (event) => {
+    const element = event.target;
+    const className = element.className;
+    console.log(className);
+    setShowVideo(true);
+    setSeeOtherMolo(false)
+    setUtility("molo")
+    if(className == "overpass_overpass-sortie-terro-molo__Z1sY8 img-fluid smaller-image hover-effect"){
+      setName("molo sortie terro")
+      console.log("short");
+    
   };
+}
+
+  const handleMouseEnterFlash = (event) => {
+    const element = event.target;
+    const className = element.className;
+    console.log(className);
+    setShowVideo(true);
+    setSeeOtherFlash(false)
+    setUtility("flash")
+    if(className == "inferno_inferno-banane-coffins-flash__DaJBD img-fluid smaller-image hover-effect"){
+      setName("flash banane from coffins")
+      console.log("short");
+    }
+    
+  };
+
+  useEffect(() => {
+
+    const handleDocumentClick = (event) => {
+      // Check if the click is outside the video box
+      const clickedTagName = event.target.tagName;
+      console.log(event);
+      if(clickedTagName !== 'IMG' || (clickedTagName === 'IMG' && event.target.alt !== 'Responsive image')){
+        
+        setShowVideo(false);
+        setName("");
+    
+      }
+      
+    };
+    
+    // Add a document click event listener
+    document.addEventListener('click', handleDocumentClick);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      document.removeEventListener('click', handleDocumentClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!showVideo) {
+      // Set the corresponding state based on the utility
+      if (utility === "smoke") {
+        setSeeOtherSmoke(true);
+        setSeeOtherMolo(false);
+        setSeeOtherFlash(false);
+      } else if (utility === "molo") {
+        setSeeOtherSmoke(false);
+        setSeeOtherMolo(true);
+        setSeeOtherFlash(false);
+      } else if (utility === "flash") {
+        setSeeOtherSmoke(false);
+        setSeeOtherMolo(false);
+        setSeeOtherFlash(true);
+      }
+    }
+  }, [showVideo, utility]);
 
   return (
     
@@ -80,7 +150,7 @@ export default function App() {
             />
 
           <div className='col d-flex justify-content-center align-items-center'>
-          <img src='/csImages/layout_mirage.webp' className="" alt="Responsive image"></img>
+          <img src='/csImages/layout_mirage.webp' className="" alt="Background"></img>
           
           
           {seeOtherSmoke &&(
@@ -100,7 +170,7 @@ export default function App() {
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-            onMouseLeave={handleMouseLeave}
+          
             
           ></iframe>
           )}
@@ -122,7 +192,7 @@ export default function App() {
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-            onMouseLeave={handleMouseLeave}
+            
             
           ></iframe>
           
@@ -145,7 +215,7 @@ export default function App() {
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-            onMouseLeave={handleMouseLeave}
+            
             
           ></iframe>
           
@@ -168,7 +238,7 @@ export default function App() {
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-            onMouseLeave={handleMouseLeave}
+           
             
           ></iframe>
           
@@ -191,7 +261,7 @@ export default function App() {
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-            onMouseLeave={handleMouseLeave}
+           
           ></iframe>
           
           )}
@@ -213,7 +283,7 @@ export default function App() {
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-            onMouseLeave={handleMouseLeave}
+            
             
           ></iframe>
           
@@ -236,7 +306,7 @@ export default function App() {
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-            onMouseLeave={handleMouseLeave}
+            
             
           ></iframe>
           
@@ -259,7 +329,7 @@ export default function App() {
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-            onMouseLeave={handleMouseLeave}
+            
             
           ></iframe>
           
@@ -282,7 +352,30 @@ export default function App() {
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-            onMouseLeave={handleMouseLeave}
+           
+            
+          ></iframe>
+          
+          )}
+
+          { seeOtherSmoke &&(
+          <img 
+            src='/csImages/smoke.png' 
+            className={`${styles["mirage-palace-ladder-smoke"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnter}>
+          </img>
+          )}
+
+          {showVideo &&  name === "palace from ladder" && (
+          <iframe className={`${styles["youtube-vid"]}`}
+            width="315" 
+            height="560"
+            src="https://www.youtube.com/embed/ZxsBulS58PM"
+            allow='autoplay'
+            frameborder="0"
+            allowfullscreen
+           
             
           ></iframe>
           
@@ -295,7 +388,7 @@ export default function App() {
             src='/csImages/incendiary.webp' 
             className={`${styles["mirage-B-arch2-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
-            onClick={handleMouseEnter}>
+            onClick={handleMouseEnterMolo}>
           </img>
           )}
 
@@ -305,7 +398,7 @@ export default function App() {
             src='/csImages/flash.webp' 
             className={`${styles["mirage-B-arch2-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
-            onClick={handleMouseEnter}>
+            onClick={handleMouseEnterFlash}>
           </img>
           )}
 

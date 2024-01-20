@@ -155,3 +155,25 @@ li a:hover {
 .red_cross{
   transform: scale(0.5);
 }
+
+.top-elements-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /* Adjust as needed */
+  margin-bottom: -100px;
+  margin-top: 0px;
+  justify-content: space-evenly ;
+  
+}
+
+.top-inciendiary{ /* Center the image horizontally */
+  transform: scale(0.5);
+}
+
+.top-smoke{
+  transform: scale(0.4);
+}
+
+.top-flash{
+  transform: scale(0.4);
+}

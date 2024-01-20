@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import fadeIn from '../../../fadeIn';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from "./ancient.module.css"
+import TopElementsContainer from './topElementContainer';
 
 
 
@@ -10,8 +11,12 @@ export default function App() {
   const [showVideo, setShowVideo] = useState(false);
   const [name, setName] = useState("");
   const [seeOtherSmoke, setSeeOtherSmoke] = useState (true)
+  const [seeOtherMolo, setSeeOtherMolo] = useState (false)
+  const [seeOtherFlash, setSeeOtherFlash] = useState (false)
   const [ctThrow, setCtThrow] = useState (false)
   const [cross, setCross] = useState (false)
+  const [utility, setUtility] = useState("")
+  
 
   const handleMouseEnter = (event) => {
     const element = event.target;
@@ -19,6 +24,7 @@ export default function App() {
     console.log(className);
     setShowVideo(true);
     setSeeOtherSmoke(false)
+    setUtility("smoke")
     if(className == "ancient_ancient-backsiteA-smoke__KDmjs img-fluid smaller-image hover-effect"){
       setName("ancient-backsiteA-smoke")
     }if (className == "ancient_ancient-ctFromDonut-smoke__RhFsC img-fluid smaller-image hover-effect") {
@@ -34,16 +40,83 @@ export default function App() {
     }if (className == "ancient_ancient-cave-smoke__FzDtc img-fluid smaller-image hover-effect") {
       setName("ancient-cave-smoke")
       console.log("test");
+    }if (className == "ancient_ancient-cat-spawn-smoke__TWdgu img-fluid smaller-image hover-effect") {
+      setName("ancient-cat-smoke")
+      console.log("test");
     }
     
   };
 
-  const handleMouseLeave = () => {
-    setShowVideo(false);
-    setName("")
-    setSeeOtherSmoke(true)
-    setCross(false)
+  const handleMouseEnterMolo = (event) => {
+    const element = event.target;
+    const className = element.className;
+    console.log(className);
+    setShowVideo(true);
+    setSeeOtherMolo(false)
+    setUtility("molo")
+    if(className == "inferno_inferno-banana-terro-molo__sm2Xd img-fluid smaller-image hover-effect"){
+      setName("molo banane from T")
+      console.log("short");
+    }
+    
   };
+
+  const handleMouseEnterFlash = (event) => {
+    const element = event.target;
+    const className = element.className;
+    console.log(className);
+    setShowVideo(true);
+    setSeeOtherFlash(false)
+    setUtility("flash")
+    if(className == "ancient_ancient-a-flash__pZheC img-fluid smaller-image hover-effect"){
+      setName("flash A")
+      console.log("short");
+    }
+    
+  };
+
+  useEffect(() => {
+
+    const handleDocumentClick = (event) => {
+      // Check if the click is outside the video box
+      const clickedTagName = event.target.tagName;
+      console.log(event);
+      if(clickedTagName !== 'IMG' || (clickedTagName === 'IMG' && event.target.alt !== 'Responsive image')){
+        
+        setShowVideo(false);
+        setName("");
+    
+      }
+      
+    };
+    
+    // Add a document click event listener
+    document.addEventListener('click', handleDocumentClick);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      document.removeEventListener('click', handleDocumentClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!showVideo) {
+      // Set the corresponding state based on the utility
+      if (utility === "smoke") {
+        setSeeOtherSmoke(true);
+        setSeeOtherMolo(false);
+        setSeeOtherFlash(false);
+      } else if (utility === "molo") {
+        setSeeOtherSmoke(false);
+        setSeeOtherMolo(true);
+        setSeeOtherFlash(false);
+      } else if (utility === "flash") {
+        setSeeOtherSmoke(false);
+        setSeeOtherMolo(false);
+        setSeeOtherFlash(true);
+      }
+    }
+  }, [showVideo, utility]);
 
   const handlecross = (event) => {
     setCross(true)
@@ -72,8 +145,15 @@ export default function App() {
       <div className="container">
         <div className ='row'>
           <div className ="col">
+
+            <TopElementsContainer
+                setSeeOtherMolo={setSeeOtherMolo}
+                setSeeOtherSmoke={setSeeOtherSmoke}
+                setSeeOtherFlash={setSeeOtherFlash}
+                styles={styles}
+              />
           <div className="col d-flex justify-content-center align-items-center">
-          <img src='/csImages/layout_ancient.webp' alt="Responsive image"></img>
+          <img src='/csImages/layout_ancient.webp' alt="Background"></img>
           
           {seeOtherSmoke &&(
           <img 
@@ -92,7 +172,7 @@ export default function App() {
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-            onMouseLeave={handleMouseLeave}
+            
             
           ></iframe>
           
@@ -115,7 +195,7 @@ export default function App() {
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-            onMouseLeave={handleMouseLeave}
+            
             
           ></iframe>
           
@@ -129,7 +209,7 @@ export default function App() {
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-            onMouseLeave={handleMouseLeave}
+            
             
           ></iframe>
           
@@ -170,7 +250,7 @@ export default function App() {
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-            onMouseLeave={handleMouseLeave}
+            
             
           ></iframe>
           
@@ -193,7 +273,7 @@ export default function App() {
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-            onMouseLeave={handleMouseLeave}
+            
             
           ></iframe>
           
@@ -216,7 +296,7 @@ export default function App() {
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-            onMouseLeave={handleMouseLeave}
+            
             
           ></iframe>
           
@@ -239,13 +319,85 @@ export default function App() {
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-            onMouseLeave={handleMouseLeave}
+            
             
           ></iframe>
           
           )}
 
+          {seeOtherSmoke &&(
+          <img 
+            src='/csImages/smoke.png' 
+            className={`${styles["ancient-cat-spawn-smoke"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnter}>
+          </img>
+          )}
+
+          {showVideo &&  name === "ancient-cat-smoke" && (
+          <iframe className={styles["youtube-vid"]}
+            width="315"
+            height="560"
+            src="https://www.youtube.com/embed/SiDXHgojLd4"
+            allow='autoplay'
+            frameborder="0"
+            allowfullscreen
+            
+            
+          ></iframe>
           
+          )}
+
+          {/* START OF MOLOTOVS */}
+
+          { seeOtherMolo &&(
+          <img 
+            src='/csImages/incendiary.webp' 
+            className={`${styles["nuke-hut-roof-molo"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnterMolo}>
+          </img>
+          )}
+
+          {showVideo &&  name === "molo hut from roof" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/_Y1CP-0zJAI"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            
+            allowfullscreen
+            
+          ></iframe>
+          )}
+
+          {/* START OF Flashes */}
+          { seeOtherFlash &&(
+          <img 
+            src='/csImages/flash.webp' 
+            className={`${styles["ancient-a-flash"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnterFlash}>
+          </img>
+          )}
+
+          {showVideo &&  name === "flash A" && (
+          <iframe className={styles["youtube-vid"]}
+            width="315" 
+            height="560"
+            src="https://www.youtube.com/embed/aJdnuhMl6Ho"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            
+            allowfullscreen
+          
+          ></iframe>
+          )}
 
           </div>
           </div>
