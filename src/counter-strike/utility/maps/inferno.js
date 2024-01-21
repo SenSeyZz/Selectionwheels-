@@ -15,6 +15,8 @@ export default function App() {
   const [seeOtherSmoke, setSeeOtherSmoke] = useState (true)
   const [seeOtherMolo, setSeeOtherMolo] = useState (false)
   const [seeOtherFlash, setSeeOtherFlash] = useState (false)
+  const [newBoxMolo, setNewBoxMolo] = useState (false)
+  const [darkMolo, setDarkMolo] = useState (false)
   const [utility, setUtility] = useState("")
 
 
@@ -60,7 +62,10 @@ export default function App() {
     setUtility("molo")
     if(className == "inferno_inferno-banana-terro-molo__sm2Xd img-fluid smaller-image hover-effect"){
       setName("molo banane from T")
-      console.log("short");
+    }else if (className == "inferno_inferno-newBox-molo__dzcJ9 img-fluid smaller-image hover-effect") {
+      setNewBoxMolo(true)
+    }else if (className == "inferno_inferno-dark-molo__d39qk img-fluid smaller-image hover-effect") {
+      setDarkMolo(true)
     }
     
   };
@@ -78,6 +83,28 @@ export default function App() {
     }
     
   };
+
+  const handlecross = (event) => {
+    
+    setNewBoxMolo(false)
+    setDarkMolo(false)
+    const element = event.target;
+    const className = element.className;
+    console.log(className);
+
+    if(className == "inferno_newBox-terro-cross__q1TcG img-fluid smaller-image hover-effect red_cross"){
+      setName("molo new box terro")
+    }else if (className == "inferno_newBox-Ct-cross__k0e1v img-fluid smaller-image hover-effect red_cross") {
+      setName("new box Ct")
+    }else if (className == "inferno_newBox-garden-cross__xo7eI img-fluid smaller-image hover-effect red_cross") {
+      setName("new box garden")
+    }else if (className == "inferno_dark-sandbag-cross__czJIu img-fluid smaller-image hover-effect red_cross") {
+      setName("dark sandbag")
+    }else if (className == "inferno_dark-Ct-cross__tYSEf img-fluid smaller-image hover-effect red_cross") {
+      setName("dark ct")
+    }
+  
+  }
 
   useEffect(() => {
 
@@ -114,6 +141,8 @@ export default function App() {
         setSeeOtherSmoke(false);
         setSeeOtherMolo(true);
         setSeeOtherFlash(false);
+        setNewBoxMolo(false)
+        setDarkMolo(false)
       } else if (utility === "flash") {
         setSeeOtherSmoke(false);
         setSeeOtherMolo(false);
@@ -372,7 +401,7 @@ export default function App() {
           <iframe className={styles["youtube-vid"]}
             width="315" 
             height="560"
-            src="https://www.youtube.com/embed/Yl0VuWAAqiU"
+            src="https://www.youtube.com/embed/Yl0VuWAAqiU?autoplay=1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture;
               web-share"
@@ -382,6 +411,145 @@ export default function App() {
             
           ></iframe>
           )}
+
+          { seeOtherMolo &&(
+          <img 
+            src='/csImages/incendiary.webp' 
+            className={`${styles["inferno-newBox-molo"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnterMolo}>
+          </img>
+          )}
+
+          {newBoxMolo &&(
+          <img 
+            src='/csImages/red_cross.png' 
+            className={`${styles["newBox-Ct-cross"]} img-fluid smaller-image hover-effect red_cross`} 
+            alt="Responsive image" 
+            onClick={handlecross}>
+          </img>
+          )}
+
+          {newBoxMolo &&(
+          <img 
+            src='/csImages/red_cross.png' 
+            className={`${styles["newBox-garden-cross"]} img-fluid smaller-image hover-effect red_cross`} 
+            alt="Responsive image" 
+            onClick={handlecross}>
+          </img>
+          )}
+
+          {newBoxMolo &&(
+          <img 
+            src='/csImages/red_cross.png' 
+            className={`${styles["newBox-terro-cross"]} img-fluid smaller-image hover-effect red_cross`} 
+            alt="Responsive image" 
+            onClick={handlecross}>
+          </img>
+          )}
+
+          {showVideo &&  name === "molo new box terro" && (
+          <iframe className={styles["youtube-vid"]}
+            width="315" 
+            height="560"
+            src="https://www.youtube.com/embed/9cLtu5PwtUU?autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            
+            allowfullscreen
+            
+          ></iframe>
+          )}
+
+          {showVideo &&  name === "new box Ct" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/QvuetsRnc70?start=203&end=219&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            
+            allowfullscreen
+            
+          ></iframe>
+          )}
+
+          {showVideo &&  name === "new box garden" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/QvuetsRnc70?start=234&end=248&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            
+            allowfullscreen
+            
+          ></iframe>
+          )}
+
+          { seeOtherMolo &&(
+          <img 
+            src='/csImages/incendiary.webp' 
+            className={`${styles["inferno-dark-molo"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnterMolo}>
+          </img>
+          )}
+
+          {darkMolo &&(
+          <img 
+            src='/csImages/red_cross.png' 
+            className={`${styles["dark-Ct-cross"]} img-fluid smaller-image hover-effect red_cross`} 
+            alt="Responsive image" 
+            onClick={handlecross}>
+          </img>
+          )}
+
+          {darkMolo &&(
+          <img 
+            src='/csImages/red_cross.png' 
+            className={`${styles["dark-sandbag-cross"]} img-fluid smaller-image hover-effect red_cross`} 
+            alt="Responsive image" 
+            onClick={handlecross}>
+          </img>
+          )}
+
+          {showVideo &&  name === "dark ct" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/QvuetsRnc70?start=266&end=277&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            
+            allowfullscreen
+            
+          ></iframe>
+          )}
+
+          {showVideo &&  name === "dark sandbag" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/VDHQN0LAjLc?autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            
+            allowfullscreen
+            
+          ></iframe>
+          )}
+
 
           {/* START OF Flashes */}
           { seeOtherFlash &&(

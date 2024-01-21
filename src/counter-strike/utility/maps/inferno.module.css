@@ -40,11 +40,6 @@
     margin-top: 200px;
   }
 
-  .inferno-banana-terro-molo{
-    margin-left: 400px;
-    margin-top: 200px;
-  }
-
   .inferno-arch-smoke{
     margin-left: 570px;
     margin-top: 30px;
@@ -63,4 +58,44 @@
   .inferno-T-stairs-smoke{
     margin-left: -130px;
     margin-top: 200px;
+  }
+
+  .inferno-banana-terro-molo{
+    margin-left: -100px;
+    margin-top: 0px;
+  }
+
+  .inferno-newBox-molo{
+    margin-left: -160px;
+    margin-top: -520px;
+  }
+
+  .newBox-terro-cross{
+    margin-left: 20px;
+    margin-top: -260px;
+  }
+
+  .newBox-Ct-cross{
+    margin-left: 350px;
+    margin-top: -540px;
+  }
+
+  .newBox-garden-cross{
+    margin-left: 70px;
+    margin-top: -900px;
+  }
+
+  .inferno-dark-molo{
+    margin-left: -140px;
+    margin-top: -700px;
+  }
+
+  .dark-sandbag-cross{
+    margin-left: 90px;
+    margin-top: -220px;
+  }
+
+  .dark-Ct-cross{
+    margin-left: 350px;
+    margin-top: -540px;
   }

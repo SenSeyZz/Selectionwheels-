@@ -23,21 +23,34 @@ export default function App() {
     setShowVideo(true);
     setSeeOtherSmoke(false)
     setUtility("smoke")
-    if(className == "vertigo_vertigo-short-smoke__ktci3 img-fluid smaller-image hover-effect"){
-      setName("short smoke")
+    if(className == "vertigo_vertigo-mid-smoke__ialYN img-fluid smaller-image hover-effect"){
+      setName("mid smoke")
       console.log("short");
     }else if (className == "vertigo_vertigo-left-mid-smoke__xbrDm img-fluid smaller-image hover-effect") {
-      setName("long smoke")
-      console.log("long");
+      setName("left mid smoke")
     }else if(className == "vertigo_vertigo-right-mid-smoke__gDJpY img-fluid smaller-image hover-effect"){
-      setName("plaine smoke")
-      console.log("connector");
+      setName("right mid smoke")
     }else if(className == "img-fluid smaller-image inferno-B-ct-smoke hover-effect"){
       setName("Ct B smoke")
       console.log("B CT");
     }else if(className == "img-fluid smaller-image inferno-B-coffins-smoke hover-effect"){
       setName("coffins B smoke")
-    
+    }else if(className == "vertigo_vertigo-yellow-smoke___cw_V img-fluid smaller-image hover-effect"){
+      setName("yellow smoke")
+    }else if(className == "vertigo_vertigo-Tramp-smoke__j4KAa img-fluid smaller-image hover-effect"){
+      setName("T ramp smoke")
+    }else if(className == "vertigo_vertigo-A-smoke1__1fHyY img-fluid smaller-image hover-effect"){
+      setName("A left smoke")
+    }else if(className == "vertigo_vertigo-A-smoke2__ptVH6 img-fluid smaller-image hover-effect"){
+      setName("A right smoke")
+    }else if(className == "vertigo_vertigo-elevator-A-smoke__z7AkP img-fluid smaller-image hover-effect"){
+      setName("elevator A smoke")
+    }else if(className == "vertigo_vertigo-right-B-smoke__083Gv img-fluid smaller-image hover-effect"){
+      setName("right B smoke")
+    }else if(className == "vertigo_vertigo-left-B-smoke__QiT1d img-fluid smaller-image hover-effect"){
+      setName("left B smoke")
+    }else if(className == "vertigo_vertigo-ramp-terro-smoke__cbdJJ img-fluid smaller-image hover-effect"){
+      setName("ramp terro smoke")
     }
     
   };
@@ -137,29 +150,30 @@ export default function App() {
 
           <div className='col d-flex justify-content-center align-items-center'>
           <img src='/csImages/vertigo_layout.webp' className="" alt="Background"></img>
-          
-          {seeOtherSmoke &&(
+                    
+          {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
-            className={`${styles["vertigo-short-smoke"]} img-fluid smaller-image hover-effect`} 
+            className={`${styles["vertigo-mid-smoke"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>
           )}
 
-          {showVideo && name == "short smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
+          {showVideo &&  name === "mid smoke" && (
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
+            src="https://www.youtube.com/embed/MxLga5CnMFs?start=342&end=359&autoplay=1"
             allow='autoplay'
             frameborder="0"
             allowfullscreen
-           
+            
             
           ></iframe>
-          )}
           
+          )}
+
           {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
@@ -169,11 +183,11 @@ export default function App() {
           </img>
           )}
 
-          {showVideo &&  name === "long smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke'
+          {showVideo &&  name === "left mid smoke" && (
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
+            src="https://www.youtube.com/embed/MxLga5CnMFs?start=380&end=400&autoplay=1"
             allow='autoplay'
             frameborder="0"
             allowfullscreen
@@ -192,38 +206,15 @@ export default function App() {
           </img>
           )}
 
-          {showVideo &&  name === "plaine smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
+          {showVideo &&  name === "right mid smoke" && (
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
+            src="https://www.youtube.com/embed/MxLga5CnMFs?start=363&end=378&autoplay=1"
             allow='autoplay'
             frameborder="0"
             allowfullscreen
            
-            
-          ></iframe>
-          
-          )}
-
-          {seeOtherSmoke && (
-          <img 
-            src='/csImages/smoke.png' 
-            className={`${styles["vertigo-ramp-mid-smoke"]} img-fluid smaller-image hover-effect`}
-            alt="Responsive image" 
-            onClick={handleMouseEnter}>
-          </img>
-          )}
-
-          {showVideo &&  name === "Ct B smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
-            allow='autoplay'
-            frameborder="0"
-            allowfullscreen
-            
             
           ></iframe>
           
@@ -238,11 +229,11 @@ export default function App() {
           </img>
           )}
 
-          {showVideo &&  name === "coffins B smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
+          {showVideo &&  name === "A left smoke" && (
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
+            src="https://www.youtube.com/embed/MxLga5CnMFs?start=170&end=183&autoplay=1"
             allow='autoplay'
             frameborder="0"
             allowfullscreen
@@ -260,11 +251,143 @@ export default function App() {
           </img>
           )}
 
-          {showVideo &&  name === "coffins B smoke" && (
-          <iframe className='youtube-vid-mirage-window-smoke '
+          {showVideo &&  name === "A right smoke" && (
+          <iframe className={`${styles["youtube-vid"]}`}
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
+            src="https://www.youtube.com/embed/MxLga5CnMFs?start=185&end=199&autoplay=1"
+            allow='autoplay'
+            frameborder="0"
+            allowfullscreen
+           
+          ></iframe>
+          
+          )}
+
+          { seeOtherSmoke &&(
+          <img 
+            src='/csImages/smoke.png' 
+            className={`${styles["vertigo-yellow-smoke"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnter}>
+          </img>
+          )}
+
+          {showVideo &&  name === "yellow smoke" && (
+          <iframe className={`${styles["youtube-vid"]}`}
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/MxLga5CnMFs?start=15&end=38&autoplay=1"
+            allow='autoplay'
+            frameborder="0"
+            allowfullscreen
+           
+          ></iframe>
+          
+          )}
+
+          { seeOtherSmoke &&(
+          <img 
+            src='/csImages/smoke.png' 
+            className={`${styles["vertigo-Tramp-smoke"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnter}>
+          </img>
+          )}
+
+          {showVideo &&  name === "T ramp smoke" && (
+          <iframe className={`${styles["youtube-vid"]}`}
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/MxLga5CnMFs?start=75&end=98&autoplay=1"
+            allow='autoplay'
+            frameborder="0"
+            allowfullscreen
+           
+          ></iframe>
+          
+          )}
+
+          { seeOtherSmoke &&(
+          <img 
+            src='/csImages/smoke.png' 
+            className={`${styles["vertigo-elevator-A-smoke"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnter}>
+          </img>
+          )}
+
+          {showVideo &&  name === "elevator A smoke" && (
+          <iframe className={`${styles["youtube-vid"]}`}
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/MxLga5CnMFs?start=215&end=226&autoplay=1"
+            allow='autoplay'
+            frameborder="0"
+            allowfullscreen
+           
+          ></iframe>
+          
+          )}
+
+          { seeOtherSmoke &&(
+          <img 
+            src='/csImages/smoke.png' 
+            className={`${styles["vertigo-right-B-smoke"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnter}>
+          </img>
+          )}
+
+          {showVideo &&  name === "right B smoke" && (
+          <iframe className={`${styles["youtube-vid"]}`}
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/MxLga5CnMFs?start=291&end=301&autoplay=1"
+            allow='autoplay'
+            frameborder="0"
+            allowfullscreen
+           
+          ></iframe>
+          
+          )}
+
+          { seeOtherSmoke &&(
+          <img 
+            src='/csImages/smoke.png' 
+            className={`${styles["vertigo-left-B-smoke"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnter}>
+          </img>
+          )}
+
+          {showVideo &&  name === "left B smoke" && (
+          <iframe className={`${styles["youtube-vid"]}`}
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/MxLga5CnMFs?start=303&end=317&autoplay=1"
+            allow='autoplay'
+            frameborder="0"
+            allowfullscreen
+           
+          ></iframe>
+          
+          )}
+
+          { seeOtherSmoke &&(
+          <img 
+            src='/csImages/smoke.png' 
+            className={`${styles["vertigo-ramp-terro-smoke"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnter}>
+          </img>
+          )}
+
+          {showVideo &&  name === "ramp terro smoke" && (
+          <iframe className={`${styles["youtube-vid"]}`}
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/MxLga5CnMFs?start=402&end=422&autoplay=1"
             allow='autoplay'
             frameborder="0"
             allowfullscreen

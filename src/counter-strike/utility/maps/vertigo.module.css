@@ -4,33 +4,66 @@
     padding: 0; /* Remove default body padding */
   }
 
-.vertigo-short-smoke{
-    margin-left: 350px;
-    margin-top: 330px;
+  .youtube-vid{
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+  }
+
+  .vertigo-mid-smoke{
+    margin-left: -50px;
+    margin-top: -260px;
   }
   
   .vertigo-left-mid-smoke{
-    margin-left: 280px;
-    margin-top: 400px;
+    margin-left: 10px;
+    margin-top: -350px;
   }
   
   .vertigo-right-mid-smoke{
-    margin-left: 200px;
+    margin-left: 70px;
+    margin-top: -150px;
+  }
+  
+  .vertigo-yellow-smoke{
+    margin-left: 10px;
     margin-top: 400px;
   }
-  
-  .nuke-heaven-smoke{
-    margin-left: 230px;
-    margin-top: -80px;
+
+  .vertigo-Tramp-smoke{
+    margin-left: 150px;
+    margin-top: 450px;
   }
   
-  .nuke-hut-smoke{
-    margin-left: 200px;
-    margin-top: 260px;
+  .vertigo-A-smoke1{
+    margin-left: 320px;
+    margin-top: 100px;
   }
 
-  .nuke-enlarged{
-  
-    width: 1000px; /* Set the desired width */
-    height: 1000px;
+  .vertigo-A-smoke2{
+    margin-left: 430px;
+    margin-top: 100px;
   }
+  
+  .vertigo-elevator-A-smoke{
+    margin-left: 320px;
+    margin-top: -30px;
+  }
+
+  .vertigo-right-B-smoke{
+    margin-left: -350px;
+    margin-top: -450px;
+  }
+
+  .vertigo-left-B-smoke{
+    margin-left: -300px;
+    margin-top: -550px;
+  }
+
+  .vertigo-ramp-terro-smoke{
+    margin-left: 150px;
+    margin-top: 300px;
+  }
+
+
+  

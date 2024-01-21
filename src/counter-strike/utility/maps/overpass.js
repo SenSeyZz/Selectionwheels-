@@ -265,8 +265,8 @@ useEffect(() => {
           
           {showVideo &&  name === "molo sortie terro" && (
           <iframe className={styles["youtube-vid"]}
-            width="560"
-            height="315"
+            width="315"
+            height="560"
             src="https://www.youtube.com/embed/O8ZOy5h_hK4?autoplay=1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture;
