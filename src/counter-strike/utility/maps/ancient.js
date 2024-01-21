@@ -29,7 +29,6 @@ export default function App() {
       setName("ancient-backsiteA-smoke")
     }if (className == "ancient_ancient-ctFromDonut-smoke__RhFsC img-fluid smaller-image hover-effect") {
       setCtThrow(true)
-      console.log(cross);
     }if(className == "ancient_ancient-tunnel-smoke__WiZFX img-fluid smaller-image hover-effect"){
       setName("ancient-tunnel-smoke")
     }if(className == "ancient_ancient-bLong-smoke__TA5Sf img-fluid smaller-image hover-effect"){
@@ -124,11 +123,13 @@ export default function App() {
     const element = event.target;
     const className = element.className;
     console.log(className);
+
     if(className == "ancient_donut-cross__VE7l1 img-fluid smaller-image hover-effect red_cross"){
       setName("ancient-ctFromDonut-smoke")
     }else if (className =="ancient_mid-cross__hzqYA img-fluid smaller-image hover-effect red_cross") {
       setName("ancient-ctFromMid-smoke")
     }
+  
   }
 
 

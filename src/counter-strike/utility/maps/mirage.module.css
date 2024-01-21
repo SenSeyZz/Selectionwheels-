@@ -67,7 +67,102 @@
     margin-top: -540px;
   }
 
+  .mirage-B-short-smoke{
+    margin-left: -200px;
+    margin-top: -420px;
+  }
+
   .mirage-palace-ladder-smoke{
-    margin-left: 100px;
-    margin-top: 0px;
+    margin-left: 290px;
+    margin-top: 550px;
+  }
+
+  .mirage-topMid-smoke{
+    margin-left: 200px;
+    margin-top: -180px;
+  }
+
+  .mirage-topConnector-smoke{
+    margin-left: 0px;
+    margin-top: 200px;
+  }
+
+  .mirage-underWood-molo{
+    margin-left: 280px;
+    margin-top: 450px;
+  }
+
+  .ramp-cross{
+    margin-left: 280px;
+    margin-top: 300px;
+  }
+
+  .palace-cross{
+    margin-left: 290px;
+    margin-top: 590px;
+  }
+
+  .mirage-ramp-molo{
+    margin-left: 350px;
+    margin-top: 260px;
+  }
+
+  .mirage-window-molo{
+    margin-left: -200px;
+    margin-top: -100px;
+  }
+
+  .mirage-aps-molo{
+    margin-left: -350px;
+    margin-top: -650px;
+  }
+
+  .left-mid-cross{
+    margin-left: 460px;
+    margin-top: -260px;
+  }
+
+  .top-mid-cross{
+    margin-left: 450px;
+    margin-top: -80px;
+  }
+
+  .mirage-jungle-molo{
+    margin-left: -200px;
+    margin-top: 200px;
+  }
+
+  .mirage-A-flash{
+    margin-left: 320px;
+    margin-top: 260px;
+  }
+
+  .lamp-flash{
+    margin-left: 630px;
+    margin-top: 80px;
+  }
+
+  .A-site-flash{
+    margin-left: 710px;
+    margin-top: 60px;
+  }
+
+  .Ct-ramp-flash{
+    margin-left: 320px;
+    margin-top: 480px;
+  }
+
+  .mirage-B-flash{
+    margin-left: -400px;
+    margin-top: -550px;
+  }
+
+  .mirage-B-apps-flash{
+    margin-left: -460px;
+    margin-top: -660px;
+  }
+
+  .mirage-window-flash{
+    margin-left: -200px;
+    margin-top: -100px;
   }
