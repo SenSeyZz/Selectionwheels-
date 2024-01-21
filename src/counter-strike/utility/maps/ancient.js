@@ -340,7 +340,7 @@ export default function App() {
           <iframe className={styles["youtube-vid"]}
             width="315"
             height="560"
-            src="https://www.youtube.com/embed/SiDXHgojLd4"
+            src="https://www.youtube.com/embed/SiDXHgojLd4?autoplay=1"
             allow='autoplay'
             frameborder="0"
             allowfullscreen

@@ -14,6 +14,11 @@
     margin-left: 370px;
     margin-top: -380px;
   }
+
+  .overpass-B-ramp-smoke{
+    margin-left: 370px;
+    margin-top: -260px;
+  }
   
   .overpass-heaven-B-smoke{
     margin-left: 170px;
@@ -35,12 +40,82 @@
     margin-top: -560px;
   }
 
-  .overpass-sortie-terro-molo{
-    margin-left: 20px;
-    margin-top: -560px;
+  .overpass-toilet-smoke{
+    margin-left: -200px;
+    margin-top: 30px;
   }
 
-  .overpass-B-toilet-molo{
+  .overpass-door-smoke{
+    margin-left: 180px;
+    margin-top: -40px;
+  }
+
+  .overpass-ABC-smoke{
+    margin-left: 150px;
+    margin-top: -285px;
+  }
+
+  .overpass-monster-smoke{
+    margin-left: 635px;
+    margin-top: -80px;
+  }
+
+  .overpass-Tstairs-smoke{
+    margin-left: 120px;
+    margin-top: 580px;
+  }
+
+  .overpass-sortie-terro-molo{
+    margin-left: 120px;
+    margin-top: 580px;
+  }
+
+  .overpass-B-default-molo{
+    margin-left: 370px;
+    margin-top: -380px;
+  }
+
+  .coin-pute-cross{
+    margin-left: 120px;
+    margin-top: -420px;
+  }
+
+  .toilet-cross{
+    margin-left: -130px;
+    margin-top: -310px;
+  }
+
+  .overpass-A-default-molo{
+    margin-left: -150px;
+    margin-top: -580px;
+  }
+
+  .overpass-short-molo{
+    margin-left: 370px;
+    margin-top: 20px;
+  }
+
+  .short-A-bench{
+    margin-left: -70px;
+    margin-top: -200px;
+  }
+
+  .short-A-vent{
+    margin-left: -60px;
+    margin-top: -380px;
+  }
+
+  .overpass-sorti-short-molo{
+    margin-left: 470px;
+    margin-top: -250px;
+  }
+
+  .overpass-toxic-molo{
+    margin-left: 515px;
+    margin-top: -515px;
+  }
+
+  .overpass-graffiti-molo{
     margin-left: 100px;
-    margin-top: -560px;
+    margin-top: -250px;
   }

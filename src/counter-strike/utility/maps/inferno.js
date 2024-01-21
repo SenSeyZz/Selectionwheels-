@@ -66,6 +66,16 @@ export default function App() {
       setNewBoxMolo(true)
     }else if (className == "inferno_inferno-dark-molo__d39qk img-fluid smaller-image hover-effect") {
       setDarkMolo(true)
+    }else if (className == "inferno_inferno-pit-molo__0kY0C img-fluid smaller-image hover-effect") {
+      setName("pit")
+    }else if (className == "inferno_inferno-C1-molo__teL1Q img-fluid smaller-image hover-effect") {
+      setName("C1")
+    }else if (className == "inferno_inferno-banane-molo__dF65W img-fluid smaller-image hover-effect") {
+      setName("banane")
+    }else if (className == "inferno_inferno-default-molo__7C5Ap img-fluid smaller-image hover-effect") {
+      setName("default")
+    }else if (className == "inferno_inferno-backsiteA-molo__w8Q0l img-fluid smaller-image hover-effect") {
+      setName("backsiteA")
     }
     
   };
@@ -80,6 +90,8 @@ export default function App() {
     if(className == "inferno_inferno-banane-coffins-flash__DaJBD img-fluid smaller-image hover-effect"){
       setName("flash banane from coffins")
       console.log("short");
+    }else if (className == "inferno_inferno-banane-T-flash__mGsxY img-fluid smaller-image hover-effect") {
+      setName("flash banane from T")
     }
     
   };
@@ -550,8 +562,129 @@ export default function App() {
           ></iframe>
           )}
 
+          { seeOtherMolo &&(
+          <img 
+            src='/csImages/incendiary.webp' 
+            className={`${styles["inferno-pit-molo"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnterMolo}>
+          </img>
+          )}
+
+          {showVideo &&  name === "pit" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/QvuetsRnc70?start=71&end=93&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            
+            allowfullscreen
+            
+          ></iframe>
+          )}
+
+          { seeOtherMolo &&(
+          <img 
+            src='/csImages/incendiary.webp' 
+            className={`${styles["inferno-C1-molo"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnterMolo}>
+          </img>
+          )}
+
+          {showVideo &&  name === "C1" && (
+          <iframe className={styles["youtube-vid"]}
+            width="315" 
+            height="560"
+            src="https://www.youtube.com/embed/cP19bypfPr4?autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            
+            allowfullscreen
+            
+          ></iframe>
+          )}
+
+          { seeOtherMolo &&(
+          <img 
+            src='/csImages/incendiary.webp' 
+            className={`${styles["inferno-banane-molo"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnterMolo}>
+          </img>
+          )}
+
+          {showVideo &&  name === "banane" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/QvuetsRnc70?start=124&end=140&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            
+            allowfullscreen
+            
+          ></iframe>
+          )}
+
+          { seeOtherMolo &&(
+          <img 
+            src='/csImages/incendiary.webp' 
+            className={`${styles["inferno-default-molo"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnterMolo}>
+          </img>
+          )}
+
+          {showVideo &&  name === "default" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/QvuetsRnc70?start=146&end=160&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            
+            allowfullscreen
+            
+          ></iframe>
+          )}
+
+          { seeOtherMolo &&(
+          <img 
+            src='/csImages/incendiary.webp' 
+            className={`${styles["inferno-backsiteA-molo"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnterMolo}>
+          </img>
+          )}
+
+          {showVideo &&  name === "backsiteA" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/QvuetsRnc70?start=165&end=176&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            
+            allowfullscreen
+            
+          ></iframe>
+          )}
+
 
           {/* START OF Flashes */}
+
           { seeOtherFlash &&(
           <img 
             src='/csImages/flash.webp' 
@@ -565,7 +698,31 @@ export default function App() {
           <iframe className={styles["youtube-vid"]}
             width="315" 
             height="560"
-            src="https://www.youtube.com/embed/2D3cE9q7Mr4"
+            src="https://www.youtube.com/embed/2D3cE9q7Mr4?autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            
+            allowfullscreen
+            
+          ></iframe>
+          )}
+
+          { seeOtherFlash &&(
+          <img 
+            src='/csImages/flash.webp' 
+            className={`${styles["inferno-banane-T-flash"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnterFlash}>
+          </img>
+          )}
+
+          {showVideo &&  name === "flash banane from T" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/M3R_MrNltDw?start=10&end=54&autoplay=1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture;
               web-share"
