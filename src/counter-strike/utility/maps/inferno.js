@@ -39,7 +39,14 @@ export default function App() {
       console.log("B CT");
     }if(className == "inferno_inferno-B-coffins-smoke__rF1ub img-fluid smaller-image hover-effect"){
       setName("coffins B smoke")
-    
+    }if(className == "inferno_inferno-arch-smoke__JBRB1 img-fluid smaller-image hover-effect"){
+      setName("arch smoke")
+    }if(className == "inferno_inferno-library-smoke__FOsuS img-fluid smaller-image hover-effect"){
+      setName("library smoke")
+    }if(className == "inferno_inferno-default-A-smoke__kVoa3 img-fluid smaller-image hover-effect"){
+      setName("default A smoke")
+    }if(className == "inferno_inferno-T-stairs-smoke__CStNC img-fluid smaller-image hover-effect"){
+      setName("T stairs smoke")
     }
     
   };
@@ -177,7 +184,7 @@ export default function App() {
           ref={videoRef}
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
+            src="https://www.youtube.com/embed/JF9BdvhQwOM?start=157&end=173&autoplay=1"
             allow='autoplay'
             frameborder="0"
             allowfullscreen
@@ -201,7 +208,7 @@ export default function App() {
           ref={videoRef}
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
+            src="https://www.youtube.com/embed/JF9BdvhQwOM?start=193&end=205&autoplay=1"
             allow='autoplay'
             frameborder="0"
             allowfullscreen
@@ -225,7 +232,7 @@ export default function App() {
           ref={videoRef}
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
+            src="https://www.youtube.com/embed/JF9BdvhQwOM?start=90&end=100&autoplay=1"
             allow='autoplay'
             frameborder="0"
             allowfullscreen
@@ -249,7 +256,99 @@ export default function App() {
           ref={videoRef}
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
+            src="https://www.youtube.com/embed/JF9BdvhQwOM?start=48&end=71&autoplay=1"
+            allow='autoplay'
+            frameborder="0"
+            allowfullscreen
+            
+          ></iframe>
+          
+          )}
+
+          { seeOtherSmoke &&(
+          <img 
+            src='/csImages/smoke.png' 
+            className={`${styles["inferno-arch-smoke"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnter}>
+          </img>
+          )}
+
+          {showVideo &&  name === "arch smoke" && (
+          <iframe className={`${styles["youtube-vid"]}`}
+          ref={videoRef}
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/JF9BdvhQwOM?start=228&end=240&autoplay=1"
+            allow='autoplay'
+            frameborder="0"
+            allowfullscreen
+            
+          ></iframe>
+          
+          )}
+
+          { seeOtherSmoke &&(
+          <img 
+            src='/csImages/smoke.png' 
+            className={`${styles["inferno-library-smoke"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnter}>
+          </img>
+          )}
+
+          {showVideo &&  name === "library smoke" && (
+          <iframe className={`${styles["youtube-vid"]}`}
+          ref={videoRef}
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/JF9BdvhQwOM?start=240&end=254&autoplay=1"
+            allow='autoplay'
+            frameborder="0"
+            allowfullscreen
+            
+          ></iframe>
+          
+          )}
+
+          { seeOtherSmoke &&(
+          <img 
+            src='/csImages/smoke.png' 
+            className={`${styles["inferno-default-A-smoke"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnter}>
+          </img>
+          )}
+
+          {showVideo &&  name === "default A smoke" && (
+          <iframe className={`${styles["youtube-vid"]}`}
+          ref={videoRef}
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/JF9BdvhQwOM?start=255&end=266&autoplay=1"
+            allow='autoplay'
+            frameborder="0"
+            allowfullscreen
+            
+          ></iframe>
+          
+          )}
+
+          { seeOtherSmoke &&(
+          <img 
+            src='/csImages/smoke.png' 
+            className={`${styles["inferno-T-stairs-smoke"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnter}>
+          </img>
+          )}
+
+          {showVideo &&  name === "T stairs smoke" && (
+          <iframe className={`${styles["youtube-vid"]}`}
+          ref={videoRef}
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/JF9BdvhQwOM?start=321&end=343&autoplay=1"
             allow='autoplay'
             frameborder="0"
             allowfullscreen

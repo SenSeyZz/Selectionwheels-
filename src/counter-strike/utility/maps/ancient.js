@@ -105,6 +105,7 @@ export default function App() {
         setSeeOtherSmoke(true);
         setSeeOtherMolo(false);
         setSeeOtherFlash(false);
+        setCtThrow(false)
       } else if (utility === "molo") {
         setSeeOtherSmoke(false);
         setSeeOtherMolo(true);
