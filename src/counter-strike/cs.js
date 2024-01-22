@@ -4,7 +4,7 @@ import fadeIn from '../fadeIn';
 export default function App() {
   fadeIn()
   return (
-    <div className="container-fluid black-bg">
+    <div className="container-fluid black-bg"  style={{ height: '132vh' }}>
         <div>
       <ul>
         <li><Link href="/"> Home Page </Link></li>
@@ -14,16 +14,15 @@ export default function App() {
       <h1 class="text-center text-light mt-4">In this part you can choose between learning utilities <br/>
       or having fun with the Wheels !  </h1>
       
-        <div className="col-md-6" style={{ height: '899px' }}>
+        <div className="col-md-6" style={{ height: '60vh' }}>
           <h2 className='bottomMarginForWheel text-center text-light'>To learn utilities follow this path ;)</h2>
           <Link href="/counter-strike/utility"> 
           
-            <div className="ml-3 test-container grayscale image-container rounded-circle" style={{ 
+            <div className="left-container grayscale" style={{ 
               backgroundImage: 'url(/csImages/utility.webp)', 
               backgroundSize: 'cover', 
-              height: '650px', 
-              width:"650px",
-              padding: '20px',
+              height: '100%', 
+              width:"100%"
               }}>
             </div>
           
@@ -35,13 +34,12 @@ export default function App() {
           {/* Content on the right side */}
           <h2 className='bottomMarginForWheel text-light'>To have fun with the wheels follow this path</h2>
           <Link href="/counter-strike/Wheels">
-            <div  className="ml-3 test-container grayscale image-container rounded-circle" style={{ 
+            <div  className="right-container grayscale fun-wheel" style={{ 
               backgroundImage: 'url(/csImages/wheel.png)', 
               backgroundSize: 'cover', 
-              backgroundPosition: 'center center', 
-              height: '650px', 
-              width:"650px",
-              padding: '20px' 
+              backgroundPosition: 'center', 
+              height: '100%', 
+              width: "100%"
               }}>
             </div>
 

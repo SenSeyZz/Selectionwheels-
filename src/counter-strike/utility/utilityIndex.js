@@ -28,6 +28,7 @@ export default function App() {
               backgroundSize: 'cover', 
               height: '100%', 
               backgroundPosition: 'center',
+              width:"100%"
               
               }}>
             </div>
@@ -40,6 +41,7 @@ export default function App() {
               backgroundSize: 'cover', 
               height: '100%', 
               backgroundPosition: 'center',
+              width:"100%"
               
               }}>
             </div>
@@ -55,7 +57,7 @@ export default function App() {
               backgroundSize: 'cover', 
               height: '100%', 
               backgroundPosition: 'center',
-              
+              width:"100%"
               }}>
             </div>
             </Link>
@@ -68,7 +70,7 @@ export default function App() {
               backgroundSize: 'cover', 
               height: '100%', 
               backgroundPosition: 'center',
-              
+              width:"100%"
               }}>
             </div>
             </Link>
@@ -83,7 +85,7 @@ export default function App() {
               backgroundSize: 'cover', 
               height: '100%', 
               backgroundPosition: 'center',
-
+              width:"100%"
               }}>
             </div>
             </Link>
@@ -96,7 +98,7 @@ export default function App() {
               backgroundSize: 'cover', 
               height: '100%', 
               backgroundPosition: 'center',
-
+              width:"100%"
               }}>
             </div>
             </Link>

@@ -115,7 +115,6 @@ li a:hover {
 
 .left-container{
   margin-top: 50px;
-  margin-left: -300px ;
   transition: transform 0.3s ease-in-out;
   visibility: hidden;
 }
@@ -126,9 +125,17 @@ li a:hover {
 
 .right-container{
   margin-top: 50px;
-  margin-right: -300px ;
   transition: transform 0.3s ease-in-out;
   visibility: hidden;
+}
+
+
+@media (max-width: 768px) {
+  .left-container,
+  .right-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .right-container:hover {
