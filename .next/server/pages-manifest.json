@@ -2,6 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/counter-strike/utility/mirage": "pages/counter-strike/utility/mirage.js",
-  "/counter-strike/utility/nuke": "pages/counter-strike/utility/nuke.js"
+  "/counter-strike/utility": "pages/counter-strike/utility.js",
+  "/counter-strike": "pages/counter-strike.js",
+  "/counter-strike/utility/ancient": "pages/counter-strike/utility/ancient.js"
 }

@@ -33,7 +33,7 @@ export default function App() {
 
         <div className="col-md-6">
           {/* Content on the right side */}
-          <h2 className='bottomMarginForWheel text-light'>To have fun with the wheels follow this path ;)</h2>
+          <h2 className='bottomMarginForWheel text-light'>To have fun with the wheels follow this path</h2>
           <Link href="/counter-strike/Wheels">
             <div  className="ml-3 test-container grayscale image-container rounded-circle" style={{ 
               backgroundImage: 'url(/csImages/wheel.png)', 

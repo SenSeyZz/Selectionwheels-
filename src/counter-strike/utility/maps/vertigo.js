@@ -13,6 +13,7 @@ export default function App() {
   const [seeOtherSmoke, setSeeOtherSmoke] = useState (true)
   const [seeOtherMolo, setSeeOtherMolo] = useState (false)
   const [seeOtherFlash, setSeeOtherFlash] = useState (false)
+  const [rampMolo, setRampMolo] = useState(false)
   const [utility, setUtility] = useState("")
 
 
@@ -62,10 +63,23 @@ export default function App() {
     setShowVideo(true);
     setSeeOtherMolo(false)
     setUtility("molo")
-    if(className == "nuke_nuke-hut-roof-molo__OTrZd img-fluid smaller-image hover-effect"){
-      setName("molo hut from roof")
+    if(className == "vertigo_vertigo-heaven-molo__u_scH img-fluid smaller-image hover-effect"){
+      setName("molo heaven")
       console.log("short");
+    }else if (className == "vertigo_vertigo-ramp-molo__nDpue img-fluid smaller-image hover-effect") {
+      setRampMolo(true)
+    }else if (className == "vertigo_vertigo-short-molo__4rDQU img-fluid smaller-image hover-effect") {
+      setName("molo short")
+    }else if (className == "vertigo_vertigo-elevator-molo__v6uZa img-fluid smaller-image hover-effect") {
+      setName("elevator molo")
+    }else if (className == "vertigo_vertigo-mid-molo__2j4lB img-fluid smaller-image hover-effect") {
+      setName("mid molo")
+    }else if (className == "vertigo_vertigo-B-site-molo__Bq_WE img-fluid smaller-image hover-effect") {
+      setName("B site molo")
+    }else if (className == "vertigo_vertigo-heaven-mid-molo__8TlU8 img-fluid smaller-image hover-effect") {
+      setName("heaven mid molo")
     }
+    
     
   };
 
@@ -82,6 +96,21 @@ export default function App() {
     }
     
   };
+
+  const handlecross = (event) => {
+    setRampMolo(false)
+    setName(false)
+    const element = event.target;
+    const className = element.className;
+    console.log(className);
+
+    if(className == "vertigo_molo-ramp-short-cross___16Oy img-fluid smaller-image hover-effect red_cross"){
+      setName("molo ramp from short")
+    }else if (className == "vertigo_molo-ramp-site-cross__h0xv8 img-fluid smaller-image hover-effect red_cross") {
+      setName("molo ramp from site")
+    }
+  
+  }
 
   useEffect(() => {
 
@@ -118,6 +147,7 @@ export default function App() {
         setSeeOtherSmoke(false);
         setSeeOtherMolo(true);
         setSeeOtherFlash(false);
+        setRampMolo(false)
       } else if (utility === "flash") {
         setSeeOtherSmoke(false);
         setSeeOtherMolo(false);
@@ -401,22 +431,193 @@ export default function App() {
           { seeOtherMolo &&(
           <img 
             src='/csImages/incendiary.webp' 
-            className={`${styles["inferno-banana-terro-molo"]} img-fluid smaller-image hover-effect`} 
+            className={`${styles["vertigo-heaven-molo"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnterMolo}>
           </img>
           )}
 
-          {showVideo &&  name === "molo banane from T" && (
+          {showVideo &&  name === "molo heaven" && (
           <iframe className={styles["youtube-vid"]}
-            width="315" 
-            height="560"
-            src="https://www.youtube.com/embed/Yl0VuWAAqiU"
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/b2n-4rZSEjk?start=69&end=80&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            allowfullscreen="1"
+            
+          ></iframe>
+          )}
+
+          { seeOtherMolo &&(
+          <img 
+            src='/csImages/incendiary.webp' 
+            className={`${styles["vertigo-ramp-molo"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnterMolo}>
+          </img>
+          )}
+
+          {rampMolo &&(
+          <img 
+            src='/csImages/red_cross.png' 
+            className={`${styles["molo-ramp-short-cross"]} img-fluid smaller-image hover-effect red_cross`} 
+            alt="Responsive image" 
+            onClick={handlecross}>
+          </img>
+          )}
+
+          {rampMolo &&(
+          <img 
+            src='/csImages/red_cross.png' 
+            className={`${styles["molo-ramp-site-cross"]} img-fluid smaller-image hover-effect red_cross`} 
+            alt="Responsive image" 
+            onClick={handlecross}>
+          </img>
+          )}
+
+          {showVideo &&  name === "molo ramp from short" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/b2n-4rZSEjk?start=43&end=50&autoplay=1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture;
               web-share"
             frameborder="0"
             
+            allowfullscreen="1"
+            
+          ></iframe>
+          )}
+
+          {showVideo &&  name === "molo ramp from site" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/b2n-4rZSEjk?start=31&end=39&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            
+            allowfullscreen="1"
+            
+          ></iframe>
+          )}
+
+          { seeOtherMolo &&(
+          <img 
+            src='/csImages/incendiary.webp' 
+            className={`${styles["vertigo-short-molo"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnterMolo}>
+          </img>
+          )}
+
+          {showVideo &&  name === "molo short" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/b2n-4rZSEjk?start=83&end=91&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            allowfullscreen="1"
+            
+          ></iframe>
+          )}
+
+          { seeOtherMolo &&(
+          <img 
+            src='/csImages/incendiary.webp' 
+            className={`${styles["vertigo-elevator-molo"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnterMolo}>
+          </img>
+          )}
+
+          {showVideo &&  name === "elevator molo" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/b2n-4rZSEjk?start=99&end=107&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            allowfullscreen="1"
+            
+          ></iframe>
+          )}
+
+          { seeOtherMolo &&(
+          <img 
+            src='/csImages/incendiary.webp' 
+            className={`${styles["vertigo-mid-molo"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnterMolo}>
+          </img>
+          )}
+
+          {showVideo &&  name === "mid molo" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/b2n-4rZSEjk?start=125&end=135&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            allowfullscreen="1"
+            
+          ></iframe>
+          )}
+
+          { seeOtherMolo &&(
+          <img 
+            src='/csImages/incendiary.webp' 
+            className={`${styles["vertigo-B-site-molo"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnterMolo}>
+          </img>
+          )}
+
+          {showVideo &&  name === "B site molo" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/b2n-4rZSEjk?start=139&end=148&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
+            allowfullscreen="1"
+            
+          ></iframe>
+          )}
+
+          { seeOtherMolo &&(
+          <img 
+            src='/csImages/incendiary.webp' 
+            className={`${styles["vertigo-heaven-mid-molo"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnterMolo}>
+          </img>
+          )}
+
+          {showVideo &&  name === "heaven mid molo" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/b2n-4rZSEjk?start=153&end=163&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"
             allowfullscreen="1"
             
           ></iframe>

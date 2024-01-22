@@ -14,7 +14,7 @@ export default function App() {
   const [seeOtherMolo, setSeeOtherMolo] = useState (false)
   const [seeOtherFlash, setSeeOtherFlash] = useState (false)
   const [ctThrow, setCtThrow] = useState (false)
-  const [cross, setCross] = useState (false)
+  const [ninja, setNinja] = useState(false)
   const [utility, setUtility] = useState("")
   
 
@@ -53,9 +53,8 @@ export default function App() {
     setShowVideo(true);
     setSeeOtherMolo(false)
     setUtility("molo")
-    if(className == "inferno_inferno-banana-terro-molo__sm2Xd img-fluid smaller-image hover-effect"){
-      setName("molo banane from T")
-      console.log("short");
+    if(className == "ancient_ancient-ninja-molo__PGYCu img-fluid smaller-image hover-effect"){
+      setNinja(true)
     }
     
   };
@@ -73,6 +72,26 @@ export default function App() {
     }
     
   };
+
+  const handlecross = (event) => {
+
+    setCtThrow(false)
+    setNinja(false)
+    const element = event.target;
+    const className = element.className;
+    console.log(className);
+
+    if(className == "ancient_donut-cross__VE7l1 img-fluid smaller-image hover-effect red_cross"){
+      setName("ancient-ctFromDonut-smoke")
+    }else if (className =="ancient_mid-cross__hzqYA img-fluid smaller-image hover-effect red_cross") {
+      setName("ancient-ctFromMid-smoke")
+    }else if (className =="ancient_T-cross__EHmNH img-fluid smaller-image hover-effect red_cross") {
+      setName("ninja from T molo")
+    }else if (className =="ancient_cat-cross___2EmP img-fluid smaller-image hover-effect red_cross") {
+      setName("ninja from cat molo")
+    }
+  
+  }
 
   useEffect(() => {
 
@@ -110,6 +129,7 @@ export default function App() {
         setSeeOtherSmoke(false);
         setSeeOtherMolo(true);
         setSeeOtherFlash(false);
+        setNinja(false)
       } else if (utility === "flash") {
         setSeeOtherSmoke(false);
         setSeeOtherMolo(false);
@@ -117,21 +137,6 @@ export default function App() {
       }
     }
   }, [showVideo, utility]);
-
-  const handlecross = (event) => {
-    setCross(true)
-    setCtThrow(false)
-    const element = event.target;
-    const className = element.className;
-    console.log(className);
-
-    if(className == "ancient_donut-cross__VE7l1 img-fluid smaller-image hover-effect red_cross"){
-      setName("ancient-ctFromDonut-smoke")
-    }else if (className =="ancient_mid-cross__hzqYA img-fluid smaller-image hover-effect red_cross") {
-      setName("ancient-ctFromMid-smoke")
-    }
-  
-  }
 
 
   return (
@@ -355,17 +360,50 @@ export default function App() {
           { seeOtherMolo &&(
           <img 
             src='/csImages/incendiary.webp' 
-            className={`${styles["nuke-hut-roof-molo"]} img-fluid smaller-image hover-effect`} 
+            className={`${styles["ancient-ninja-molo"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnterMolo}>
           </img>
           )}
 
-          {showVideo &&  name === "molo hut from roof" && (
+          {ninja &&(
+          <img 
+            src='/csImages/red_cross.png' 
+            className={`${styles["T-cross"]} img-fluid smaller-image hover-effect red_cross`} 
+            alt="Responsive image" 
+            onClick={handlecross}>
+          </img>
+          )}
+
+          {ninja &&(
+          <img 
+            src='/csImages/red_cross.png' 
+            className={`${styles["cat-cross"]} img-fluid smaller-image hover-effect red_cross`} 
+            alt="Responsive image" 
+            onClick={handlecross}>
+          </img>
+          )}
+
+
+          {showVideo &&  name === "ninja from T molo" && (
           <iframe className={styles["youtube-vid"]}
             width="560" 
             height="315"
-            src="https://www.youtube.com/embed/_Y1CP-0zJAI"
+            src="https://www.youtube.com/embed/mW52eCD2Dr0?start=443&end=451&autoplay=1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+              gyroscope; picture-in-picture;
+              web-share"
+            frameborder="0"    
+            allowfullscreen="1"
+            
+          ></iframe>
+          )}
+
+          {showVideo &&  name === "ninja from cat molo" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560" 
+            height="315"
+            src="https://www.youtube.com/embed/mW52eCD2Dr0?start=472&end=481&autoplay=1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture;
               web-share"

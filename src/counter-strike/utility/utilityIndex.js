@@ -18,46 +18,87 @@ export default function App() {
       
 
       </div>
-      <div class="container">
-        <div class="row">
+      <div class="container" style={{ height: '132vh' }}>
+        <div class="row mb-4" style={{ height: '40vh' }}>
           <div class="col">
             <Link href="/counter-strike/utility/mirage" style={{ textDecoration: 'none' }}> 
-              <img src='/csImages/mirage.jpg' className="img-fluid left-container grayscale rounded-circle grayscale fade " alt="Responsive image"></img>
               
+              <div className="left-container grayscale" style={{ 
+              backgroundImage: 'url(/csImages/mirage.jpg)', 
+              backgroundSize: 'cover', 
+              height: '100%', 
+              backgroundPosition: 'center',
+              
+              }}>
+            </div>
             </Link>
           </div>
           <div class="col">
           <Link href="/counter-strike/utility/inferno" style={{ textDecoration: 'none' }}>
-            <img src='/csImages/inferno.jpg' className="img-fluid right-container rounded-circle grayscale" alt="Responsive image"></img>
-            
+          <div className="right-container grayscale" style={{ 
+              backgroundImage: 'url(/csImages/inferno.jpg)', 
+              backgroundSize: 'cover', 
+              height: '100%', 
+              backgroundPosition: 'center',
+              
+              }}>
+            </div>
             </Link>
           </div>
         </div>
-        <div class="row">
+        <div class="row mb-4" style={{ height: '40vh' }}>
           <div class="col">
             <Link href="/counter-strike/utility/nuke" style={{ textDecoration: 'none' }}> 
-              <img src='/csImages/nuke.png' className="img-fluid left-container grayscale rounded-circle grayscale " alt="Responsive image"></img>
+
+            <div className="left-container grayscale" style={{ 
+              backgroundImage: 'url(/csImages/nuke.png)', 
+              backgroundSize: 'cover', 
+              height: '100%', 
+              backgroundPosition: 'center',
               
+              }}>
+            </div>
             </Link>
           </div>
           <div class="col">
           <Link href="/counter-strike/utility/overpass" style={{ textDecoration: 'none' }}>
-            <img src='/csImages/overpass.avif' className="img-fluid right-container rounded-circle grayscale" alt="Responsive image"></img>
             
+            <div className="right-container grayscale" style={{ 
+              backgroundImage: 'url(/csImages/overpass.avif)', 
+              backgroundSize: 'cover', 
+              height: '100%', 
+              backgroundPosition: 'center',
+              
+              }}>
+            </div>
             </Link>
           </div>
         </div>
-        <div class="row">
+        <div class="row mb-4" style={{ height: '40vh' }}>
           <div class="col">
             <Link href="/counter-strike/utility/vertigo" style={{ textDecoration: 'none' }}> 
-              <img src='/csImages/vertigo.webp' className="img-fluid left-container grayscale rounded-circle grayscale " alt="Responsive image"></img>
-              
+
+            <div className="left-container grayscale" style={{ 
+              backgroundImage: 'url(/csImages/vertigo.webp)', 
+              backgroundSize: 'cover', 
+              height: '100%', 
+              backgroundPosition: 'center',
+
+              }}>
+            </div>
             </Link>
+
           </div>
           <div class="col">
           <Link href="/counter-strike/utility/ancient" style={{ textDecoration: 'none' }}>
-            <img src='/csImages/ancient.avif' className="img-fluid right-container rounded-circle grayscale" alt="Responsive image"></img>
-            
+          <div className="right-container grayscale" style={{ 
+              backgroundImage: 'url(/csImages/ancient.avif)', 
+              backgroundSize: 'cover', 
+              height: '100%', 
+              backgroundPosition: 'center',
+
+              }}>
+            </div>
             </Link>
           </div>
         </div>

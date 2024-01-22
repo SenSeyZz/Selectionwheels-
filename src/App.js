@@ -7,7 +7,7 @@ export default function App() {
 
   return (
     
-    <div className="container-fluid black-bg">
+    <div className="container-fluid black-bg" style={{ height: '98vh' }}>
   
       <div className="row">
       <h1 className="text-center text-light mt-4">Welcome to this website </h1>
@@ -15,7 +15,7 @@ export default function App() {
 
       <p class="text-center text-light">My website is there to help you have fun while playing ! <br/> You will also be able to discover multiple important information so do not wait and go ahaead ! </p>
       
-        <div className="col-md-6" style={{ height: '899px' }}>
+        <div className="col-md-6" style={{ height: '70vh' }}>
         
           <Link href="/counter-strike"> 
           
@@ -33,9 +33,9 @@ export default function App() {
         </div>
 
         <div className="col-md-6">
-          {/* Content on the right side */}
+          
           <Link href="/league-of-legends">
-            <div  className="image-container grayscale" style={{ 
+            <div  className="image-container grayscale image-container-right" style={{ 
               backgroundImage: 'url(/lolImages/league.jpg)', 
               backgroundSize: 'cover', 
               backgroundPosition: 'center center', 

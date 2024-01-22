@@ -27,15 +27,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/counter-strike/utility.js"
     ],
-    "/counter-strike/utility/mirage": [
+    "/counter-strike/utility/ancient": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/counter-strike/utility/mirage.js"
-    ],
-    "/counter-strike/utility/nuke": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/counter-strike/utility/nuke.js"
+      "static/chunks/pages/counter-strike/utility/ancient.js"
     ]
   },
   "ampFirstPages": []
