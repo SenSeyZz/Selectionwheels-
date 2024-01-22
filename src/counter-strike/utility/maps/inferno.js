@@ -206,7 +206,7 @@ export default function App() {
             src="https://www.youtube.com/embed/F_DVcBW3KAg?autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -228,8 +228,7 @@ export default function App() {
             src="https://www.youtube.com/embed/JF9BdvhQwOM?start=157&end=173&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
-            
+            allowfullscreen="1"
             
           ></iframe>
           
@@ -252,8 +251,7 @@ export default function App() {
             src="https://www.youtube.com/embed/JF9BdvhQwOM?start=193&end=205&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
-            
+            allowfullscreen="1"          
             
           ></iframe>
           
@@ -276,7 +274,7 @@ export default function App() {
             src="https://www.youtube.com/embed/JF9BdvhQwOM?start=90&end=100&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
             
           ></iframe>
@@ -300,7 +298,7 @@ export default function App() {
             src="https://www.youtube.com/embed/JF9BdvhQwOM?start=48&end=71&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           
@@ -323,7 +321,7 @@ export default function App() {
             src="https://www.youtube.com/embed/JF9BdvhQwOM?start=228&end=240&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           
@@ -346,7 +344,7 @@ export default function App() {
             src="https://www.youtube.com/embed/JF9BdvhQwOM?start=240&end=254&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           
@@ -369,7 +367,7 @@ export default function App() {
             src="https://www.youtube.com/embed/JF9BdvhQwOM?start=255&end=266&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           
@@ -392,7 +390,7 @@ export default function App() {
             src="https://www.youtube.com/embed/JF9BdvhQwOM?start=321&end=343&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           
@@ -418,8 +416,7 @@ export default function App() {
               gyroscope; picture-in-picture;
               web-share"
             frameborder="0"
-            
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -469,8 +466,7 @@ export default function App() {
               gyroscope; picture-in-picture;
               web-share"
             frameborder="0"
-            
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -483,9 +479,8 @@ export default function App() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture;
               web-share"
-            frameborder="0"
-            
-            allowfullscreen
+            frameborder="0"          
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -498,9 +493,8 @@ export default function App() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture;
               web-share"
-            frameborder="0"
-            
-            allowfullscreen
+            frameborder="0"           
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -540,9 +534,8 @@ export default function App() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture;
               web-share"
-            frameborder="0"
-            
-            allowfullscreen
+            frameborder="0"          
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -555,9 +548,8 @@ export default function App() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture;
               web-share"
-            frameborder="0"
-            
-            allowfullscreen
+            frameborder="0"           
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -580,8 +572,7 @@ export default function App() {
               gyroscope; picture-in-picture;
               web-share"
             frameborder="0"
-            
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -603,9 +594,8 @@ export default function App() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture;
               web-share"
-            frameborder="0"
-            
-            allowfullscreen
+            frameborder="0"       
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -627,9 +617,8 @@ export default function App() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture;
               web-share"
-            frameborder="0"
-            
-            allowfullscreen
+            frameborder="0"        
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -651,9 +640,8 @@ export default function App() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture;
               web-share"
-            frameborder="0"
-            
-            allowfullscreen
+            frameborder="0"      
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -675,9 +663,8 @@ export default function App() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture;
               web-share"
-            frameborder="0"
-            
-            allowfullscreen
+            frameborder="0"       
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -702,9 +689,8 @@ export default function App() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture;
               web-share"
-            frameborder="0"
-            
-            allowfullscreen
+            frameborder="0"          
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -726,9 +712,8 @@ export default function App() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media;
               gyroscope; picture-in-picture;
               web-share"
-            frameborder="0"
-            
-            allowfullscreen
+            frameborder="0"        
+            allowfullscreen="1"
             
           ></iframe>
           )}

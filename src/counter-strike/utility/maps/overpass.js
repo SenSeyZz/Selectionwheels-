@@ -199,7 +199,7 @@ useEffect(() => {
             src="https://www.youtube.com/embed/bDD2Yd4rDvc?end=13&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
           
             
           ></iframe>
@@ -221,7 +221,7 @@ useEffect(() => {
             src="https://www.youtube.com/embed/bDD2Yd4rDvc?start=15&end=28&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
           
             
           ></iframe>
@@ -243,7 +243,7 @@ useEffect(() => {
             src="https://www.youtube.com/embed/3TP7jIDzMpY?start=29&end=42&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
             
           ></iframe>
@@ -266,7 +266,7 @@ useEffect(() => {
             src="https://www.youtube.com/embed/3TP7jIDzMpY?start=245&end=254&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
             
           ></iframe>
@@ -289,7 +289,7 @@ useEffect(() => {
             src="https://www.youtube.com/embed/3TP7jIDzMpY?start=294&end=304&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
             
           ></iframe>
@@ -312,7 +312,7 @@ useEffect(() => {
             src="https://www.youtube.com/embed/UgkHW-JjEYA?autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
           ></iframe>
           
@@ -334,7 +334,7 @@ useEffect(() => {
             src="https://www.youtube.com/embed/3TP7jIDzMpY?start=8&end=20&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
           ></iframe>
           
@@ -356,7 +356,7 @@ useEffect(() => {
             src="https://www.youtube.com/embed/3TP7jIDzMpY?start=70&end=83&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
           ></iframe>
           
@@ -378,7 +378,7 @@ useEffect(() => {
             src="https://www.youtube.com/embed/3TP7jIDzMpY?start=117&end=125&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
           ></iframe>
           
@@ -400,7 +400,7 @@ useEffect(() => {
             src="https://www.youtube.com/embed/3TP7jIDzMpY?start=346&end=356&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
           ></iframe>
           
@@ -422,7 +422,7 @@ useEffect(() => {
             src="https://www.youtube.com/embed/3TP7jIDzMpY?start=372&end=387&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
           ></iframe>
           
@@ -451,7 +451,7 @@ useEffect(() => {
             web-share"
             frameborder="0"
             
-            allowfullscreen
+            allowfullscreen="1"
            
           ></iframe>
           )}
@@ -493,7 +493,7 @@ useEffect(() => {
             web-share"
             frameborder="0"
             
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -509,7 +509,7 @@ useEffect(() => {
             web-share"
             frameborder="0"
             
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -533,7 +533,7 @@ useEffect(() => {
             web-share"
             frameborder="0"
             
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -575,7 +575,7 @@ useEffect(() => {
             web-share"
             frameborder="0"
             
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -591,7 +591,7 @@ useEffect(() => {
             web-share"
             frameborder="0"
             
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -615,7 +615,7 @@ useEffect(() => {
             web-share"
             frameborder="0"
             
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -639,7 +639,7 @@ useEffect(() => {
             web-share"
             frameborder="0"
             
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -663,7 +663,7 @@ useEffect(() => {
             web-share"
             frameborder="0"
             
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -688,7 +688,7 @@ useEffect(() => {
               web-share"
             frameborder="0"
             
-            allowfullscreen
+            allowfullscreen="1"
           
           ></iframe>
           )}

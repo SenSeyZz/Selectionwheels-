@@ -220,7 +220,7 @@ export default function App() {
             src="https://www.youtube.com/embed/F_DVcBW3KAg?start=9&end=30&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
           
             
           ></iframe>
@@ -242,7 +242,7 @@ export default function App() {
             src="https://www.youtube.com/embed/wZ7UnVk-Zoo?autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
             
           ></iframe>
@@ -265,7 +265,7 @@ export default function App() {
             src="https://www.youtube.com/embed/9vjcZPteWrY?start=59&end=80&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
             
           ></iframe>
@@ -288,7 +288,7 @@ export default function App() {
             src="https://www.youtube.com/embed/ypjJca0K_1s?start=295&end=324&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -311,7 +311,7 @@ export default function App() {
             src="https://www.youtube.com/embed/aTybn7crELo?start=13&end=35&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
           ></iframe>
           
@@ -333,7 +333,7 @@ export default function App() {
             src="https://www.youtube.com/embed/ypjJca0K_1s?start=276&end=294&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
             
           ></iframe>
@@ -356,7 +356,7 @@ export default function App() {
             src="https://www.youtube.com/embed/ypjJca0K_1s?start=325&end=367&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
             
           ></iframe>
@@ -379,7 +379,7 @@ export default function App() {
             src="https://www.youtube.com/embed/Vjtu7FsKs40?start=10&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
             
           ></iframe>
@@ -402,7 +402,7 @@ export default function App() {
             src="https://www.youtube.com/embed/Vjtu7FsKs40?end=10&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -425,7 +425,7 @@ export default function App() {
             src="https://www.youtube.com/embed/ypjJca0K_1s?start=369&end=393&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
             
           ></iframe>
@@ -448,7 +448,7 @@ export default function App() {
             src="https://www.youtube.com/embed/ZxsBulS58PM"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -471,7 +471,7 @@ export default function App() {
             src="https://www.youtube.com/embed/ypjJca0K_1s?start=62&end=75&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -493,7 +493,7 @@ export default function App() {
             src="https://www.youtube.com/embed/ypjJca0K_1s?start=145&end=154&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -517,7 +517,7 @@ export default function App() {
             src="https://www.youtube.com/embed/3_8KvM3aMAg?start=11&end=20&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -530,7 +530,7 @@ export default function App() {
             src="https://www.youtube.com/embed/3_8KvM3aMAg?start=23&end=33&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -570,7 +570,7 @@ export default function App() {
             src="https://www.youtube.com/embed/3_8KvM3aMAg?end=9&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -610,7 +610,7 @@ export default function App() {
             src="https://www.youtube.com/embed/3_8KvM3aMAg?start=50&end=60&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -623,7 +623,7 @@ export default function App() {
             src="https://www.youtube.com/embed/3_8KvM3aMAg?start=65&end=73&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -645,7 +645,7 @@ export default function App() {
             src="https://www.youtube.com/embed/3_8KvM3aMAg?start=77&end=85&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -667,7 +667,7 @@ export default function App() {
             src="https://www.youtube.com/embed/3_8KvM3aMAg?start=130&end=140&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -681,6 +681,15 @@ export default function App() {
             className={`${styles["mirage-A-flash"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnterFlash}>
+          </img>
+          )}
+
+          { seeOtherFlash &&(
+          <img 
+            src='/csImages/3.png' 
+            className={`${styles["mirage-A-flash-3"]} img-fluid smaller-image`} 
+            alt="Responsive image" 
+           >
           </img>
           )}
           
@@ -718,7 +727,7 @@ export default function App() {
             src="https://www.youtube.com/embed/u4iqihJis2k?start=14&end=22&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -731,7 +740,7 @@ export default function App() {
             src="https://www.youtube.com/embed/u4iqihJis2k?start=50&end=63&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -744,7 +753,7 @@ export default function App() {
             src="https://www.youtube.com/embed/u4iqihJis2k?start=100&end=110&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -766,7 +775,7 @@ export default function App() {
             src="https://www.youtube.com/embed/u4iqihJis2k?start=183&end=195&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -788,7 +797,7 @@ export default function App() {
             src="https://www.youtube.com/embed/u4iqihJis2k?start=215&end=227&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -810,7 +819,7 @@ export default function App() {
             src="https://www.youtube.com/embed/u4iqihJis2k?start=255&end=265&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>

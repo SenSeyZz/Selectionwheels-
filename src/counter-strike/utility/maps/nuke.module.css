@@ -11,41 +11,51 @@
   }
 
 .nuke-outside1-smoke{
-    margin-left: 750px;
-    margin-top: 760px;
+    margin-left: 340px;
+    margin-top: 710px;
   }
   
   .nuke-outside2-smoke{
-    margin-left: 700px;
-    margin-top: 850px;
+    margin-left: 270px;
+    margin-top: 800px;
   }
   
   .nuke-outside3-smoke{
-    margin-left: 630px;
-    margin-top: 850px;
+    margin-left: 200px;
+    margin-top: 800px;
   }
   
   .nuke-hut-smoke{
-    margin-left: 630px;
-    margin-top: 665px;
+    margin-left: 200px;
+    margin-top: 635px;
   }
 
   .nuke-heaven-smoke{
-    margin-left: 680px;
-    margin-top: 270px;
-  }
-
-  .nuke-hut-roof-molo{
-    margin-left: 680px;
-    margin-top: 270px;
+    margin-left: 220px;
+    margin-top: 240px;
   }
 
   .nuke-lurk-door-smoke{
-    margin-left: 500px;
-    margin-top: 565px;
+    margin-left: 60px;
+    margin-top: 520px;
   }
 
   .nuke-setup-smoke{
-    margin-left: 480px;
-    margin-top: 780px;
+    margin-left: 50px;
+    margin-top: 750px;
+  }
+
+  .nuke-hut-roof-molo{
+    margin-left: 120px;
+    margin-top: 635px;
+  }
+
+  .nuke-A-roof-molo{
+    margin-left: 130px;
+    margin-top: 280px
+  }
+
+  .nuke-secret-molo{
+    margin-left: 300px;
+    margin-top: 850px
   }

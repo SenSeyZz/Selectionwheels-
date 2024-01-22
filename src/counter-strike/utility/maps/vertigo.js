@@ -167,7 +167,7 @@ export default function App() {
             src="https://www.youtube.com/embed/MxLga5CnMFs?start=342&end=359&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
             
           ></iframe>
@@ -190,7 +190,7 @@ export default function App() {
             src="https://www.youtube.com/embed/MxLga5CnMFs?start=380&end=400&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
             
           ></iframe>
@@ -213,7 +213,7 @@ export default function App() {
             src="https://www.youtube.com/embed/MxLga5CnMFs?start=363&end=378&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
             
           ></iframe>
@@ -236,7 +236,7 @@ export default function App() {
             src="https://www.youtube.com/embed/MxLga5CnMFs?start=170&end=183&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           
@@ -258,7 +258,7 @@ export default function App() {
             src="https://www.youtube.com/embed/MxLga5CnMFs?start=185&end=199&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
           ></iframe>
           
@@ -280,7 +280,7 @@ export default function App() {
             src="https://www.youtube.com/embed/MxLga5CnMFs?start=15&end=38&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
           ></iframe>
           
@@ -302,7 +302,7 @@ export default function App() {
             src="https://www.youtube.com/embed/MxLga5CnMFs?start=75&end=98&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
           ></iframe>
           
@@ -324,7 +324,7 @@ export default function App() {
             src="https://www.youtube.com/embed/MxLga5CnMFs?start=215&end=226&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
           ></iframe>
           
@@ -346,7 +346,7 @@ export default function App() {
             src="https://www.youtube.com/embed/MxLga5CnMFs?start=291&end=301&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
           ></iframe>
           
@@ -368,7 +368,7 @@ export default function App() {
             src="https://www.youtube.com/embed/MxLga5CnMFs?start=303&end=317&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
           ></iframe>
           
@@ -390,7 +390,7 @@ export default function App() {
             src="https://www.youtube.com/embed/MxLga5CnMFs?start=402&end=422&autoplay=1"
             allow='autoplay'
             frameborder="0"
-            allowfullscreen
+            allowfullscreen="1"
            
           ></iframe>
           
@@ -417,7 +417,7 @@ export default function App() {
               web-share"
             frameborder="0"
             
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           )}
@@ -442,7 +442,7 @@ export default function App() {
               web-share"
             frameborder="0"
             
-            allowfullscreen
+            allowfullscreen="1"
             
           ></iframe>
           )}
