@@ -62,11 +62,6 @@
   margin-top: 150px;
 }
 
-.ancient-a-flash{
-  margin-left: 0px;
-  margin-top: 0px;
-}
-
 .ancient-ninja-molo{
   margin-left: 440px;
   margin-top: -80px;
@@ -80,4 +75,54 @@
 .cat-cross{
   margin-left: 400px;
   margin-top: 150px;
+}
+
+.ancient-cat-molo{
+  margin-left: 100px;
+  margin-top: 140px;
+}
+
+.ancient-elbow-molo{
+  margin-left: -200px;
+  margin-top: 130px;
+}
+
+.ancient-chubby-molo{
+  margin-left: 70px;
+  margin-top: -85px;
+}
+
+.ancient-orange-molo{
+  margin-left: 430px;
+  margin-top: 140px;
+}
+
+.ancient-A-site-molo{
+  margin-left: 440px;
+  margin-top: -240px;
+}
+
+.A-Ct-cross{
+  margin-left: 560px;
+  margin-top: -540px;
+}
+
+.A-T-cross{
+  margin-left: 630px;
+  margin-top: 430px;
+}
+
+.A-door-cross{
+  margin-left: 610px;
+  margin-top: 200px;
+}
+
+.ancient-short-molo{
+  margin-left: 660px;
+  margin-top: -320px;
+}
+
+.ancient-a-flash{
+  margin-left: 0px;
+  margin-top: 0px;
 }

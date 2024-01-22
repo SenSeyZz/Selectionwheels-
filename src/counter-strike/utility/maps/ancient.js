@@ -3,6 +3,9 @@ import fadeIn from '../../../fadeIn';
 import React, { useState, useEffect } from 'react';
 import styles from "./ancient.module.css"
 import TopElementsContainer from './topElementContainer';
+import SmokeElementAncient from './ancient_smoke';
+import MoloElementAncient from './ancient_molo';
+import FlashElementAncient from './ancient_flash';
 
 
 
@@ -15,6 +18,7 @@ export default function App() {
   const [seeOtherFlash, setSeeOtherFlash] = useState (false)
   const [ctThrow, setCtThrow] = useState (false)
   const [ninja, setNinja] = useState(false)
+  const [ASite, setASite] = useState(false)
   const [utility, setUtility] = useState("")
   
 
@@ -55,7 +59,20 @@ export default function App() {
     setUtility("molo")
     if(className == "ancient_ancient-ninja-molo__PGYCu img-fluid smaller-image hover-effect"){
       setNinja(true)
+    }else if (className == "ancient_ancient-cat-molo__UAdGC img-fluid smaller-image hover-effect") {
+      setName("cat molo")
+    }else if (className == "ancient_ancient-elbow-molo__i7ak5 img-fluid smaller-image hover-effect") {
+      setName("elbow molo")
+    }else if (className == "ancient_ancient-chubby-molo__L0jHY img-fluid smaller-image hover-effect") {
+      setName("chubby molo")
+    }else if (className == "ancient_ancient-orange-molo__wQJji img-fluid smaller-image hover-effect") {
+      setName("orange molo")
+    }else if (className == "ancient_ancient-A-site-molo__yx2Sq img-fluid smaller-image hover-effect") {
+      setASite(true)
+    }else if (className == "ancient_ancient-short-molo__m_xBa img-fluid smaller-image hover-effect") {
+      setName("short molo")
     }
+    
     
   };
 
@@ -77,6 +94,7 @@ export default function App() {
 
     setCtThrow(false)
     setNinja(false)
+    setASite(false)
     const element = event.target;
     const className = element.className;
     console.log(className);
@@ -89,6 +107,12 @@ export default function App() {
       setName("ninja from T molo")
     }else if (className =="ancient_cat-cross___2EmP img-fluid smaller-image hover-effect red_cross") {
       setName("ninja from cat molo")
+    }else if (className =="ancient_A-Ct-cross__0Y4IY img-fluid smaller-image hover-effect red_cross") {
+      setName("A site from ct molo")
+    }else if (className =="ancient_A-T-cross__97FZg img-fluid smaller-image hover-effect red_cross") {
+      setName("A site from T molo")
+    }else if (className =="ancient_A-door-cross__eQCm4 img-fluid smaller-image hover-effect red_cross") {
+      setName("A site from door molo")
     }
   
   }
@@ -130,6 +154,7 @@ export default function App() {
         setSeeOtherMolo(true);
         setSeeOtherFlash(false);
         setNinja(false)
+        setASite(false)
       } else if (utility === "flash") {
         setSeeOtherSmoke(false);
         setSeeOtherMolo(false);
@@ -162,280 +187,36 @@ export default function App() {
           <div className="col d-flex justify-content-center align-items-center">
           <img src='/csImages/layout_ancient.webp' alt="Background"></img>
           
-          {seeOtherSmoke &&(
-          <img 
-            src='/csImages/smoke.png' 
-            className={`${styles["ancient-backsiteA-smoke"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnter}>
-          </img>
-          )}
-
-          {showVideo &&  name === "ancient-backsiteA-smoke" && (
-          <iframe className={styles["youtube-vid"]}
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/qGst7qOFkgw?autoplay=1&mute=1&end=20"
-            allow='autoplay'
-            frameborder="0"
-            allowfullscreen="1"
-            
-            
-          ></iframe>
-          
-          )}
-          
-          {seeOtherSmoke &&(
-          <img 
-            src='/csImages/smoke.png' 
-            className={`${styles["ancient-ctFromDonut-smoke"]} img-fluid smaller-image hover-effect`}
-            alt="Responsive image" 
-            onClick={handleMouseEnter}>
-          </img>
-          )}
-
-          {showVideo &&  name === "ancient-ctFromDonut-smoke" && cross && (
-          <iframe className={styles["youtube-vid"]}
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/qGst7qOFkgw?start=21&end=38&autoplay=1&mute=1"
-            allow='autoplay'
-            frameborder="0"
-            allowfullscreen="1"
-            
-            
-          ></iframe>
-          
-          )}
-
-          {showVideo &&  name === "ancient-ctFromMid-smoke" && cross && (
-          <iframe className={styles["youtube-vid"]}
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/qGst7qOFkgw?start=57&end=75&autoplay=1&mute=1"
-            allow='autoplay'
-            frameborder="0"
-            allowfullscreen="1"
-            
-            
-          ></iframe>
-          
-          )}
-
-          {ctThrow &&(
-          <img 
-            src='/csImages/red_cross.png' 
-            className={`${styles["donut-cross"]} img-fluid smaller-image hover-effect red_cross`} 
-            alt="Responsive image" 
-            onClick={handlecross}>
-          </img>
-          )}
-
-          {ctThrow &&(
-          <img 
-            src='/csImages/red_cross.png' 
-            className={`${styles["mid-cross"]} img-fluid smaller-image hover-effect red_cross`} 
-            alt="Responsive image" 
-            onClick={handlecross}>
-          </img>
-          )}
-
-          {seeOtherSmoke &&(
-          <img 
-            src='/csImages/smoke.png' 
-            className={`${styles["ancient-tunnel-smoke"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnter}>
-          </img>
-          )}
-
-          {showVideo &&  name === "ancient-tunnel-smoke" && (
-          <iframe className={styles['youtube-vid']}  
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/qGst7qOFkgw?start=39&end=56&autoplay=1&mute=1"
-            allow='autoplay'
-            frameborder="0"
-            allowfullscreen="1"
-            
-            
-          ></iframe>
-          
-          )}
-
-          {seeOtherSmoke &&(
-          <img 
-            src='/csImages/smoke.png' 
-            className={`${styles["ancient-bLong-smoke"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnter}>
-          </img>
-          )}
-
-          {showVideo &&  name === "ancient-bLong-smoke" && (
-          <iframe className={styles["youtube-vid"]} 
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/qGst7qOFkgw?start=78&end=93&autoplay=1&mute=1"
-            allow='autoplay'
-            frameborder="0"
-            allowfullscreen="1"
-            
-            
-          ></iframe>
-          
-          )}
-
-          {seeOtherSmoke &&(
-          <img 
-            src='/csImages/smoke.png' 
-            className={`${styles["ancient-bShort-smoke"]} img-fluid smaller-image hover-effect`}  
-            alt="Responsive image" 
-            onClick={handleMouseEnter}>
-          </img>
-          )}
-
-          {showVideo &&  name === "ancient-bShort-smoke" && (
-          <iframe className={styles["youtube-vid"]} 
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/qGst7qOFkgw?start=94&end=108&autoplay=1&mute=1"
-            allow='autoplay'
-            frameborder="0"
-            allowfullscreen="1"
-            
-            
-          ></iframe>
-          
-          )}
-
-          {seeOtherSmoke &&(
-          <img 
-            src='/csImages/smoke.png' 
-            className={`${styles["ancient-cave-smoke"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnter}>
-          </img>
-          )}
-
-          {showVideo &&  name === "ancient-cave-smoke" && (
-          <iframe className={styles["youtube-vid"]}
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/qGst7qOFkgw?start=109&end=125&autoplay=1&mute=1"
-            allow='autoplay'
-            frameborder="0"
-            allowfullscreen="1"
-            
-            
-          ></iframe>
-          
-          )}
-
-          {seeOtherSmoke &&(
-          <img 
-            src='/csImages/smoke.png' 
-            className={`${styles["ancient-cat-spawn-smoke"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnter}>
-          </img>
-          )}
-
-          {showVideo &&  name === "ancient-cat-smoke" && (
-          <iframe className={styles["youtube-vid"]}
-            width="315"
-            height="560"
-            src="https://www.youtube.com/embed/SiDXHgojLd4?autoplay=1"
-            allow='autoplay'
-            frameborder="0"
-            allowfullscreen="1"
-            
-            
-          ></iframe>
-          
-          )}
+          <SmokeElementAncient
+            seeOtherSmoke={seeOtherSmoke}
+            handleMouseEnter={handleMouseEnter}
+            showVideo={showVideo}
+            name={name}
+            handlecross={handlecross}
+            ctThrow={ctThrow}
+          />
 
           {/* START OF MOLOTOVS */}
 
-          { seeOtherMolo &&(
-          <img 
-            src='/csImages/incendiary.webp' 
-            className={`${styles["ancient-ninja-molo"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnterMolo}>
-          </img>
-          )}
-
-          {ninja &&(
-          <img 
-            src='/csImages/red_cross.png' 
-            className={`${styles["T-cross"]} img-fluid smaller-image hover-effect red_cross`} 
-            alt="Responsive image" 
-            onClick={handlecross}>
-          </img>
-          )}
-
-          {ninja &&(
-          <img 
-            src='/csImages/red_cross.png' 
-            className={`${styles["cat-cross"]} img-fluid smaller-image hover-effect red_cross`} 
-            alt="Responsive image" 
-            onClick={handlecross}>
-          </img>
-          )}
-
-
-          {showVideo &&  name === "ninja from T molo" && (
-          <iframe className={styles["youtube-vid"]}
-            width="560" 
-            height="315"
-            src="https://www.youtube.com/embed/mW52eCD2Dr0?start=443&end=451&autoplay=1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-              gyroscope; picture-in-picture;
-              web-share"
-            frameborder="0"    
-            allowfullscreen="1"
-            
-          ></iframe>
-          )}
-
-          {showVideo &&  name === "ninja from cat molo" && (
-          <iframe className={styles["youtube-vid"]}
-            width="560" 
-            height="315"
-            src="https://www.youtube.com/embed/mW52eCD2Dr0?start=472&end=481&autoplay=1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-              gyroscope; picture-in-picture;
-              web-share"
-            frameborder="0"    
-            allowfullscreen="1"
-            
-          ></iframe>
-          )}
+          <MoloElementAncient
+            seeOtherMolo={seeOtherMolo}
+            handleMouseEnterMolo={handleMouseEnterMolo}
+            showVideo={showVideo}
+            name={name}
+            handlecross={handlecross}
+            ninja={ninja}
+            ASite={ASite}
+          />
 
           {/* START OF Flashes */}
-          { seeOtherFlash &&(
-          <img 
-            src='/csImages/flash.webp' 
-            className={`${styles["ancient-a-flash"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnterFlash}>
-          </img>
-          )}
-
-          {showVideo &&  name === "flash A" && (
-          <iframe className={styles["youtube-vid"]}
-            width="315" 
-            height="560"
-            src="https://www.youtube.com/embed/aJdnuhMl6Ho"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-              gyroscope; picture-in-picture;
-              web-share"
-            frameborder="0"   
-            allowfullscreen="1"
           
-          ></iframe>
-          )}
+          <FlashElementAncient
+            seeOtherFlash={seeOtherFlash}
+            handleMouseEnterFlash={handleMouseEnterFlash}
+            showVideo={showVideo}
+            name={name}
+          />
+
 
           </div>
           </div>

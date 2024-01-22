@@ -3,8 +3,9 @@ import fadeIn from '../../../fadeIn';
 import React, { use, useState, useEffect } from 'react';
 import styles from "./nuke.module.css"; 
 import TopElementsContainer from './topElementContainer';
-
-
+import SmokeElementNuke from './nuke_smoke';
+import MoloElementNuke from './nuke_molo';
+import FlashElementNuke from './nuke_flash';
 
 export default function App() {
   
@@ -60,7 +61,10 @@ export default function App() {
       setName("molo A site from roof")
     }else if (className == "nuke_nuke-secret-molo__X3ZKW img-fluid smaller-image hover-effect") {
       setName("molo secret")
+    }else if (className == "nuke_nuke-dark-molo__DvZyL img-fluid smaller-image hover-effect") {
+      setName("molo dark")
     }
+    
     
   };
 
@@ -146,254 +150,30 @@ export default function App() {
           <div className='col d-flex justify-content-center align-items-center'>
           <img src='/csImages/nuke_layout.svg'  alt="Background"></img>
           
-          {seeOtherSmoke &&(
-          <img 
-            src='/csImages/smoke.png' 
-            className={`${styles["nuke-outside1-smoke"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnter}>
-          </img>
-          )}
-
-          {showVideo && name == "outside1 smoke" && (
-          <iframe className={`${styles["youtube-vid"]}`}
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/EIHqy_mJnDk?start=302&end=314&autoplay=1"
-            allow='autoplay'
-            frameborder="0"
-            allowfullscreen="1"
-            
-          ></iframe>
-          )}
-          
-          {seeOtherSmoke && (
-          <img 
-            src='/csImages/smoke.png' 
-            className={`${styles["nuke-outside2-smoke"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnter}>
-          </img>
-          )}
-
-          {showVideo &&  name === "outside2 smoke" && (
-          <iframe className={`${styles["youtube-vid"]}`}
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/EIHqy_mJnDk?start=176&end=188&autoplay=1"
-            allow='autoplay'
-            frameborder="0"
-            allowfullscreen="1"
-            
-          ></iframe>
-          
-          )}
-
-          {seeOtherSmoke && (
-          <img 
-            src='/csImages/smoke.png' 
-            className={`${styles["nuke-outside3-smoke"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnter}>
-          </img>
-          )}
-
-          {showVideo &&  name === "outside3 smoke" && (
-          <iframe className={`${styles["youtube-vid"]}`}
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/EIHqy_mJnDk?start=166&end=174&autoplay=1"
-            allow='autoplay'
-            frameborder="0"
-            allowfullscreen="1"         
-            
-          ></iframe>
-          
-          )}
-
-          {seeOtherSmoke && (
-          <img 
-            src='/csImages/smoke.png' 
-            className={`${styles["nuke-heaven-smoke"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnter}>
-          </img>
-          )}
-
-          {showVideo &&  name === "heaven smoke" && (
-          <iframe className={`${styles["youtube-vid"]}`}
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/TqkGoHbLFhw?end=20&autoplay=1"
-            allow='autoplay'
-            frameborder="0"
-            allowfullscreen="1"
-                  
-          ></iframe>
-          
-          )}
-          
-          { seeOtherSmoke &&(
-          <img 
-            src='/csImages/smoke.png' 
-            className={`${styles["nuke-hut-smoke"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnter}>
-          </img>
-          )}
-
-          {showVideo &&  name === "hut smoke" && (
-          <iframe className={`${styles["youtube-vid"]}`}
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/EIHqy_mJnDk?start=274&end=293&autoplay=1"
-            allow='autoplay'
-            frameborder="0"
-            allowfullscreen="1"
-            
-          ></iframe>
-          
-          )}
-
-          { seeOtherSmoke &&(
-          <img 
-            src='/csImages/smoke.png' 
-            className={`${styles["nuke-lurk-door-smoke"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnter}>
-          </img>
-          )}
-
-          {showVideo &&  name === "door smoke" && (
-          <iframe className={`${styles["youtube-vid"]}`}
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/EIHqy_mJnDk?start=43&end=75&autoplay=1"
-            allow='autoplay'
-            frameborder="0"
-            allowfullscreen="1"
-            
-          ></iframe>
-          
-          )}
-
-          { seeOtherSmoke &&(
-          <img 
-            src='/csImages/smoke.png' 
-            className={`${styles["nuke-setup-smoke"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnter}>
-          </img>
-          )}
-
-          {showVideo &&  name === "setup smoke" && (
-          <iframe className={`${styles["youtube-vid"]}`}
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/EIHqy_mJnDk?start=145&end=160&autoplay=1"
-            allow='autoplay'
-            frameborder="0"
-            allowfullscreen="1"
-            
-          ></iframe>
-          
-          )}
+          <SmokeElementNuke
+            seeOtherSmoke={seeOtherSmoke}
+            handleMouseEnter={handleMouseEnter}
+            showVideo={showVideo}
+            name={name}
+          />
 
           {/* START OF MOLOTOVS */}
 
-          { seeOtherMolo &&(
-          <img 
-            src='/csImages/incendiary.webp' 
-            className={`${styles["nuke-hut-roof-molo"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnterMolo}>
-          </img>
-          )}
-
-          {showVideo &&  name === "molo hut from roof" && (
-          <iframe className={styles["youtube-vid"]}
-            width="560" 
-            height="315"
-            src="https://www.youtube.com/embed/_Y1CP-0zJAI"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-              gyroscope; picture-in-picture;
-              web-share"
-            frameborder="0"
-            allowfullscreen="1"
-          ></iframe>
-          )}
-
-          { seeOtherMolo &&(
-          <img 
-            src='/csImages/incendiary.webp' 
-            className={`${styles["nuke-A-roof-molo"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnterMolo}>
-          </img>
-          )}
-
-          {showVideo &&  name === "molo A site from roof" && (
-          <iframe className={styles["youtube-vid"]}
-            width="560" 
-            height="315"
-            src="https://www.youtube.com/embed/9C4fKR267Mk?autoplay=1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-              gyroscope; picture-in-picture;
-              web-share"
-            frameborder="0"
-            allowfullscreen="1"
-            
-          ></iframe>
-          )}
-
-          { seeOtherMolo &&(
-          <img 
-            src='/csImages/incendiary.webp' 
-            className={`${styles["nuke-secret-molo"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnterMolo}>
-          </img>
-          )}
-
-          {showVideo &&  name === "molo secret" && (
-          <iframe className={styles["youtube-vid"]}
-            width="560" 
-            height="315"
-            src="https://www.youtube.com/embed/q0jNYGkNEWY?autoplay=1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-              gyroscope; picture-in-picture;
-              web-share"
-            frameborder="0"
-            allowfullscreen="1"
-            
-          ></iframe>
-          )}
+          <MoloElementNuke
+            seeOtherMolo={seeOtherMolo}
+            handleMouseEnterMolo={handleMouseEnterMolo}
+            showVideo={showVideo}
+            name={name}
+          />
 
           {/* START OF Flashes */}
-          { seeOtherFlash &&(
-          <img 
-            src='/csImages/flash.webp' 
-            className={`${styles["inferno-banane-coffins-flash"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnterFlash}>
-          </img>
-          )}
-
-          {showVideo &&  name === "flash banane from coffins" && (
-          <iframe className={styles["youtube-vid"]}
-            width="315" 
-            height="560"
-            src="https://www.youtube.com/embed/2D3cE9q7Mr4"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-              gyroscope; picture-in-picture;
-              web-share"
-            frameborder="0"
-            
-            allowfullscreen
-           
-          ></iframe>
-          )}
           
+          <FlashElementNuke
+            seeOtherFlash={seeOtherFlash}
+            handleMouseEnterFlash={handleMouseEnterFlash}
+            showVideo={showVideo}
+            name={name}
+          />
           
 
           </div>
