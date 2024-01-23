@@ -58,7 +58,12 @@
 }
 
 .ancient-cat-spawn-smoke{
-  margin-left: 150px;
+  margin-left: -55px;
+  margin-top: -250px;
+}
+
+.ancient-mid-smoke{
+  margin-left: 250px;
   margin-top: 150px;
 }
 
@@ -123,6 +128,66 @@
 }
 
 .ancient-a-flash{
-  margin-left: 0px;
+  margin-left: -420px;
+  margin-top: -500px;
+}
+
+.A-donut-flash{
+  margin-left: -200px;
+  margin-top: -80px;
+}
+
+.A-mid-flash{
+  margin-left: 80px;
+  margin-top: -80px;
+}
+
+.A-idk-flash{
+  margin-left: -565px;
+  margin-top: 50px;
+}
+
+.ancient-exitA-flash{
+  margin-left: -680px;
+  margin-top: -400px;
+}
+
+.ancient-mid-flash{
+  margin-left: -50px;
   margin-top: 0px;
+}
+
+.cave-mid-flash{
+  margin-left: 340px;
+  margin-top: -30px;
+}
+
+.wood-mid-flash{
+  margin-left: 430px;
+  margin-top: -40px;
+}
+
+.alley-mid-flash{
+  margin-left: 200px;
+  margin-top: -500px;
+}
+
+.T-mid-flash{
+  margin-left: -120px;
+  margin-top: 600px;
+}
+
+.ancient-b-flash{
+  margin-left: 540px;
+  margin-top: -200px;
+}
+
+.cave-b-flash{
+  margin-left: 340px;
+  margin-top: -30px;
+}
+
+.ramp-b-flash{
+  margin-left: 610px;
+  margin-top: 200px;
 }

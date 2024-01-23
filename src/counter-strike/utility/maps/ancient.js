@@ -19,6 +19,9 @@ export default function App() {
   const [ctThrow, setCtThrow] = useState (false)
   const [ninja, setNinja] = useState(false)
   const [ASite, setASite] = useState(false)
+  const [aFlash, setAFlash] = useState(false)
+  const [midFlash, setMidFlash] = useState(false)
+  const [bFlash, setBFlash] = useState(false)
   const [utility, setUtility] = useState("")
   
 
@@ -39,13 +42,16 @@ export default function App() {
       setName("ancient-bLong-smoke")
     }if(className == "ancient_ancient-bShort-smoke__q4yaW img-fluid smaller-image hover-effect"){
       setName("ancient-bShort-smoke")
-      console.log("test");
+    
     }if (className == "ancient_ancient-cave-smoke__FzDtc img-fluid smaller-image hover-effect") {
       setName("ancient-cave-smoke")
-      console.log("test");
+      
     }if (className == "ancient_ancient-cat-spawn-smoke__TWdgu img-fluid smaller-image hover-effect") {
       setName("ancient-cat-smoke")
-      console.log("test");
+      
+    }if (className == "ancient_ancient-mid-smoke__ah8Pd img-fluid smaller-image hover-effect") {
+      setName("ancient-mid-smoke")
+  
     }
     
   };
@@ -84,8 +90,13 @@ export default function App() {
     setSeeOtherFlash(false)
     setUtility("flash")
     if(className == "ancient_ancient-a-flash__pZheC img-fluid smaller-image hover-effect"){
-      setName("flash A")
-      console.log("short");
+      setAFlash(true)
+    }else if (className =="ancient_ancient-exitA-flash__pufRS img-fluid smaller-image hover-effect") {
+      setName("exit A flash")
+    }else if (className =="ancient_ancient-mid-flash__ktm_e img-fluid smaller-image hover-effect") {
+      setMidFlash(true)
+    }else if (className =="ancient_ancient-b-flash__GmRlr img-fluid smaller-image hover-effect") {
+      setBFlash(true)
     }
     
   };
@@ -95,6 +106,9 @@ export default function App() {
     setCtThrow(false)
     setNinja(false)
     setASite(false)
+    setAFlash(false)
+    setMidFlash(false)
+    setBFlash(false)
     const element = event.target;
     const className = element.className;
     console.log(className);
@@ -113,6 +127,22 @@ export default function App() {
       setName("A site from T molo")
     }else if (className =="ancient_A-door-cross__eQCm4 img-fluid smaller-image hover-effect red_cross") {
       setName("A site from door molo")
+    }else if (className =="ancient_A-donut-flash__lFiki img-fluid smaller-image hover-effect red_cross") {
+      setName("A site from donut flash")
+    }else if (className =="ancient_A-mid-flash__fKCD1 img-fluid smaller-image hover-effect red_cross") {
+      setName("A site from mid flash")
+    }else if (className =="ancient_cave-mid-flash__zNRRJ img-fluid smaller-image hover-effect red_cross") {
+      setName("mid from cave flash")
+    }else if (className =="ancient_wood-mid-flash__ekvVr img-fluid smaller-image hover-effect red_cross") {
+      setName("mid from wood flash")
+    }else if (className =="ancient_alley-mid-flash__CwSMT img-fluid smaller-image hover-effect red_cross") {
+      setName("mid from alley flash")
+    }else if (className =="ancient_T-mid-flash__ICa8F img-fluid smaller-image hover-effect red_cross") {
+      setName("mid from T flash")
+    }else if (className =="ancient_ramp-b-flash__GcTJL img-fluid smaller-image hover-effect red_cross") {
+      setName("b from ramp flash")
+    }else if (className =="ancient_cave-b-flash__zBLvV img-fluid smaller-image hover-effect red_cross") {
+      setName("b from cave flash")
     }
   
   }
@@ -159,6 +189,9 @@ export default function App() {
         setSeeOtherSmoke(false);
         setSeeOtherMolo(false);
         setSeeOtherFlash(true);
+        setAFlash(false)
+        setMidFlash(false)
+        setBFlash(false)
       }
     }
   }, [showVideo, utility]);
@@ -215,6 +248,10 @@ export default function App() {
             handleMouseEnterFlash={handleMouseEnterFlash}
             showVideo={showVideo}
             name={name}
+            handlecross={handlecross}
+            aFlash={aFlash}
+            midFlash={midFlash}
+            bFlash={bFlash}
           />
 
 

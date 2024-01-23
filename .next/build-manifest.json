@@ -32,11 +32,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/counter-strike/utility/ancient.js"
     ],
-    "/counter-strike/utility/inferno": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/counter-strike/utility/inferno.js"
-    ],
     "/counter-strike/utility/mirage": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

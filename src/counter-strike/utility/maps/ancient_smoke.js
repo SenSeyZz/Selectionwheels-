@@ -196,6 +196,29 @@ const SmokeElementAncient = ({seeOtherSmoke, handleMouseEnter, showVideo, name, 
           ></iframe>
           
           )}
+
+          {seeOtherSmoke &&(
+          <img 
+            src='/csImages/smoke.png' 
+            className={`${styles["ancient-mid-smoke"]} img-fluid smaller-image hover-effect`} 
+            alt="Responsive image" 
+            onClick={handleMouseEnter}>
+          </img>
+          )}
+
+          {showVideo &&  name === "ancient-mid-smoke" && (
+          <iframe className={styles["youtube-vid"]}
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/P0b6X2AYqWg?autoplay=1"
+            allow='autoplay'
+            frameborder="0"
+            allowfullscreen="1"
+            
+            
+          ></iframe>
+          
+          )}
         </>
     )
 }
