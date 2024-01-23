@@ -14,6 +14,7 @@ export default function App() {
   const [seeOtherSmoke, setSeeOtherSmoke] = useState (true)
   const [seeOtherMolo, setSeeOtherMolo] = useState (false)
   const [seeOtherFlash, setSeeOtherFlash] = useState (false)
+  const [aFlash, setAFlash] = useState (false)
   const [utility, setUtility] = useState("")
 
 
@@ -75,12 +76,33 @@ export default function App() {
     setShowVideo(true);
     setSeeOtherFlash(false)
     setUtility("flash")
-    if(className == "inferno_inferno-banane-coffins-flash__DaJBD img-fluid smaller-image hover-effect"){
-      setName("flash banane from coffins")
-      console.log("short");
+    if(className == "nuke_nuke-ramp-flash__vQd4O img-fluid smaller-image hover-effect"){
+      setName("ramp flash")
+    }else if (className == "nuke_nuke-lobby-flash__5aNBv img-fluid smaller-image hover-effect") {
+      setName("lobby flash")
+    }else if (className == "nuke_nuke-main-flash__yEP8S img-fluid smaller-image hover-effect") {
+      setName("main flash")
+    }else if (className == "nuke_nuke-B-flash__vkyLW img-fluid smaller-image hover-effect") {
+      setAFlash(true)
     }
     
   };
+
+  const handlecross = (event) => {
+
+    setName(false)
+    setAFlash(false)
+  
+    const element = event.target;
+    const className = element.className;
+    console.log(className);
+
+    if(className == "nuke_A-roof-flash__dSzaX img-fluid smaller-image hover-effect red_cross"){
+      setName("A from roof")
+    }else if(className == "nuke_A-outside-flash__kfvQy img-fluid smaller-image hover-effect red_cross"){
+      setName("A from outside")
+    }
+  }
 
   useEffect(() => {
 
@@ -121,6 +143,7 @@ export default function App() {
         setSeeOtherSmoke(false);
         setSeeOtherMolo(false);
         setSeeOtherFlash(true);
+        setAFlash(false)
       }
     }
   }, [showVideo, utility]);
@@ -173,6 +196,8 @@ export default function App() {
             handleMouseEnterFlash={handleMouseEnterFlash}
             showVideo={showVideo}
             name={name}
+            handlecross={handlecross}
+            aFlash={aFlash}
           />
           
 

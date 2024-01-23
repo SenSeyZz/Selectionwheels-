@@ -64,3 +64,33 @@
     margin-left: -330px;
     margin-top: -490px
   }
+
+  .nuke-ramp-flash{
+    margin-left: -40px;
+    margin-top: 200px
+  }
+
+  .nuke-lobby-flash{
+    margin-left: -30px;
+    margin-top: 370px
+  }
+
+  .nuke-main-flash{
+    margin-left: 110px;
+    margin-top: 580px
+  }
+
+  .nuke-B-flash{
+    margin-left: 130px;
+    margin-top: 280px
+  }
+
+  .A-outside-flash{
+    margin-left: -270px;
+    margin-top: 350px
+  }
+
+  .A-roof-flash{
+    margin-left: -100px;
+    margin-top: 350px
+  }

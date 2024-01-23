@@ -89,9 +89,18 @@ const handleMouseEnterFlash = (event) => {
   setShowVideo(true);
   setSeeOtherFlash(false)
   setUtility("flash")
-  if(className == "inferno_inferno-banane-coffins-flash__DaJBD img-fluid smaller-image hover-effect"){
-    setName("flash banane from coffins")
-    console.log("short");
+  if(className == "overpass_overpass-water-flash__axeBB img-fluid smaller-image hover-effect"){
+    setName("overpass-water-flash")
+  }else if (className == "overpass_overpass-Bsite-flash__Sfu6s img-fluid smaller-image hover-effect") {
+    setName("overpass-Bsite-flash")
+  }else if (className == "overpass_overpass-Asite-flash__ffglI img-fluid smaller-image hover-effect") {
+    setName("overpass-Asite-flash")
+  }else if (className == "overpass_overpass-long-flash__hzIvt img-fluid smaller-image hover-effect") {
+    setName("overpass-long-flash")
+  }else if (className == "overpass_overpass-long2-flash__WlVRP img-fluid smaller-image hover-effect") {
+    setName("overpass-long2-flash")
+  }else if (className == "overpass_overpass-toilet-flash__DmbRa img-fluid smaller-image hover-effect") {
+    setName("overpass-toilet-flash")
   }
   
 };

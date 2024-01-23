@@ -16,6 +16,9 @@ export default function App() {
   const [seeOtherMolo, setSeeOtherMolo] = useState (false)
   const [seeOtherFlash, setSeeOtherFlash] = useState (false)
   const [rampMolo, setRampMolo] = useState(false)
+  const [yellowFlash, setYellowFlash] = useState(false)
+  const [aFlash, setAFlash] = useState(false)
+  const [bFlash, setBFlash] = useState(false)
   const [utility, setUtility] = useState("")
 
 
@@ -95,6 +98,14 @@ export default function App() {
     if(className == "inferno_inferno-banane-coffins-flash__DaJBD img-fluid smaller-image hover-effect"){
       setName("flash banane from coffins")
       console.log("short");
+    }else if (className == "vertigo_vertigo-yellow-flash__Al9sf img-fluid smaller-image hover-effect") {
+      setYellowFlash(true)
+    }else if (className == "vertigo_vertigo-A-flash__EKCri img-fluid smaller-image hover-effect") {
+      setAFlash(true)
+    }else if (className == "vertigo_vertigo-b-stairs-flash__K4VGA img-fluid smaller-image hover-effect") {
+      setName("b stairs")
+    }else if (className == "vertigo_vertigo-b-flash__kex9U img-fluid smaller-image hover-effect") {
+      setBFlash(true)
     }
     
   };
@@ -102,6 +113,9 @@ export default function App() {
   const handlecross = (event) => {
     setRampMolo(false)
     setName(false)
+    setYellowFlash(false)
+    setAFlash(false)
+    setBFlash(false)
     const element = event.target;
     const className = element.className;
     console.log(className);
@@ -110,7 +124,22 @@ export default function App() {
       setName("molo ramp from short")
     }else if (className == "vertigo_molo-ramp-site-cross__h0xv8 img-fluid smaller-image hover-effect red_cross") {
       setName("molo ramp from site")
+    }else if (className == "vertigo_A-yellow-flash__nydYf img-fluid smaller-image hover-effect red_cross") {
+      setName("yellow from A")
+    }else if (className == "vertigo_short-yellow-flash__7Wpxe img-fluid smaller-image hover-effect red_cross") {
+      setName("yellow from short")
+    }else if (className == "vertigo_A-ramp-flash__lhiku img-fluid smaller-image hover-effect red_cross") {
+      setName("A from ramp")
+    }else if (className == "vertigo_A-51-flash__lPrxZ img-fluid smaller-image hover-effect red_cross") {
+      setName("A from 51")
+    }else if (className == "vertigo_A-headshot-flash__Y8PJy img-fluid smaller-image hover-effect red_cross") {
+      setName("A from headshot")
+    }else if (className == "vertigo_B-stairs-flash__u_O_s img-fluid smaller-image hover-effect red_cross") {
+      setName("B from stairs")
+    }else if (className == "vertigo_B-mid-flash__0JjKA img-fluid smaller-image hover-effect red_cross") {
+      setName("B from mid")
     }
+  
   
   }
 
@@ -154,6 +183,9 @@ export default function App() {
         setSeeOtherSmoke(false);
         setSeeOtherMolo(false);
         setSeeOtherFlash(true);
+        setYellowFlash(false)
+        setAFlash(false)
+        setBFlash(false)
       }
     }
   }, [showVideo, utility]);
@@ -208,6 +240,10 @@ export default function App() {
             handleMouseEnterFlash={handleMouseEnterFlash}
             showVideo={showVideo}
             name={name}
+            handlecross={handlecross}
+            yellowFlash={yellowFlash}
+            aFlash={aFlash}
+            bFlash={bFlash}
           />
 
           </div>
