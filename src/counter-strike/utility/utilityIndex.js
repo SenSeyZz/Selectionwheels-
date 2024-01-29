@@ -18,7 +18,7 @@ export default function App() {
       
 
       </div>
-      <div class="container" style={{ height: '132vh' }}>
+      <div class="container" style={{ height: '185vh' }}>
         <div class="row mb-4" style={{ height: '40vh' }}>
           <div class="col">
             <Link href="/counter-strike/utility/mirage" style={{ textDecoration: 'none' }}> 
@@ -95,6 +95,36 @@ export default function App() {
           <Link href="/counter-strike/utility/ancient" style={{ textDecoration: 'none' }}>
           <div className="right-container grayscale" style={{ 
               backgroundImage: 'url(/csImages/ancient.avif)', 
+              backgroundSize: 'cover', 
+              height: '100%', 
+              backgroundPosition: 'center',
+              width:"100%"
+              }}>
+            </div>
+            </Link>
+          </div>
+        </div>
+
+        <div class="row mb-4" style={{ height: '40vh' }}>
+          <div class="col">
+            <Link href="/counter-strike/utility/anubis" style={{ textDecoration: 'none' }}> 
+
+            <div className="left-container grayscale" style={{ 
+              backgroundImage: 'url(/csImages/anubis.jpg)', 
+              backgroundSize: 'cover', 
+              height: '100%', 
+              backgroundPosition: 'center',
+              width:"100%"
+              }}>
+            </div>
+            </Link>
+
+          </div>
+
+          <div class="col">
+          <Link href="/counter-strike/utility/ancient" style={{ textDecoration: 'none' }}>
+          <div className="right-container grayscale" style={{ 
+              
               backgroundSize: 'cover', 
               height: '100%', 
               backgroundPosition: 'center',

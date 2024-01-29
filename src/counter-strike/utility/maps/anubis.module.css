@@ -1,0 +1,86 @@
+.black-bg {
+    background-color: black; /* Set the background color to black */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+  }
+  
+  .youtube-vid{
+    margin-left: 0px;
+    margin-top: 0px;
+    position: absolute;
+  }
+
+  .anubis_window_smoke{
+    margin-left: 10px;
+    margin-top: -20px;
+  }
+
+  .T-cross{
+    margin-left: 0px;
+    margin-top: 900px;
+  }
+
+  .mid-cross{
+    margin-left: -150px;
+    margin-top: 450px;
+  }
+
+  .anubis_connector_smoke{
+    margin-left: -150px;
+    margin-top: 210px;
+  }
+
+  .T-connector-cross{
+    margin-left: 100px;
+    margin-top: 900px;
+  }
+
+  .mid-A-cross{
+    margin-left: 350px;
+    margin-top: 540px;
+  }
+
+  .anubis_temple_smoke{
+    margin-left: 100px;
+    margin-top: -350px;
+  }
+
+  .T-temple-cross{
+    margin-left: 440px;
+    margin-top: 450px;
+  }
+
+  .mid-temple-cross{
+    margin-left: 0px;
+    margin-top: 420px;
+  }
+
+  .anubis-B-left-smoke{
+    margin-left: -430px;
+    margin-top: -50px;
+  }
+
+  .anubis-B-temple-smoke{
+    margin-left: -310px;
+    margin-top: -150px;
+  }
+
+  .anubis-B-ct-smoke{
+    margin-left: -430px;
+    margin-top: -150px;
+  }
+
+  .anubis-B-right-smoke{
+    margin-left: -300px;
+    margin-top: 30px;
+  }
+
+  .anubis-A-heaven-smoke{
+    margin-left: 437px;
+    margin-top: -580px;
+  }
+
+  .anubis-A-camera-smoke{
+    margin-left: 300px;
+    margin-top: -250px;
+  }
