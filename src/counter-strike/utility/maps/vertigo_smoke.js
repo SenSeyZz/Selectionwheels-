@@ -4,7 +4,7 @@ import styles from './vertigo.module.css';
 const SmokeElementVertigo = ({seeOtherSmoke, handleMouseEnter, showVideo, name}) => {
     return(
         <>
-        {seeOtherSmoke && (
+          {seeOtherSmoke && (
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["vertigo-mid-smoke"]} img-fluid smaller-image hover-effect`} 
@@ -73,7 +73,7 @@ const SmokeElementVertigo = ({seeOtherSmoke, handleMouseEnter, showVideo, name})
           
           )}
           
-          { seeOtherSmoke &&(
+          {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["vertigo-A-smoke1"]} img-fluid smaller-image hover-effect`} 
@@ -95,7 +95,7 @@ const SmokeElementVertigo = ({seeOtherSmoke, handleMouseEnter, showVideo, name})
           
           )}
 
-          { seeOtherSmoke &&(
+          {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["vertigo-A-smoke2"]} img-fluid smaller-image hover-effect`} 
@@ -117,7 +117,7 @@ const SmokeElementVertigo = ({seeOtherSmoke, handleMouseEnter, showVideo, name})
           
           )}
 
-          { seeOtherSmoke &&(
+          {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["vertigo-yellow-smoke"]} img-fluid smaller-image hover-effect`} 
@@ -139,7 +139,7 @@ const SmokeElementVertigo = ({seeOtherSmoke, handleMouseEnter, showVideo, name})
           
           )}
 
-          { seeOtherSmoke &&(
+          {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["vertigo-Tramp-smoke"]} img-fluid smaller-image hover-effect`} 
@@ -161,7 +161,7 @@ const SmokeElementVertigo = ({seeOtherSmoke, handleMouseEnter, showVideo, name})
           
           )}
 
-          { seeOtherSmoke &&(
+          {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["vertigo-elevator-A-smoke"]} img-fluid smaller-image hover-effect`} 
@@ -183,7 +183,7 @@ const SmokeElementVertigo = ({seeOtherSmoke, handleMouseEnter, showVideo, name})
           
           )}
 
-          { seeOtherSmoke &&(
+          {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["vertigo-right-B-smoke"]} img-fluid smaller-image hover-effect`} 
@@ -205,7 +205,7 @@ const SmokeElementVertigo = ({seeOtherSmoke, handleMouseEnter, showVideo, name})
           
           )}
 
-          { seeOtherSmoke &&(
+          {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["vertigo-left-B-smoke"]} img-fluid smaller-image hover-effect`} 
@@ -227,7 +227,7 @@ const SmokeElementVertigo = ({seeOtherSmoke, handleMouseEnter, showVideo, name})
           
           )}
 
-          { seeOtherSmoke &&(
+          {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["vertigo-ramp-terro-smoke"]} img-fluid smaller-image hover-effect`} 

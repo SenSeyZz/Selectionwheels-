@@ -4,7 +4,7 @@ import styles from './vertigo.module.css';
 const MoloElementVertigo = ({seeOtherMolo, handleMouseEnterMolo, showVideo, name, handlecross, rampMolo}) => {
     return(
         <>
-        { seeOtherMolo &&(
+          {seeOtherMolo &&(
           <img 
             src='/csImages/incendiary.webp' 
             className={`${styles["vertigo-heaven-molo"]} img-fluid smaller-image hover-effect`} 
@@ -27,13 +27,20 @@ const MoloElementVertigo = ({seeOtherMolo, handleMouseEnterMolo, showVideo, name
           ></iframe>
           )}
 
-          { seeOtherMolo &&(
+          {seeOtherMolo &&(
           <img 
             src='/csImages/incendiary.webp' 
             className={`${styles["vertigo-ramp-molo"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnterMolo}>
           </img>
+          )}
+
+          {seeOtherMolo &&(
+          <h1 
+            className={`${styles["vertigo-ramp-molo-2"]} img-fluid smaller-image`} 
+            > 2
+          </h1>
           )}
 
           {rampMolo &&(
@@ -84,7 +91,7 @@ const MoloElementVertigo = ({seeOtherMolo, handleMouseEnterMolo, showVideo, name
           ></iframe>
           )}
 
-          { seeOtherMolo &&(
+          {seeOtherMolo &&(
           <img 
             src='/csImages/incendiary.webp' 
             className={`${styles["vertigo-short-molo"]} img-fluid smaller-image hover-effect`} 
@@ -107,7 +114,7 @@ const MoloElementVertigo = ({seeOtherMolo, handleMouseEnterMolo, showVideo, name
           ></iframe>
           )}
 
-          { seeOtherMolo &&(
+          {seeOtherMolo &&(
           <img 
             src='/csImages/incendiary.webp' 
             className={`${styles["vertigo-elevator-molo"]} img-fluid smaller-image hover-effect`} 
@@ -130,7 +137,7 @@ const MoloElementVertigo = ({seeOtherMolo, handleMouseEnterMolo, showVideo, name
           ></iframe>
           )}
 
-          { seeOtherMolo &&(
+          {seeOtherMolo &&(
           <img 
             src='/csImages/incendiary.webp' 
             className={`${styles["vertigo-mid-molo"]} img-fluid smaller-image hover-effect`} 
@@ -153,7 +160,7 @@ const MoloElementVertigo = ({seeOtherMolo, handleMouseEnterMolo, showVideo, name
           ></iframe>
           )}
 
-          { seeOtherMolo &&(
+          {seeOtherMolo &&(
           <img 
             src='/csImages/incendiary.webp' 
             className={`${styles["vertigo-B-site-molo"]} img-fluid smaller-image hover-effect`} 
@@ -176,7 +183,7 @@ const MoloElementVertigo = ({seeOtherMolo, handleMouseEnterMolo, showVideo, name
           ></iframe>
           )}
 
-          { seeOtherMolo &&(
+          {seeOtherMolo &&(
           <img 
             src='/csImages/incendiary.webp' 
             className={`${styles["vertigo-heaven-mid-molo"]} img-fluid smaller-image hover-effect`} 

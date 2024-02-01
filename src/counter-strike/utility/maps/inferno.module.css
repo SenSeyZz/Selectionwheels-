@@ -65,6 +65,15 @@
     margin-top: -520px;
   }
 
+  .inferno-newBox-molo-3{
+    margin-left: -120px;
+    margin-top: -550px;
+    color: white;
+    border: 2px solid white;
+    padding-left: 15px; /* Optional: Add padding for spacing */
+    transform: scale(0.4);
+  }
+
   .newBox-terro-cross{
     margin-left: 20px;
     margin-top: -260px;
@@ -83,6 +92,15 @@
   .inferno-dark-molo{
     margin-left: -140px;
     margin-top: -700px;
+  }
+
+  .inferno-dark-molo-2{
+    margin-left: -100px;
+    margin-top: -730px;
+    color: white;
+    border: 2px solid white;
+    padding-left: 15px; /* Optional: Add padding for spacing */
+    transform: scale(0.4);
   }
 
   .dark-sandbag-cross{

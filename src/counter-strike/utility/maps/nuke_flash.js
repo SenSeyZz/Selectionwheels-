@@ -79,10 +79,17 @@ const FlashElementNuke = ({seeOtherFlash, handleMouseEnterFlash, showVideo, name
           { seeOtherFlash &&(
           <img 
             src='/csImages/flash.webp' 
-            className={`${styles["nuke-B-flash"]} img-fluid smaller-image hover-effect`} 
+            className={`${styles["nuke-A-flash"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnterFlash}>
           </img>
+          )}
+
+          { seeOtherFlash &&(
+          <h1 
+            className={`${styles["nuke-A-flash-2"]} img-fluid smaller-image`} 
+            > 2
+          </h1>
           )}
 
           {aFlash &&(

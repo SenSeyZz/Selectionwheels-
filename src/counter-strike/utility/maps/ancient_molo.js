@@ -13,6 +13,13 @@ const MoloElementAncient = ({seeOtherMolo, handleMouseEnterMolo, showVideo, name
           </img>
           )}
 
+          { seeOtherMolo &&(
+          <h1 
+            className={`${styles["ancient-ninja-molo-2"]} img-fluid smaller-image`} 
+            > 2
+          </h1>
+          )}
+
           {ninja &&(
           <img 
             src='/csImages/red_cross.png' 
@@ -30,7 +37,6 @@ const MoloElementAncient = ({seeOtherMolo, handleMouseEnterMolo, showVideo, name
             onClick={handlecross}>
           </img>
           )}
-
 
           {showVideo &&  name === "ninja from T molo" && (
           <iframe className={styles["youtube-vid"]}
@@ -69,7 +75,6 @@ const MoloElementAncient = ({seeOtherMolo, handleMouseEnterMolo, showVideo, name
           </img>
           )}
 
-          
           {showVideo &&  name === "cat molo" && (
           <iframe className={styles["youtube-vid"]}
             width="560" 
@@ -92,7 +97,6 @@ const MoloElementAncient = ({seeOtherMolo, handleMouseEnterMolo, showVideo, name
             onClick={handleMouseEnterMolo}>
           </img>
           )}
-
           
           {showVideo &&  name === "elbow molo" && (
           <iframe className={styles["youtube-vid"]}
@@ -116,7 +120,6 @@ const MoloElementAncient = ({seeOtherMolo, handleMouseEnterMolo, showVideo, name
             onClick={handleMouseEnterMolo}>
           </img>
           )}
-
           
           {showVideo &&  name === "chubby molo" && (
           <iframe className={styles["youtube-vid"]}
@@ -163,6 +166,13 @@ const MoloElementAncient = ({seeOtherMolo, handleMouseEnterMolo, showVideo, name
             alt="Responsive image" 
             onClick={handleMouseEnterMolo}>
           </img>
+          )}
+
+          { seeOtherMolo &&(
+          <h1 
+            className={`${styles["ancient-A-site-molo-3"]} img-fluid smaller-image`} 
+            > 3
+          </h1>
           )}
 
           {ASite &&(
@@ -242,7 +252,6 @@ const MoloElementAncient = ({seeOtherMolo, handleMouseEnterMolo, showVideo, name
             onClick={handleMouseEnterMolo}>
           </img>
           )}
-
           
           {showVideo &&  name === "short molo" && (
           <iframe className={styles["youtube-vid"]}

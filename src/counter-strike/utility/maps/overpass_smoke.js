@@ -4,7 +4,7 @@ import styles from './overpass.module.css';
 const SmokeElementOverpass = ({seeOtherSmoke, handleMouseEnter, showVideo, name}) => {
     return(
         <>
-        {seeOtherSmoke &&(
+          {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["overpass-B-site-smoke"]} img-fluid smaller-image hover-effect`} 
@@ -117,7 +117,7 @@ const SmokeElementOverpass = ({seeOtherSmoke, handleMouseEnter, showVideo, name}
           
           )}
           
-          { seeOtherSmoke &&(
+          {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["overpass-truck-smoke"]} img-fluid smaller-image hover-effect`} 
@@ -139,7 +139,7 @@ const SmokeElementOverpass = ({seeOtherSmoke, handleMouseEnter, showVideo, name}
           
           )}
 
-          { seeOtherSmoke &&(
+          {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["overpass-toilet-smoke"]} img-fluid smaller-image hover-effect`} 
@@ -161,7 +161,7 @@ const SmokeElementOverpass = ({seeOtherSmoke, handleMouseEnter, showVideo, name}
           
           )}
 
-          { seeOtherSmoke &&(
+          {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["overpass-door-smoke"]} img-fluid smaller-image hover-effect`} 
@@ -183,7 +183,7 @@ const SmokeElementOverpass = ({seeOtherSmoke, handleMouseEnter, showVideo, name}
           
           )}
 
-          { seeOtherSmoke &&(
+          {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["overpass-ABC-smoke"]} img-fluid smaller-image hover-effect`} 
@@ -205,7 +205,7 @@ const SmokeElementOverpass = ({seeOtherSmoke, handleMouseEnter, showVideo, name}
           
           )}
 
-          { seeOtherSmoke &&(
+          {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["overpass-monster-smoke"]} img-fluid smaller-image hover-effect`} 
@@ -227,7 +227,7 @@ const SmokeElementOverpass = ({seeOtherSmoke, handleMouseEnter, showVideo, name}
           
           )}
 
-          { seeOtherSmoke &&(
+          {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["overpass-Tstairs-smoke"]} img-fluid smaller-image hover-effect`} 

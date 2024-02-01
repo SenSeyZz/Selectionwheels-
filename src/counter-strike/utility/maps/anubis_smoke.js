@@ -13,6 +13,13 @@ const SmokeElementAnubis = ({seeOtherSmoke, handleMouseEnter, showVideo, name, h
           </img>
           )}
 
+          { seeOtherSmoke &&(
+          <h1 
+            className={`${styles["anubis-window-smoke-2"]} img-fluid smaller-image`} 
+            > 2
+          </h1>
+          )}
+
           {windowSmoke &&(
           <img 
             src='/csImages/red_cross.png' 
@@ -66,6 +73,13 @@ const SmokeElementAnubis = ({seeOtherSmoke, handleMouseEnter, showVideo, name, h
           </img>
           )}
 
+          { seeOtherSmoke &&(
+          <h1 
+            className={`${styles["anubis_connector_smoke-2"]} img-fluid smaller-image`} 
+            > 2
+          </h1>
+          )}
+
           {connectorSmoke &&(
           <img 
             src='/csImages/red_cross.png' 
@@ -117,6 +131,13 @@ const SmokeElementAnubis = ({seeOtherSmoke, handleMouseEnter, showVideo, name, h
             alt="Responsive image" 
             onClick={handleMouseEnter}>
           </img>
+          )}
+
+          { seeOtherSmoke &&(
+          <h1 
+            className={`${styles["anubis_temple_smoke-2"]} img-fluid smaller-image`} 
+            > 2
+          </h1>
           )}
 
           {templeSmoke &&(

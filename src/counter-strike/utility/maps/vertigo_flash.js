@@ -4,7 +4,7 @@ import styles from './vertigo.module.css';
 const FlashElementVertigo = ({seeOtherFlash, handleMouseEnterFlash, showVideo, name, handlecross, yellowFlash, aFlash, bFlash}) => {
     return(
         <>
-        { seeOtherFlash &&(
+          {seeOtherFlash &&(
           <img 
             src='/csImages/flash.webp' 
             className={`${styles["vertigo-yellow-flash"]} img-fluid smaller-image hover-effect`} 
@@ -44,6 +44,13 @@ const FlashElementVertigo = ({seeOtherFlash, handleMouseEnterFlash, showVideo, n
             alt="Responsive image" 
             onClick={handleMouseEnterFlash}>
           </img>
+          )}
+
+          {seeOtherFlash &&(
+          <h1 
+            className={`${styles["vertigo-A-flash-3"]} img-fluid smaller-image`} 
+            > 3
+          </h1>
           )}
 
           {aFlash &&(
@@ -118,7 +125,7 @@ const FlashElementVertigo = ({seeOtherFlash, handleMouseEnterFlash, showVideo, n
           ></iframe>
           )}
 
-          { seeOtherFlash &&(
+          {seeOtherFlash &&(
           <img 
             src='/csImages/flash.webp' 
             className={`${styles["vertigo-b-stairs-flash"]} img-fluid smaller-image hover-effect`} 
@@ -142,13 +149,20 @@ const FlashElementVertigo = ({seeOtherFlash, handleMouseEnterFlash, showVideo, n
           ></iframe>
           )}
 
-          { seeOtherFlash &&(
+          {seeOtherFlash &&(
           <img 
             src='/csImages/flash.webp' 
             className={`${styles["vertigo-b-flash"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnterFlash}>
           </img>
+          )}
+
+          {seeOtherFlash &&(
+          <h1 
+            className={`${styles["vertigo-b-flash-3"]} img-fluid smaller-image`} 
+            > 3
+          </h1>
           )}
 
           {bFlash &&(

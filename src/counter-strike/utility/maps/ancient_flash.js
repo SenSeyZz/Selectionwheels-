@@ -14,6 +14,13 @@ const FlashElementAncient = ({seeOtherFlash, handleMouseEnterFlash, showVideo, n
           </img>
           )}
 
+          { seeOtherFlash &&(
+          <h1 
+            className={`${styles["ancient-a-flash-3"]} img-fluid smaller-image`} 
+            > 3
+          </h1>
+          )}
+
          {aFlash &&(
           <img 
             src='/csImages/red_cross.png' 
@@ -41,14 +48,6 @@ const FlashElementAncient = ({seeOtherFlash, handleMouseEnterFlash, showVideo, n
           </img>
           )}  
           
-            { seeOtherFlash &&(
-          <img 
-            src='/csImages/flash.webp' 
-            className={`${styles["ancient-a-flash"]} img-fluid smaller-image hover-effect`} 
-            alt="Responsive image" 
-            onClick={handleMouseEnterFlash}>
-          </img>
-          )}
 
           {showVideo &&  name === "A site from idk flash" && (
           <iframe className={styles["youtube-vid"]}
@@ -122,6 +121,13 @@ const FlashElementAncient = ({seeOtherFlash, handleMouseEnterFlash, showVideo, n
             alt="Responsive image" 
             onClick={handleMouseEnterFlash}>
           </img>
+          )}
+
+          { seeOtherFlash &&(
+          <h1 
+            className={`${styles["ancient-mid-flash-4"]} img-fluid smaller-image`} 
+            > 4
+          </h1>
           )}
 
          {midFlash &&(
@@ -223,6 +229,13 @@ const FlashElementAncient = ({seeOtherFlash, handleMouseEnterFlash, showVideo, n
             alt="Responsive image" 
             onClick={handleMouseEnterFlash}>
           </img>
+          )}
+
+          { seeOtherFlash &&(
+          <h1 
+            className={`${styles["ancient-b-flash-2"]} img-fluid smaller-image`} 
+            > 2
+          </h1>
           )}
 
           {bFlash &&(

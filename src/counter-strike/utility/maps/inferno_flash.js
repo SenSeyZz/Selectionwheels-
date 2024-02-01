@@ -9,7 +9,7 @@ const FlashElementInferno =({
 }) => {
     return(
         <>
-            { seeOtherFlash &&(
+          { seeOtherFlash &&(
           <img 
             src='/csImages/flash.webp' 
             className={`${styles["inferno-banane-coffins-flash"]} img-fluid smaller-image hover-effect`} 
@@ -78,7 +78,6 @@ const FlashElementInferno =({
           ></iframe>
           )}
 
-          
           { seeOtherFlash &&(
           <img 
             src='/csImages/flash.webp' 

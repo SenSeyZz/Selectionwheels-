@@ -4,7 +4,7 @@ import styles from './nuke.module.css';
 const SmokeElementNuke = ({seeOtherSmoke, handleMouseEnter, showVideo, name}) =>{
     return(
         <>
-            {seeOtherSmoke &&(
+          {seeOtherSmoke &&(
           <img 
             src='/csImages/smoke.png' 
             className={`${styles["nuke-outside1-smoke"]} img-fluid smaller-image hover-effect`} 

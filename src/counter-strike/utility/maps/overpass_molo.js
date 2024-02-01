@@ -37,6 +37,13 @@ const MoloElementOverpass = ({seeOtherMolo, handleMouseEnterMolo, showVideo, nam
           </img>
           )}
 
+          { seeOtherMolo &&(
+          <h1 
+            className={`${styles["overpass-B-default-molo-2"]} img-fluid smaller-image`} 
+            > 2
+          </h1>
+          )}
+
           {defaultB &&(
           <img 
             src='/csImages/red_cross.png' 
@@ -70,7 +77,6 @@ const MoloElementOverpass = ({seeOtherMolo, handleMouseEnterMolo, showVideo, nam
           ></iframe>
           )}
 
-          
           {showVideo &&  name === "default from toilet" && (
           <iframe className={styles["youtube-vid"]}
             width="560"
@@ -86,7 +92,7 @@ const MoloElementOverpass = ({seeOtherMolo, handleMouseEnterMolo, showVideo, nam
           ></iframe>
           )}
 
-          { seeOtherMolo &&(
+          {seeOtherMolo &&(
           <img 
             src='/csImages/incendiary.webp' 
             className={`${styles["overpass-A-default-molo"]} img-fluid smaller-image hover-effect`} 
@@ -117,6 +123,13 @@ const MoloElementOverpass = ({seeOtherMolo, handleMouseEnterMolo, showVideo, nam
             alt="Responsive image" 
             onClick={handleMouseEnterMolo}>
           </img>
+          )}
+
+          { seeOtherMolo &&(
+          <h1 
+            className={`${styles["overpass-short-molo-2"]} img-fluid smaller-image`} 
+            > 2
+          </h1>
           )}
 
           {shortMolo &&(
@@ -151,7 +164,6 @@ const MoloElementOverpass = ({seeOtherMolo, handleMouseEnterMolo, showVideo, nam
             
           ></iframe>
           )}
-
           
           {showVideo &&  name === "short from A vent" && (
           <iframe className={styles["youtube-vid"]}
@@ -168,7 +180,7 @@ const MoloElementOverpass = ({seeOtherMolo, handleMouseEnterMolo, showVideo, nam
           ></iframe>
           )}
 
-          { seeOtherMolo &&(
+          {seeOtherMolo &&(
           <img 
             src='/csImages/incendiary.webp' 
             className={`${styles["overpass-sorti-short-molo"]} img-fluid smaller-image hover-effect`} 
@@ -192,7 +204,7 @@ const MoloElementOverpass = ({seeOtherMolo, handleMouseEnterMolo, showVideo, nam
           ></iframe>
           )}
 
-          { seeOtherMolo &&(
+          {seeOtherMolo &&(
           <img 
             src='/csImages/incendiary.webp' 
             className={`${styles["overpass-toxic-molo"]} img-fluid smaller-image hover-effect`} 
@@ -216,7 +228,7 @@ const MoloElementOverpass = ({seeOtherMolo, handleMouseEnterMolo, showVideo, nam
           ></iframe>
           )}
 
-          { seeOtherMolo &&(
+          {seeOtherMolo &&(
           <img 
             src='/csImages/incendiary.webp' 
             className={`${styles["overpass-graffiti-molo"]} img-fluid smaller-image hover-effect`} 

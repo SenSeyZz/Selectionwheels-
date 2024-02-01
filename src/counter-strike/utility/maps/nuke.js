@@ -82,7 +82,7 @@ export default function App() {
       setName("lobby flash")
     }else if (className == "nuke_nuke-main-flash__yEP8S img-fluid smaller-image hover-effect") {
       setName("main flash")
-    }else if (className == "nuke_nuke-B-flash__vkyLW img-fluid smaller-image hover-effect") {
+    }else if (className == "nuke_nuke-A-flash__Vb779 img-fluid smaller-image hover-effect") {
       setAFlash(true)
     }
     

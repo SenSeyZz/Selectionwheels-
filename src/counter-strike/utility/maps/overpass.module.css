@@ -75,6 +75,15 @@
     margin-top: -380px;
   }
 
+  .overpass-B-default-molo-2{
+    margin-left: 410px;
+    margin-top: -410px;
+    color: white;
+    border: 2px solid white;
+    padding-left: 15px; /* Optional: Add padding for spacing */
+    transform: scale(0.4);
+  }
+
   .coin-pute-cross{
     margin-left: 120px;
     margin-top: -420px;
@@ -93,6 +102,15 @@
   .overpass-short-molo{
     margin-left: 370px;
     margin-top: 20px;
+  }
+
+  .overpass-short-molo-2{
+    margin-left: 410px;
+    margin-top: -10px;
+    color: white;
+    border: 2px solid white;
+    padding-left: 15px; /* Optional: Add padding for spacing */
+    transform: scale(0.4);
   }
 
   .short-A-bench{

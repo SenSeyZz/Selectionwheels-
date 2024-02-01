@@ -13,7 +13,7 @@ const MoloElementInferno = ({
 }) => {
   return (
     <>
-      { seeOtherMolo &&(
+          { seeOtherMolo &&(
           <img 
             src='/csImages/incendiary.webp' 
             className={`${styles["inferno-banana-terro-molo"]} img-fluid smaller-image hover-effect`} 
@@ -43,6 +43,13 @@ const MoloElementInferno = ({
             alt="Responsive image" 
             onClick={handleMouseEnterMolo}>
           </img>
+          )}
+
+          { seeOtherMolo &&(
+          <h1 
+            className={`${styles["inferno-newBox-molo-3"]} img-fluid smaller-image`} 
+            > 3
+          </h1>
           )}
 
           {newBoxMolo &&(
@@ -121,6 +128,13 @@ const MoloElementInferno = ({
             alt="Responsive image" 
             onClick={handleMouseEnterMolo}>
           </img>
+          )}
+
+          { seeOtherMolo &&(
+          <h1 
+            className={`${styles["inferno-dark-molo-2"]} img-fluid smaller-image`} 
+            > 2
+          </h1>
           )}
 
           {darkMolo &&(

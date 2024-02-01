@@ -36,6 +36,13 @@ const SmokeElementAncient = ({seeOtherSmoke, handleMouseEnter, showVideo, name, 
           </img>
           )}
 
+          { seeOtherSmoke &&(
+          <h1 
+            className={`${styles["ancient-ctFromDonut-smoke-2"]} img-fluid smaller-image`} 
+            > 2
+          </h1>
+          )}
+          
           {showVideo &&  name === "ancient-ctFromDonut-smoke" && (
           <iframe className={styles["youtube-vid"]}
             width="560"

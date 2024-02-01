@@ -75,6 +75,15 @@
     margin-top: 400px;
   }
 
+  .vertigo-ramp-molo-2{
+    margin-left: 190px;
+    margin-top: 370px;
+    color: white;
+    border: 2px solid white;
+    padding-left: 15px; /* Optional: Add padding for spacing */
+    transform: scale(0.4);
+  }
+
   .molo-ramp-short-cross{
     margin-left: 200px;
     margin-top: 130px;
@@ -125,6 +134,15 @@
     margin-top: 110px;
   }
 
+  .vertigo-A-flash-3{
+    margin-left: 470px;
+    margin-top: 80px;
+    color: white;
+    border: 2px solid white;
+    padding-left: 15px; /* Optional: Add padding for spacing */
+    transform: scale(0.4);
+  }
+
   .A-ramp-flash{
     margin-left: 130px;
     margin-top: 520px;
@@ -148,6 +166,15 @@
   .vertigo-b-flash{
     margin-left: -560px;
     margin-top: -500px;
+  }
+
+  .vertigo-b-flash-3{
+    margin-left: -520px;
+    margin-top: -530px;
+    color: white;
+    border: 2px solid white;
+    padding-left: 15px; /* Optional: Add padding for spacing */
+    transform: scale(0.4);
   }
 
   .B-mid-flash{

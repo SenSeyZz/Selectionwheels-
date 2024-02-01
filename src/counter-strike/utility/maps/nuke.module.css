@@ -80,9 +80,18 @@
     margin-top: 580px
   }
 
-  .nuke-B-flash{
+  .nuke-A-flash{
     margin-left: 130px;
     margin-top: 280px
+  }
+
+  .nuke-A-flash-2{
+    margin-left: 170px;
+    margin-top: 250px; 
+    color: white;
+    border: 2px solid white;
+    padding-left: 15px; /* Optional: Add padding for spacing */
+    transform: scale(0.4);
   }
 
   .A-outside-flash{

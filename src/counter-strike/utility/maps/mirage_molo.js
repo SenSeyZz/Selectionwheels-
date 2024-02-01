@@ -13,6 +13,13 @@ const MoloElementMirage = ({seeOtherMolo, handleMouseEnterMolo, showVideo, name,
           </img>
           )}
 
+          { seeOtherMolo &&(
+          <h1 
+            className={`${styles["mirage-underWood-molo-2"]} img-fluid smaller-image`} 
+            > 2
+          </h1>
+          )}
+
           {showVideo &&  name === "mirage-underFromPalace-molo" && (
           <iframe className={`${styles["youtube-vid"]}`}
             width="560" 
@@ -86,6 +93,13 @@ const MoloElementMirage = ({seeOtherMolo, handleMouseEnterMolo, showVideo, name,
             alt="Responsive image" 
             onClick={handleMouseEnterMolo}>
           </img>
+          )}
+
+          { seeOtherMolo &&(
+          <h1 
+            className={`${styles["mirage-window-molo-2"]} img-fluid smaller-image`} 
+            > 2
+          </h1>
           )}
 
           {windowMolo &&(

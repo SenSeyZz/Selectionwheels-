@@ -16,10 +16,18 @@
   margin-top: -630px;
 }
 
-
 .ancient-ctFromDonut-smoke{
   margin-left: -300px;
   margin-top: -580px;
+}
+
+.ancient-ctFromDonut-smoke-2{
+  margin-left: -260px;
+  margin-top: -610px;
+  color: white;
+  border: 2px solid white;
+  padding-left: 15px; /* Optional: Add padding for spacing */
+  transform: scale(0.4);
 }
 
 .ancient-tunnel-smoke{
@@ -72,6 +80,15 @@
   margin-top: -80px;
 }
 
+.ancient-ninja-molo-2{
+  margin-left: 480px;
+  margin-top: -110px;
+  color: white;
+  border: 2px solid white;
+  padding-left: 15px; /* Optional: Add padding for spacing */
+  transform: scale(0.4);
+}
+
 .T-cross{
   margin-left: 630px;
   margin-top: 430px;
@@ -107,6 +124,15 @@
   margin-top: -240px;
 }
 
+.ancient-A-site-molo-3{
+  margin-left: 480px;
+  margin-top: -270px;
+  color: white;
+  border: 2px solid white;
+  padding-left: 15px; /* Optional: Add padding for spacing */
+  transform: scale(0.4);
+}
+
 .A-Ct-cross{
   margin-left: 560px;
   margin-top: -540px;
@@ -130,6 +156,15 @@
 .ancient-a-flash{
   margin-left: -420px;
   margin-top: -500px;
+}
+
+.ancient-a-flash-3{
+  margin-left: -380px;
+  margin-top: -530px;
+  color: white;
+  border: 2px solid white;
+  padding-left: 15px; /* Optional: Add padding for spacing */
+  transform: scale(0.4);
 }
 
 .A-donut-flash{
@@ -157,6 +192,15 @@
   margin-top: 0px;
 }
 
+.ancient-mid-flash-4{
+  margin-left: -10px;
+  margin-top: -30px;
+  color: white;
+  border: 2px solid white;
+  padding-left: 15px; /* Optional: Add padding for spacing */
+  transform: scale(0.4);
+}
+
 .cave-mid-flash{
   margin-left: 340px;
   margin-top: -30px;
@@ -180,6 +224,15 @@
 .ancient-b-flash{
   margin-left: 540px;
   margin-top: -200px;
+}
+
+.ancient-b-flash-2{
+  margin-left: 580px;
+  margin-top: -230px;
+  color: white;
+  border: 2px solid white;
+  padding-left: 15px; /* Optional: Add padding for spacing */
+  transform: scale(0.4);
 }
 
 .cave-b-flash{

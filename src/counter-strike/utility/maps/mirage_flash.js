@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './mirage.module.css';
 
 const FlashElementMirage = ({seeOtherFlash, handleMouseEnterFlash, showVideo, name, handlecross, aFlash}) => {
+
     return(
         <>
             { seeOtherFlash &&(
@@ -10,16 +11,15 @@ const FlashElementMirage = ({seeOtherFlash, handleMouseEnterFlash, showVideo, na
             className={`${styles["mirage-A-flash"]} img-fluid smaller-image hover-effect`} 
             alt="Responsive image" 
             onClick={handleMouseEnterFlash}>
+           
           </img>
           )}
 
           { seeOtherFlash &&(
-          <img 
-            src='/csImages/3.png' 
+          <h1 
             className={`${styles["mirage-A-flash-3"]} img-fluid smaller-image`} 
-            alt="Responsive image" 
-           >
-          </img>
+            > 3
+          </h1>
           )}
           
           {aFlash &&(
